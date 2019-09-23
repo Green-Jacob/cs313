@@ -3,8 +3,13 @@
   flex-wrap:wrap;
   background-image:linear-gradient(lightblue, blue);
 }
+.box{
+  width:100%;
+  font-family:'Mansalva',cursive;
+}
 header{
-  font-size:25px;
+  text-align:center;
+  font-size:35px;
   font-family:monospace;
-  width:100%; 
+  width:100%;
 }
