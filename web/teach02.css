@@ -1,4 +1,4 @@
-[id*=box]{
+[class^=box]{
   border:3px groove white;
 }
 .container{
