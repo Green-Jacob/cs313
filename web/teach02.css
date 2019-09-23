@@ -3,9 +3,20 @@
   flex-wrap:wrap;
   background-image:linear-gradient(lightblue, blue);
 }
-.box{
+.box1{
   width:100%;
+  font-size:25px;
   font-family:'Mansalva',cursive;
+}
+.box2{
+  width:100%;
+  font-size:25px;
+  font-family:sans-serif;
+}
+.box3{
+  width:100%;
+  font-size:25px;
+  font-family:serif;
 }
 header{
   text-align:center;
