@@ -3,7 +3,7 @@
   flex-wrap:wrap;
   background-image:linear-gradient(lightblue, blue);
 }
-div:hover{
+.box1:hover, .box2:hover, .box3:hover{
   font-weight:bold;
 }
 .box1{
