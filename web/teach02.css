@@ -1,3 +1,9 @@
 .container{
-  background-image:linear-gradient(blue, green);
+  display:flex;
+  flex-wrap:wrap;
+  background-image:linear-gradient(lightblue, blue);
+}
+header{
+  font-size:25px;
+  font-family:monospace;
 }
