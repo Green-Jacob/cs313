@@ -9,6 +9,6 @@ $(document).ready(function(){
   $("#change").click(function() {
     var input = $("#color");
     var colorEntered = input.val();
-    $("#box1").css("color", colorEntered);
+    $("#box1").css("background-color", colorEntered);
   });
 });
