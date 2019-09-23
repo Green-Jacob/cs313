@@ -8,6 +8,6 @@ function clickAlert() {
 function changeColor() {
   var element = $("#box1");
   var input = $("#color");
-  var colorEntered = input.value();
+  var colorEntered = input.text();
   element.css("color", colorEntered);
 }
