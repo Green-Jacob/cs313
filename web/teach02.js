@@ -3,5 +3,5 @@ function clickAlert() {
 }
 function changeColor() {
   var colorEntered = document.getElementById('color').value;
-  document.getElementsByClassName('box1').style.color = colorEntered;
+  document.getElementById('box1').style.color = colorEntered;
 }
