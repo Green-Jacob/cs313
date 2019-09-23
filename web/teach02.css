@@ -14,16 +14,19 @@
 }
 .box1{
   width:100%;
+  background-color:blue;
   font-size:25px;
   font-family:'Mansalva',cursive;
 }
 .box2{
   width:100%;
+  background-color:lightblue;
   font-size:25px;
   font-family:sans-serif;
 }
 .box3{
   width:100%;
+  background-color:white;
   font-size:25px;
   font-family:serif;
 }
