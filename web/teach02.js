@@ -8,7 +8,7 @@ function clickAlert() {
 $(document).ready(function(){
   $("#change").click(function() {
     var input = $("#color");
-    var colorEntered = input.text();
+    var colorEntered = input.val();
     $("#box1").css("color", colorEntered);
   });
 });
