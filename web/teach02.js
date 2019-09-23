@@ -5,7 +5,7 @@ function clickAlert() {
   var colorEntered = document.getElementById('color').value;
   document.getElementById('box1').style.color = colorEntered;
 }*/
-$document.ready(function(){
+$(document).ready(function(){
   $("#change").click(function() {
     var element = $("#box1");
     var input = $("#color");
