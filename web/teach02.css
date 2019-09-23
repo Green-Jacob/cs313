@@ -3,6 +3,9 @@
   flex-wrap:wrap;
   background-image:linear-gradient(lightblue, blue);
 }
+div:hover{
+  font-weight:bold;
+}
 .box1{
   width:100%;
   font-size:25px;
