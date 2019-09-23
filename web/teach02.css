@@ -1,5 +1,8 @@
 [class^=box]{
   border:3px groove white;
+  border-radius:5px; 
+  margin:1rem;
+  padding:1rem;
 }
 .container{
   display:flex;
@@ -10,22 +13,16 @@
   font-weight:bold;
 }
 .box1{
-  margin:1rem;
-  padding:1rem;
   width:100%;
   font-size:25px;
   font-family:'Mansalva',cursive;
 }
 .box2{
-  margin:1rem;
-  padding:1rem;
   width:100%;
   font-size:25px;
   font-family:sans-serif;
 }
 .box3{
-  margin:1rem;
-  padding:1rem;
   width:100%;
   font-size:25px;
   font-family:serif;
