@@ -10,16 +10,19 @@ div{
   font-weight:bold;
 }
 .box1{
+  margin:1rem;
   width:100%;
   font-size:25px;
   font-family:'Mansalva',cursive;
 }
 .box2{
+  margin:1rem;
   width:100%;
   font-size:25px;
   font-family:sans-serif;
 }
 .box3{
+  margin:1rem;
   width:100%;
   font-size:25px;
   font-family:serif;
