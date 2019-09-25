@@ -1,0 +1,41 @@
+/* the flex container for the pages */
+.container{
+  border: 2px groove black;
+  border-radius:5px;
+  display:flex;
+  flex-wrap:wrap;
+  width:auto;
+  background-color:#99ccff;/* background color for all pages */
+}
+header{
+  border: 3px groove lightblue;
+  border-radius:5px;
+  width:100%;
+  text-align:center;
+  font-family:monospace;
+  font-size:2em;
+  color:#001a33;
+  padding:.5rem;
+  margin:.75em;
+}
+.sidebar{
+  border: 3px groove grey;
+  border-radius:5px;
+  width:10%;
+  background-color:rgba(230, 242, 255, 0.5);
+  padding:.5rem;
+}
+.box-small{
+  width:20%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.2rem;
+  margin:2em;
+}
+.box-large{
+  width:80%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.2rem;
+  margin:.5em;
+}
