@@ -34,7 +34,9 @@
           This is mostly since I moved out of state my family doesn't
           get to see my projects in person.</p>
         <h4>My first and only video, so far.</h4>
-        <iframe src="https://youtu.be/gmdexx9aomc" width="420" height="315"></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gmdexx9aomc"
+        frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
+        picture-in-picture" allowfullscreen></iframe>
       </div>
     </div><!-- end container -->
   </body>
