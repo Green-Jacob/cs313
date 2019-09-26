@@ -50,6 +50,7 @@ header{
 }
 .font-yanone{
   font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:1.6rem; 
 }
 .text-center{
   text-align:center;
