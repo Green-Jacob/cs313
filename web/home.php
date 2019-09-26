@@ -18,7 +18,12 @@
       </div>
       <div class="box-large">
         <h2 class="text-center">About My Hobbies</h2>
-
+        <p>My hobbies include knife making, ring making, leather working,
+          singing, and playing piano.</p><br>
+        <p>I started making rings last summer. My wife and son were
+          away most of that summer visiting family. I had a lot of
+          time on my hands.<br>So, after watching some professionals
+          on YouTube, I decided to give it a try. </p>
       </div>
     </div><!-- end container -->
   </body>
