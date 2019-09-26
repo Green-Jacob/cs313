@@ -7,9 +7,6 @@
   width:auto;
   background-color:#ccffcc;/* background color for all pages */
 }
-p{
-  font-size:3em;
-}
 header{
   border: 3px groove lightblue;
   border-radius:5px;
@@ -43,6 +40,7 @@ header{
   border-radius:5px;
   padding:.2rem;
   margin:.5em;
+  font-size:3em;
 }
 #logo{
   margin:.3rem;
