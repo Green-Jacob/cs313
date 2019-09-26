@@ -52,6 +52,6 @@ header{
 #green-text{
   color:green;
 }
-p{
-  text-align:right;
+p.large-text{
+  font-size:50px;
 }
