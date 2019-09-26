@@ -52,3 +52,6 @@ header{
 #green-text{
   color:green;
 }
+.large-text{
+  font-size:85px;
+}
