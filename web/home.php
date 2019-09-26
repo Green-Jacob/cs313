@@ -44,7 +44,7 @@
         <form action="home.php" method="get">
           Number of sides: <input type="number" name="sides" value=""><br>
           <input type="submit" value="Roll" id="input"
-          onclick="return noReload()">
+          onclick="noReload()">
         </form>
         <?php echo $result; ?>
       </div>
