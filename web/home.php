@@ -1,3 +1,11 @@
+<?php
+  $sides = $_GET["sides"];
+  $result = "";
+  $roll = rand(1, $sides);
+  $result = "You rolled a ". $roll;
+  console_log($result);
+ ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -51,10 +59,3 @@
     </div><!-- end container -->
   </body>
 </html>
-<?php
-  $sides = $_GET["sides"];
-  $result = "";
-  $roll = rand(1, $sides);
-  $result = "You rolled a ". $roll;
-  console_log($result);
- ?>
