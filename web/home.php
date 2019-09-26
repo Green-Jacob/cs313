@@ -18,6 +18,7 @@
         <div class="dropdown">
           <span>Pages</span>
           <div class="dropdown-list">
+            <a href="home.php">Home</a>
             <a href="assignments.html">Jake's Assignments</a>
           </div>
         </div>
