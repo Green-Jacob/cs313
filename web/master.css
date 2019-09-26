@@ -7,6 +7,9 @@
   width:auto;
   background-color:#ccffcc;/* background color for all pages */
 }
+p{
+  font-size:35px;
+}
 header{
   border: 3px groove lightblue;
   border-radius:5px;
@@ -51,7 +54,4 @@ header{
 }
 #green-text{
   color:green;
-}
-p.large-text{
-  font-size:35px;
 }
