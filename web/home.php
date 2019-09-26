@@ -44,12 +44,12 @@
         <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
         <form action="home.php" method="get">
           Number of sides: <input type="number" name="sides" value=""><br>
-          <button type="button" name="roll" onclick="return noReload();">Roll</button>
+          <button type="button" name="roll" onclick="return false">Roll</button>
         </form>
         <?php
           $sides = $_GET["sides"];
           $result = "";
-          $roll = rand(1, $sides);
+          $roll = rand(0, $sides);
           $result = "You rolled a ". $roll;
           echo "<script>console.log($result)</script>";
          ?>
