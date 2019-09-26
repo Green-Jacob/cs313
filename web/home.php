@@ -17,6 +17,22 @@
       <div class="sidebar">
         <a href="assignments.html">Jake's Assignments</a>
       </div>
+      <div class="box-small font-yanone">
+        <h2>Dice Roller</h2>
+        <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
+        <form action="home.php" method="get">
+          Number of sides: <input type="number" name="sides" value=""><br>
+        <input type="submit" name="" value="Roll">
+        </form>
+        <?php
+          $sides = $_GET["sides"];
+          $result = "";
+          $roll = rand(0, $sides);
+          $result = "You rolled a ". $roll;
+          echo "<script>console.log(\"$result\")</script>";
+         ?>
+         <?php echo $result; ?>
+      </div>
       <div class="box-large font-yanone">
         <h2 class="text-center">About My Hobbies</h2>
         <p>My hobbies include knife making, ring making, leather working,
@@ -38,22 +54,6 @@
         <iframe width="560" height="315" src="https://www.youtube.com/embed/gmdexx9aomc"
         frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
         picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div class="box-large font-yanone">
-        <h2>Dice Roller</h2>
-        <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
-        <form action="home.php" method="get">
-          Number of sides: <input type="number" name="sides" value=""><br>
-        <input type="submit" name="" value="Roll">
-        </form>
-        <?php
-          $sides = $_GET["sides"];
-          $result = "";
-          $roll = rand(0, $sides);
-          $result = "You rolled a ". $roll;
-          echo "<script>console.log(\"$result\")</script>";
-         ?>
-         <?php echo $result; ?>
       </div>
     </div><!-- end container -->
   </body>
