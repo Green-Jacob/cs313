@@ -55,4 +55,5 @@
   $result = "";
   $roll = rand(1, $sides);
   $result = "You rolled a ". $roll;
+  console_log($result);
  ?>
