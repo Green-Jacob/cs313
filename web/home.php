@@ -16,8 +16,9 @@
       <div class="sidebar">
         <a href="assignments.html">Jake's Assignments</a>
       </div>
-      <div class="box-small">
-        Body of page here
+      <div class="box-large">
+        <h2 class="text-center">About My Hobbies</h2>
+
       </div>
     </div><!-- end container -->
   </body>
