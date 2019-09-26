@@ -15,9 +15,14 @@
         <h1>Jake <span id="green-text">Green</span>'s Homepage</h1>
       </header>
       <div class="sidebar">
-        <a href="assignments.html">Jake's Assignments</a>
+        <div class="dropdown">
+          <span>Pages</span>
+          <div class="dropdown-list">
+            <a href="assignments.html">Jake's Assignments</a>
+          </div>
+        </div>
       </div>
-      <div class="box-small font-yanone">
+      <div class="box-large font-yanone">
         <h2>Dice Roller</h2>
         <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
         <form action="home.php" method="get">
