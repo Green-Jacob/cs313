@@ -23,7 +23,12 @@
         <p>I started making rings last summer. My wife and son were
           away most of that summer visiting family. I had a lot of
           time on my hands.<br>So, after watching some professionals
-          on YouTube, I decided to give it a try. </p>
+          on YouTube, I decided to give it a try.</p>
+        <p>I started making knived just after that summer. I made knives as
+        as Christmas gifts for my dad, brothers, and brother-in-law.<br> Leather
+         working became necessary to make sheaths for the knives. </p>
+        <p>Singing and piano are what I do when my wife doesn't
+          want me making messes in the house.</p> 
       </div>
     </div><!-- end container -->
   </body>
