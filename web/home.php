@@ -44,7 +44,7 @@
         <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
         <form action="home.php" method="get">
           Number of sides: <input type="number" name="sides" value=""><br>
-        <button type="button" name="roll" onclick="return false">Roll</button>
+        <button type="button" name="roll" onclick="return noReload();">Roll</button>
         </form>
         <?php
           $sides = $_GET["sides"];
