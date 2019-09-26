@@ -1,11 +1,3 @@
-<?php
-  $sides = $_GET["sides"];
-  $result = "";
-  $roll = rand(1, $sides);
-  $result = "You rolled a ". $roll;
-  console_log($result);
- ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -54,6 +46,13 @@
           Number of sides: <input type="number" name="sides" value=""><br>
           <button type="button" name="roll" onclick="return noReload();">Roll</button>
         </form>
+        <?php
+          $sides = $_GET["sides"];
+          $result = "";
+          $roll = rand(1, $sides);
+          $result = "You rolled a ". $roll;
+          console_log($result);
+         ?>
         <?php echo $result; ?>
       </div>
     </div><!-- end container -->
