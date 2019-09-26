@@ -52,8 +52,8 @@
           $roll = rand(0, $sides);
           $result = "You rolled a ". $roll;
           echo "<script>console.log(\"$result\")</script>";
+          echo $result;
          ?>
-        <?php echo $result; ?>
       </div>
     </div><!-- end container -->
   </body>
