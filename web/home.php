@@ -38,6 +38,21 @@
         frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
         picture-in-picture" allowfullscreen></iframe>
       </div>
+      <div class="box-large font-yanone">
+        <h2>Dice Roller</h2>
+        <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
+        <form action="home.php" method="post">
+          Number of sides: <input type="number" name="sides" value=""><br>
+          <input type="submit">
+        </form>
+        <?php echo $result; ?>
+      </div>
     </div><!-- end container -->
   </body>
 </html>
+<?php
+  $sides = $_POST["sides"];
+  $result = "";
+  $roll = rand(1, $sides);
+  $result = "You rolled a ". $roll;
+ ?>
