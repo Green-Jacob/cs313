@@ -40,13 +40,16 @@ header{
   border-radius:5px;
   padding:.2rem;
   margin:.5em;
-  font-family: 'Turret Road', cursive;
+
 }
 .font-large{
   font-size:3em;
 }
 .font-turretroad{
   font-family: 'Turret Road', cursive;
+}
+.font-yanone{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .text-center{
   text-align:center;
