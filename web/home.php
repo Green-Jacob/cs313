@@ -43,7 +43,8 @@
         <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
         <form action="home.php" method="get">
           Number of sides: <input type="number" name="sides" value=""><br>
-          <input type="submit" value="Roll" id="input" onclick="return setValue(false);">
+          <input type="submit" value="Roll" id="input"
+          onclick="return setValue(false);return false">
         </form>
         <?php echo $result; ?>
       </div>
