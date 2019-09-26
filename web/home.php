@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="master.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Yanone+Kaffeesatz&display=swap"
     rel="stylesheet">
+    <script src="home.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
