@@ -40,6 +40,7 @@ header{
   border-radius:5px;
   padding:.2rem;
   margin:.5em;
+  font-family: 'Turret Road', cursive;
 }
 .font-turretroad{
   font-family: 'Turret Road', cursive;
@@ -55,3 +56,4 @@ header{
 #green-text{
   color:green;
 }
+    
