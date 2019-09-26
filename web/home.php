@@ -41,9 +41,9 @@
       <div class="box-large font-yanone">
         <h2>Dice Roller</h2>
         <p>My wife and I enjoy board games. So I decided to make a dice roller.</p>
-        <form action="home.php" method="post">
+        <form action="home.php" method="get">
           Number of sides: <input type="number" name="sides" value=""><br>
-          <input type="submit">
+          <input type="submit" value="Roll" id="input" onclick="return setValue(false);">
         </form>
         <?php echo $result; ?>
       </div>
@@ -51,7 +51,7 @@
   </body>
 </html>
 <?php
-  $sides = $_POST["sides"];
+  $sides = $_GET["sides"];
   $result = "";
   $roll = rand(1, $sides);
   $result = "You rolled a ". $roll;
