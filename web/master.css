@@ -48,6 +48,9 @@ header{
 .font-turretroad{
   font-family: 'Turret Road', cursive;
 }
+.text-center{
+  text-align:center;
+}
 #logo{
   margin:.3rem;
   width:100px;
