@@ -42,6 +42,9 @@ header{
   margin:.5em;
   font-family: 'Turret Road', cursive;
 }
+.font-large{
+  font-size:3em;
+}
 .font-turretroad{
   font-family: 'Turret Road', cursive;
 }
@@ -56,4 +59,3 @@ header{
 #green-text{
   color:green;
 }
-    
