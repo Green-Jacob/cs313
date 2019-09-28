@@ -4,6 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jake Green's Homepage</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
     <link rel="stylesheet" href="master.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Yanone+Kaffeesatz&display=swap"
     rel="stylesheet">
@@ -58,9 +61,10 @@
           This is mostly since I moved out of state my family doesn't
           get to see my projects in person.</p>
         <h4>My first and only video, so far.</h4>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/gmdexx9aomc"
-        frameborder="0" allow="accelerometer; encrypted-media; gyroscope;
-        picture-in-picture" allowfullscreen></iframe>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gmdexx9aomc"
+          allowfullscreen></iframe>
+        </div>
       </div>
     </div><!-- end container -->
   </body>
