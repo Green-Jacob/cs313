@@ -24,8 +24,8 @@ iframe{
   border-radius: 5px;
   margin:1rem;
 }
-input{
-  margin:.3rem;
+input[type=submit]{
+  margin:.5rem;
 }
 .sidebar{
   border: 3px groove grey;
