@@ -62,7 +62,7 @@
           get to see my projects in person.</p>
         <h4>My first and only video, so far.</h4>
         <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item bordered" src="https://www.youtube.com/embed/gmdexx9aomc"
+          <iframe class="bordered" src="https://www.youtube.com/embed/gmdexx9aomc"
           allowfullscreen></iframe>
         </div>
       </div>
