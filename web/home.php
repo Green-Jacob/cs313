@@ -55,6 +55,7 @@
          working became necessary to make sheaths for the knives. </p>
         <p>Singing and piano are what I do when my wife doesn't
           want me making messes in the house.</p>
+        <hr>
         <h3>YouTube Videos</h3>
         <p>I recently started recording my crafting to share on YouTube.
           This is mostly since I moved out of state my family doesn't
