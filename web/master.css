@@ -28,7 +28,6 @@ header{
 .bordered{
   border: 5px groove green;
   border-radius: 5px;
-  margin:1rem;
 }
 input[type=submit]{
   margin:.5rem;
