@@ -61,7 +61,7 @@
           This is mostly since I moved out of state my family doesn't
           get to see my projects in person.</p>
         <h4>My first and only video, so far.</h4>
-        <div class="embed-responsive embed-responsive-16by9">
+        <div class="embed-responsive embed-responsive-16by9 bordered>
           <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/gmdexx9aomc"
           allowfullscreen></iframe>
         </div>

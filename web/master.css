@@ -1,7 +1,7 @@
 @@media only screen and(max-width:600px) {
   iframe{
     width:200px;
-    height:200px; 
+    height:200px;
   }
 }
 /* the flex container for the pages */
@@ -25,7 +25,7 @@ header{
   padding:.5rem;
   margin:.75em;
 }
-iframe{
+iframe.bordered{
   border: 5px groove green;
   border-radius: 5px;
   margin:1rem;
