@@ -41,14 +41,12 @@ session_start();
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
-    <div hidden id="session_write"></div>
-    <p><?php
-    if (isset($_SESSION["high-five"])) {
-      echo String($_SESSION["high-five"]);
-    }
-    else {
-      echo "debug";
-    }
-     ?></p>
+    <div hidden id="session_write">
+      <?php
+        if (isset($_SESSION[])) {
+          echo $_SESSION[];
+        }
+       ?>
+    </div>
   </body>
 </html>
