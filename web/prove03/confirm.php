@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../master.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Yanone+Kaffeesatz&display=swap"
     rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="prove03.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
