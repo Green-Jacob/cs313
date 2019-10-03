@@ -42,10 +42,5 @@ session_start();
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write"></div>
-    <?php
-    if (isset($_SESSION[])) {
-      echo $_SESSION[];
-    }
-     ?>
   </body>
 </html>
