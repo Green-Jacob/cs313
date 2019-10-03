@@ -46,7 +46,7 @@ session_start();
     <div id="debug">
       <p><?php printr($_SESSION); ?></p>
     </div>
-    <div hidden id="session_write">
+    <div id="session_write">
     </div>
   </body>
 </html>
