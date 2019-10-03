@@ -7,6 +7,7 @@ function addToSession(name, value) {
   var url = str.concat(name, v);
   //jQuery makes it easy to send to session.php
   $(document).ready(function(){
+    console.log(url);
     ('#session_write').load(url);
   });
 }
