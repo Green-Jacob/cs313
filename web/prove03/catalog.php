@@ -32,7 +32,8 @@ session_start();
         </div>
       </div>
       <div class="box-large font-yanone">
-
+        <button type="button" name="high-five" value="3.00" onclick="addToSession("high-five", 3)"
+        >High-Five $3.00</button>
       </div>
       <footer>
         <a href="cart.php">cart</a><br>
@@ -40,5 +41,6 @@ session_start();
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
+    <div hidden id="session_write"></div>
   </body>
 </html>
