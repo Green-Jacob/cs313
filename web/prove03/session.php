@@ -1,5 +1,6 @@
 <?php
 session_start();
+session_unset();
 $_SESSION["high-five"] = "3";
  ?>
  <!DOCTYPE html>
