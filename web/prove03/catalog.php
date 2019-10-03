@@ -32,7 +32,7 @@ session_start();
         </div>
       </div>
       <div class="box-large font-yanone">
-        <button type="button" name="highfive" value="3.00"
+        <button type="button" name="highfive" value="3"
         >High-Five $3.00</button>
       </div>
       <footer>
