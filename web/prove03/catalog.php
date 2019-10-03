@@ -43,9 +43,6 @@ session_start();
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
-    <div id="debug">
-      <p><?php printr($_SESSION); ?></p>
-    </div>
     <div id="session_write">
       <p>yo</p>
     </div>
