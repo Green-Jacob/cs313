@@ -10,6 +10,7 @@
       console.log(url);
       //$("#session_write").load(url);
       $.ajax({url: url,data: data, type: 'GET', sucess: function(result){
+        console.log(result);
         $("#session_write").html(result);
       }});
     });//end button.click()
