@@ -1,6 +1,6 @@
 <?php
 session_start();
-session_unset();
+//session_unset();
 $_SESSION["high-five"] = $_GET["highfive"];
  ?>
  <!DOCTYPE html>
