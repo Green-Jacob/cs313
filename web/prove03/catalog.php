@@ -18,7 +18,7 @@ session_start();
     <div class="container">
       <header>
         <a href="home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
-        <h1>Jake <span id="green-text">Green</span>'s Homepage</h1>
+        <h1>Catalog of Amazing Things</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -30,7 +30,7 @@ session_start();
         </div>
       </div>
       <div class="box-large font-yanone">
-        
+
       </div>
       <footer>
         <a href="cart.php">cart</a><br>
