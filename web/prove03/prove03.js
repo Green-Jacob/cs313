@@ -9,9 +9,8 @@
       console.log(value);
       console.log(url);
       //$("#session_write").load(url);
-      $.ajax({url: url,data: data, type: 'GET', sucess: function(result){
-        console.log(result);
-        $("#session_write").html(result);
-      }});
+      $("#session_write").load(url, data, function(responseTxt){
+        
+      });
     });//end button.click()
   });//end document.ready()
