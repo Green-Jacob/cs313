@@ -8,6 +8,9 @@
       console.log(name);
       console.log(value);
       console.log(url);
-      $("#session-write").load(url);
+      //$("#session-write").load(url);
+      $.ajax({url: url, type: get, sucess: function(result){
+        $("#session_write").html(result);
+      }})
     });//end button.click()
   });//end document.ready()
