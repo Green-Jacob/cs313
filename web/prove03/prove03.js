@@ -5,6 +5,7 @@
       var value = $(this).attr('value');
       var url = "session.php?";
       url.concat(name, value);
+      console.log(url);
       $("#session-write").load(url);
     });//end button.click()
   });//end document.ready()
