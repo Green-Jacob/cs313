@@ -46,6 +46,9 @@ session_start();
     if (isset($_SESSION["high-five"])) {
       echo String($_SESSION["high-five"]);
     }
+    else {
+      echo "debug";
+    }
      ?></p>
   </body>
 </html>
