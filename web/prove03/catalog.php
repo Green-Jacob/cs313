@@ -43,7 +43,7 @@ session_start();
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
-    <div id="session_write">
+    <div hidden id="session_write">
       <p>yo</p>
     </div>
   </body>
