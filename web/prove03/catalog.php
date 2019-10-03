@@ -43,8 +43,8 @@ session_start();
     </div><!-- end container -->
     <div hidden id="session_write">
       <?php
-        if (isset($_SESSION[])) {
-          echo $_SESSION[];
+        if (isset($_SESSION["high-five"])) {
+          echo "{$_SESSION[]}";
         }
        ?>
     </div>
