@@ -1,13 +1,10 @@
-function addToSession(name, value) {
-  //get names and values from input elements.
-  //need to add the session.php that will handle adding the information
-  var str = "session.php?";
-  name.concat("=");
-  var v = String(value);
-  var url = str.concat(name, v);
-  //jQuery makes it easy to send to session.php
   $(document).ready(function(){
-    console.log(url);
-    ('#session_write').load(url);
-  });
-}
+    $("button").click(function(){
+      var name = $(this).attr('name');
+      name.concat("=");
+      var value = $(this).attr('value');
+      var url = "session.php?";
+      url.concat(name, value);
+      $(this).load(url);
+    });//end button.click()
+  });//end document.ready()

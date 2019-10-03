@@ -32,7 +32,7 @@ session_start();
         </div>
       </div>
       <div class="box-large font-yanone">
-        <button type="button" name="high-five" value="3.00" onclick="addToSession('high-five', 3)"
+        <button type="button" name="high-five" value="3.00" 
         >High-Five $3.00</button>
       </div>
       <footer>
