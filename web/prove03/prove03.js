@@ -11,6 +11,7 @@
       //$("#session_write").load(url);
       $("#session_write").load(url, data, function(responseTxt){
         console.log(responseTxt);
+        $(this).html(responseTxt);
       });
     });//end button.click()
   });//end document.ready()
