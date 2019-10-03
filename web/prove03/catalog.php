@@ -42,11 +42,6 @@ session_start();
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">
-      <p><?php
-        if (isset($_SESSION['high-five'])) {
-          echo "{$_SESSION['high-five']}";
-        }
-       ?></p>
     </div>
   </body>
 </html>
