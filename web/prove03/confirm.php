@@ -29,6 +29,11 @@
       <div class="box-large font-yanone">
 
       </div>
+      <footer>
+        <a href="cart.php">cart</a><br>
+        <a href="checkout.php">checkout</a><br>
+        <a href="catalog.php">catalog</a>
+      </footer>
     </div><!-- end container -->
   </body>
 </html>
