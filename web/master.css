@@ -24,12 +24,19 @@ header{
   padding:.5rem;
   margin:.75em;
 }
+input[type=submit]{
+  margin:.5rem;
+}
+footer{
+  width:80%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.3rem;
+  margin:.8em;
+}
 .bordered{
   border: 5px groove green;
   border-radius: 5px;
-}
-input[type=submit]{
-  margin:.5rem;
 }
 .sidebar{
   border: 3px groove grey;
@@ -75,7 +82,6 @@ input[type=submit]{
   border-radius:5px;
   padding:.3rem;
   margin:.8em;
-
 }
 .font-large{
   font-size:3em;
