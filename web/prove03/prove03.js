@@ -3,8 +3,10 @@
       var name = $(this).attr('name');
       name.concat("=");
       var value = $(this).attr('value');
-      var url = "session.php?";
+      var url = 'session.php?';
       url.concat(name, value);
+      console.log(name);
+      console.log(value);
       console.log(url);
       $("#session-write").load(url);
     });//end button.click()
