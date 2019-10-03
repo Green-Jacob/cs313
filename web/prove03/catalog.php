@@ -32,7 +32,7 @@ session_start();
         </div>
       </div>
       <div class="box-large font-yanone">
-        <button type="button" name="high-five" value="3.00" 
+        <button type="button" name="high-five" value="3.00"
         >High-Five $3.00</button>
       </div>
       <footer>
@@ -44,7 +44,7 @@ session_start();
     <div hidden id="session_write"></div>
     <p><?php
     if (isset($_SESSION["high-five"])) {
-      echo $_SESSION["high-five"];
+      echo String($_SESSION["high-five"]);
     }
      ?></p>
   </body>
