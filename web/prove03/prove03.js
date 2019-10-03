@@ -4,7 +4,7 @@
       name = name.concat("=");
       var value = $(this).attr('value');
       var url = 'session.php';
-      data = "?".concat(name, value);
+      data = name.concat(value);
       console.log(name);
       console.log(value);
       console.log(url);
