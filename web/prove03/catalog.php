@@ -43,8 +43,10 @@ session_start();
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
-    <div id="session_write">
+    <div id="debug">
       <p><?php printr($_SESSION); ?></p>
+    </div>
+    <div hidden id="session_write">
     </div>
   </body>
 </html>
