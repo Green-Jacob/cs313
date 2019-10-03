@@ -2,7 +2,8 @@
 session_start();
 //session_unset();
 $names[] = array_keys($_GET);
-$name = names[0];
+$name = $names[0];
+echo "<p> added ".$name."</p>";
 $_SESSION[$name] = $_GET[0];
 //$_SESSION["high-five"] = $_GET["highfive"];
 // debug
