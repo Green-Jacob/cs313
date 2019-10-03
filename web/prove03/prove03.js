@@ -9,7 +9,7 @@
       console.log(value);
       console.log(url);
       //$("#session_write").load(url);
-      $.ajax({url: url, type: GET, sucess: function(result){
+      $.ajax({url: url, type: 'GET', sucess: function(result){
         $("#session_write").html(result);
       }});
     });//end button.click()
