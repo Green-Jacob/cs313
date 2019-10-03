@@ -44,7 +44,7 @@ session_start();
       </footer>
     </div><!-- end container -->
     <div id="session_write">
-
+      <p><?php printr($_SESSION); ?></p>
     </div>
   </body>
 </html>
