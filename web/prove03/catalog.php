@@ -21,13 +21,13 @@
         <div class="dropdown">
           <span>Pages</span>
           <div class="dropdown-list">
-            <a href="home.php">Home</a><br>
-            <a href="assignments.html">Jake's Assignments</a>
+            <a href="../home.php">Home</a><br>
+            <a href="../assignments.html">Jake's Assignments</a>
           </div>
         </div>
       </div>
       <div class="box-large font-yanone">
-        
+
       </div>
     </div><!-- end container -->
   </body>
