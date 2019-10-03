@@ -1,6 +1,6 @@
 <?php
 session_start();
-var value = $_GET["highfive"];
+var value = $_POST["highfive"];
 $_SESSION["high-five"] = String(value);
  ?>
  <!DOCTYPE html>
