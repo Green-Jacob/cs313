@@ -33,7 +33,9 @@ session_start();
       </div>
       <div class="box-large font-yanone">
         <button type="button" name="highfive" value="3"
-        >High-Five $3.00</button>
+        >High-Five $3.00</button><br>
+        <button type="button" name="handshake" value="1"
+        >Handshake $1.00</button><br>
       </div>
       <footer>
         <a href="cart.php">cart</a><br>
