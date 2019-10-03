@@ -1,7 +1,7 @@
   $(document).ready(function(){
     $("button").click(function(){
       var name = $(this).attr('name');
-      name.concat("=");
+      name = name.concat("=");
       var value = $(this).attr('value');
       var url = 'session.php?';
       url = url.concat(String(name), String(value));
