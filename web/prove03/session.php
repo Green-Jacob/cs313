@@ -1,6 +1,7 @@
 <?php
 session_start();
-$_SESSION["high-five"] = $_GET["highfive"];
+var value = $_GET["highfive"];
+$_SESSION["high-five"] = value;
  ?>
  <!DOCTYPE html>
  <html lang="en" dir="ltr">
