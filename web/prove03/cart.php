@@ -39,7 +39,7 @@ $values = array_values($_SESSION);
       <div class="box-large font-yanone">
         <?php
         if (empty($_SESSION)) {
-          echo "Nothing in the cart.";
+          echo "Nothing in the cart.<br>";
           echo "<a href=\"catalog.php\">Return to catalog</a>";
         }
         else {
