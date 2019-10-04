@@ -34,9 +34,9 @@ session_start();
       </div>
       <div class="box-large font-yanone">
         <?php
-        //$names = array_keys($_SESSION);
-        //$values = array_values($_SESSION);
-        echo "<p>".{($_SESSION)}."</p>";
+        $names = array_keys($_SESSION);
+        $values = array_values($_SESSION);
+        echo "<p>".($names[0])."</p>";
          ?>
       </div>
       <footer>
