@@ -39,7 +39,7 @@ $values = array_values($_SESSION);
       <div class="box-large font-yanone">
         <?php
         foreach ($_SESSION as $key => $value) {
-          $button = "<button class=\"addItem\" type=\"button\" name=\"".$key."\" value=\"".$value."\">".$key." $".$value.".00 Click to Remove</button>";
+          $button = "<button class=\"removeItem\" type=\"button\" name=\"".$key."\" value=\"".$value."\">".$key." $".$value.".00 Click to Remove</button>";
           echo "$button"."<br>";
         }
          ?>
