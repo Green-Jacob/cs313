@@ -32,7 +32,8 @@ $(document).ready(function(){
 });//end document.ready()
 
 function addItem() {
-  $(document).ready(function(){
+  $(document).ready(function(event){
+    event.preventDefault();
     var name = $(".addItem").attr('name');
     name = name.concat("=");
     var value = $(".addItem").attr('value');
