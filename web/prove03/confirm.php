@@ -35,7 +35,7 @@
         echo "Ordered: <br>";
         foreach ($_SESSION as $key => $value) {
           if ($key == "handshake" || $key == "highfive") {
-            echo "Item: ".$key."Price: ".$value;
+            echo "Item: ".$key." Price: $".$value.".00";
           }
         }
         //echo "$_SESSION["address"]";
