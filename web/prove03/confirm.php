@@ -31,11 +31,11 @@
         </div>
       </div>
       <div class="box-large font-yanone">
-        Order Confirmation
+        Order Confirmation <br>
         <?php
         foreach ($_SESSION as $key => $value) {
           if ($key == "handshake" || $key == "highfive") {
-            echo "Item: ".$key." Price: $".$value.".00";
+            echo "Item: ".$key." Price: $".$value.".00<br>";
           }
           if ($key == "address") {
             echo "Address: ".$value;
