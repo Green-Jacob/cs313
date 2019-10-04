@@ -24,10 +24,10 @@ $(document).ready(function(){
     console.log(name);
     console.log(value);
     console.log(url);
-    //$("#session_write").load(url);
     $("#session_write").load(url, data, function(responseTxt){
       console.log(responseTxt);
     });
+    location.reload(true);
   });//end addItem.click()
 });//end document.ready()
 
