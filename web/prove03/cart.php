@@ -34,7 +34,7 @@
         <?php
         $names = array_keys($_SESSION);
         $values = array_values($_SESSION);
-        echo "<p>".($names)."</p>";
+        echo "<p>".($names[0])."</p>";
          ?>
       </div>
       <footer>
