@@ -32,8 +32,8 @@
       </div>
       <div class="box-large font-yanone">
         Enter Address:<br>
-        <input id="addItem" type="text" name="address" value="">
-        <input type="submit" name="submit" value="Okay" onclick="addItem()">
+        <input id="addItem" type="text" name="address" value=""><br>
+        <input type="submit" name="submit" value="Place Order" onclick="addItem()">
       </div>
       <footer>
         <a href="cart.php">cart</a><br>
