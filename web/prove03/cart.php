@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 $names = array_keys($_SESSION);
 $values = array_values($_SESSION);
@@ -38,7 +38,9 @@ $values = array_values($_SESSION);
       </div>
       <div class="box-large font-yanone">
         <?php
-        echo "<p>".($names[0])."</p>";
+        foreach ($_SESSION as $key => $value) {
+          echo "$key"."<br>"."$value";
+        }
          ?>
       </div>
       <footer>
@@ -47,5 +49,8 @@ $values = array_values($_SESSION);
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
+    <div hidden id="session_write">
+      <p>yo</p>
+    </div>
   </body>
 </html>
