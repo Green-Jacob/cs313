@@ -33,7 +33,7 @@ $(document).ready(function(){
 
 function addItem() {
   $(document).ready(function(){
-    var name = $("#addItem").attr('name');
+    var name = $(document).("#addItem").attr('name');
     name = name.concat("=");
     var value = $("#addItem").attr('value');
     var url = 'session_add.php';
