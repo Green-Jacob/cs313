@@ -48,3 +48,7 @@ function addItem() {
     });
   });
 }
+
+function sendToConfirm(){
+  window.location.replace("confirm.php");
+}
