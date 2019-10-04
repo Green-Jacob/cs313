@@ -31,12 +31,12 @@
       </div>
       <div class="box-large font-yanone">
         <?php
-        echo "Ordered: <br>";
+        /*echo "Ordered: <br>";
         foreach ($_SESSION as $key => $value) {
           if ($key == "handshake" || $key == "highfive") {
             echo "Item: ".$key."Price: ".$value;
           }
-        }
+        }*/
         echo "$_SESSION["address"]";
          ?>
       </div>
