@@ -31,7 +31,11 @@
         </div>
       </div>
       <div class="box-large font-yanone">
-
+        <?php
+        $names = array_keys($_SESSION);
+        $values = array_values($_SESSION);
+        echo "<p>".($names)."</p>";
+         ?>
       </div>
       <footer>
         <a href="catalog.php">catalog</a><br>
