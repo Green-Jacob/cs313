@@ -41,5 +41,8 @@
         <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
+    <div hidden id="session_write">
+      <p>yo</p>
+    </div>
   </body>
 </html>
