@@ -36,6 +36,7 @@ function addItem() {
     var name = $("input").attr('name');
     name = name.concat("=");
     var value = $("input").attr('value');
+    console.log(value);
     var url = 'session_add.php';
     data = name.concat(value);
     console.log(name);
