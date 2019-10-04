@@ -47,7 +47,7 @@ function addItem() {
       //$(this).html(responseTxt);
     });
   });
-  sendToConfirm();
+  //sendToConfirm();
 }
 
 function sendToConfirm(){
