@@ -32,11 +32,11 @@ $(document).ready(function(){
 });//end document.ready()
 
 function addItem() {
+  var value = document.getElementById('addItem').value;
   $(document).ready(function(){
     var name = $("input").attr('name');
     name = name.concat("=");
-    var value = $("input").attr('value');
-    console.log(value);
+    //var value = $("input").attr('value');
     var url = 'session_add.php';
     data = name.concat(value);
     console.log(name);
