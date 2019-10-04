@@ -32,7 +32,7 @@
       </div>
       <div class="box-large font-yanone">
         Enter Address:<br>
-        <input class="addItem" type="text" name="address" value="">
+        <input type="text" name="address" value="">
         <input type="submit" name="submit" value="Okay" onclick="addItem()">
       </div>
       <footer>
