@@ -19,7 +19,7 @@ session_start();
   <body>
     <div class="container">
       <header>
-        <a href="home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
+        <a href="../home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
         <h1>Catalog of Amazing Things</h1>
       </header>
       <div class="sidebar">

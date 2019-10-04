@@ -24,7 +24,7 @@ $values = array_values($_SESSION);
   <body>
     <div class="container">
       <header>
-        <a href="home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
+        <a href="../home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
         <h1>Cart</h1>
       </header>
       <div class="sidebar">
