@@ -46,5 +46,5 @@ function addItem() {
       console.log(responseTxt);
       //$(this).html(responseTxt);
     });
-  ))}
+  );}
 }
