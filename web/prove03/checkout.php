@@ -34,7 +34,7 @@
         <form class="" action="">
           Enter Address:<br>
           <input class="addItem" type="text" name="address" value="">
-          <input type="submit" name="submit" value="Okay" onclick="addItem()">
+          <input type="submit" name="submit" value="Okay" onclick="return false;addItem()">
         </form>
       </div>
       <footer>
