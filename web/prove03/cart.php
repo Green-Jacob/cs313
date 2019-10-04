@@ -39,8 +39,10 @@ $values = array_values($_SESSION);
       <div class="box-large font-yanone">
         <?php
         foreach ($_SESSION as $key => $value) {
-          $button = "<button class=\"removeItem\" type=\"button\" name=\"".$key."\" value=\"".$value."\">".$key." $".$value.".00 Click to Remove</button>";
-          echo "$button"."<br>";
+          if ($key == "handshake" || $key == "highfive") {
+            $button = "<button class=\"removeItem\" type=\"button\" name=\"".$key."\" value=\"".$value."\">".$key." $".$value.".00 Click to Remove</button>";
+            echo "$button"."<br>";
+          }
         }
          ?>
       </div>
