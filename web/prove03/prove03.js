@@ -1,5 +1,5 @@
   $(document).ready(function(){
-    $("button").click(function(){
+    $(".addItem").click(function(){
       var name = $(this).attr('name');
       name = name.concat("=");
       var value = $(this).attr('value');
