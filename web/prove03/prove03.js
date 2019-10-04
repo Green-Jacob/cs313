@@ -33,9 +33,9 @@ $(document).ready(function(){
 
 function addItem() {
   $(document).ready(function(){
-    var name = $(document).("#addItem").attr('name');
+    var name = $("input").attr('name');
     name = name.concat("=");
-    var value = $("#addItem").attr('value');
+    var value = $("input").attr('value');
     var url = 'session_add.php';
     data = name.concat(value);
     console.log(name);
