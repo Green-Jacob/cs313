@@ -31,14 +31,16 @@
         </div>
       </div>
       <div class="box-large font-yanone">
+        Order Confirmation
         <?php
-        echo "Ordered: <br>";
         foreach ($_SESSION as $key => $value) {
           if ($key == "handshake" || $key == "highfive") {
             echo "Item: ".$key." Price: $".$value.".00";
           }
+          if ($key == "address") {
+            echo "Address: ".$value;
+          }
         }
-        echo "$_SESSION["address"]";
          ?>
       </div>
       <footer>
