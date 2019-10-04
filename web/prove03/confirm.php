@@ -38,7 +38,7 @@
             echo "Item: ".$key." Price: $".$value.".00";
           }
         }
-        //echo "$_SESSION["address"]";
+        echo "$_SESSION["address"]";
          ?>
       </div>
       <footer>
