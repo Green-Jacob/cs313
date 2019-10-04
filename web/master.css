@@ -9,7 +9,7 @@
   border-radius:5px;
   display:flex;
   flex-wrap:wrap;
-  align-items:flex-start;
+  align-items:center;
   width:auto;
   background-color:#ccffcc;/* background color for all pages */
 }
