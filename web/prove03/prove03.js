@@ -33,15 +33,14 @@ $(document).ready(function(){
 
 function addItem() {
   $(document).ready(function(){
-    var name = $(".addItem").attr('name');
+    var name = $("#addItem").attr('name');
     name = name.concat("=");
-    var value = $(".addItem").attr('value');
+    var value = $("#addItem").attr('value');
     var url = 'session_add.php';
     data = name.concat(value);
     console.log(name);
     console.log(value);
     console.log(url);
-    //$("#session_write").load(url);
     $("#session_write").load(url, data, function(responseTxt){
       console.log(responseTxt);
       //$(this).html(responseTxt);

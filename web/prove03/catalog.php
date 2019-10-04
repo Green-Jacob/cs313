@@ -34,7 +34,7 @@ session_start();
       <div class="box-large font-yanone">
         <button class="addItem" type="button" name="highfive" value="3"
         >High-Five $3.00</button><br>
-        <button class="addItem" type="button" name="handshake" value="1"
+        <button id="addItem" type="button" name="handshake" value="1"
         >Handshake $1.00</button><br>
       </div>
       <footer>
