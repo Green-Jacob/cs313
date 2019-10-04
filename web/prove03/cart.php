@@ -1,4 +1,8 @@
+<?php 
 session_start();
+$names = array_keys($_SESSION);
+$values = array_values($_SESSION);
+ ?>
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -34,8 +38,6 @@ session_start();
       </div>
       <div class="box-large font-yanone">
         <?php
-        $names = array_keys($_SESSION);
-        $values = array_values($_SESSION);
         echo "<p>".($names[0])."</p>";
          ?>
       </div>
