@@ -1,7 +1,9 @@
 <?php
 session_start();
 $names = array_keys($_GET);
-$value = array_values($_GET);
-$_SESSION[$names[0]] = $value[0];
-echo "added ".($_SESSION[$names[0]]);
+$values = array_values($_GET);
+$name = htmlspecialchars_decode($name[0]);
+$value = htmlspecialchars_decode($values[0]);
+$_SESSION[$name] = $value;
+echo "added ".($_SESSION[$name]);
  ?>
