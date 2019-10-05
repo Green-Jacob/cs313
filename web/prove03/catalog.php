@@ -41,7 +41,7 @@ session_start();
         >Add to cart</button><br>
       </div>
       <footer>
-        <a href="cart.php">cart</a><br>
+        <button type="button" name="button"><a href="cart.php">cart</a></button>
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">
