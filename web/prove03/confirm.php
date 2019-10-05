@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="prove03.js" charset="utf-8"></script>
   </head>
-  <body onunload="cleanSession()">
+  <body>
     <div class="container">
       <header>
         <a href="../home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
@@ -46,6 +46,8 @@
          ?>
       </div>
       <footer>
+        <button type="button" name="button"
+        onclick="cleanSession()">Clear Session</button><br>
         <a href="cart.php">cart</a><br>
         <a href="checkout.php">checkout</a><br>
         <a href="catalog.php">catalog</a>
