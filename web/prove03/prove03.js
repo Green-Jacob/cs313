@@ -27,7 +27,7 @@ $(document).ready(function(){
     $("#session_write").load(url, data, function(responseTxt){
       console.log(responseTxt);
     });
-    location.reload(true);
+    refresh();
   });//end addItem.click()
 });//end document.ready()
 
@@ -52,4 +52,8 @@ function addItem() {
 
 function sendToConfirm(){
   window.location.replace("confirm.php");
+}
+
+function refresh() {
+  location.reload(true);
 }
