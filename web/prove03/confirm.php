@@ -51,5 +51,9 @@
         <a href="catalog.php">catalog</a>
       </footer>
     </div><!-- end container -->
+    <?php
+    session_unset();
+    session_destroy();
+     ?>
   </body>
 </html>
