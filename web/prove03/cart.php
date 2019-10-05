@@ -38,10 +38,9 @@ $values = array_values($_SESSION);
       </div>
       <div class="box-large font-yanone">
         <?php
-        if (empty($_SESSION)) {
+        if (!$_SESSION["Handshake"] || !$_SESSION["Hug"]) {
           echo "Nothing in the cart.<br>";
           echo "<a href=\"catalog.php\">Return to catalog</a>";
-        }
         else {
           foreach ($_SESSION as $key => $value) {
             if ($key == "Handshake" || $key == "Hug") {
