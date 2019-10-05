@@ -54,6 +54,7 @@ $values = array_values($_SESSION);
          ?>
       </div>
       <footer>
+        <button type="button" name="button" onclick="cleanSession()">Clear Data</button>
         <a href="catalog.php">catalog</a><br>
         <a href="checkout.php">checkout</a><br>
         <a href="confirm.php">confirm</a>
