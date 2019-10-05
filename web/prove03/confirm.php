@@ -34,7 +34,7 @@
         Order Confirmation <br>
         <?php
         foreach ($_SESSION as $key => $value) {
-          if ($key == "handshake" || $key == "highfive") {
+          if ($key == "Handshake" || $key == "Hug") {
             print "Item: ".$key." Price: $".$value.".00<br>";
           }
           else {

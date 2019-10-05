@@ -44,7 +44,7 @@ $values = array_values($_SESSION);
         }
         else {
           foreach ($_SESSION as $key => $value) {
-            if ($key == "handshake" || $key == "highfive") {
+            if ($key == "Handshake" || $key == "Hug") {
               $button = "<button class=\"removeItem\" type=\"button\" name=\"".$key."\" value=\"".$value."\">".$key." $".$value.".00 Click to Remove</button>";
               echo "$button"."<br>";
             }

@@ -32,10 +32,12 @@ session_start();
         </div>
       </div>
       <div class="box-large font-yanone">
-        <button class="addItem" type="button" name="highfive" value="3"
-        >High-Five $3.00</button><br>
-        <button class="addItem" type="button" name="handshake" value="1"
-        >Handshake $1.00</button><br>
+        <h2>Hug $3.00</h2>
+        <button class="addItem" type="button" name="Hug" value="3"
+        >Add to cart</button><br>
+        <h2>Handshake $1.00</h2>
+        <button class="addItem" type="button" name="Handshake" value="1"
+        >Add to cart</button><br>
       </div>
       <footer>
         <a href="cart.php">cart</a><br>
