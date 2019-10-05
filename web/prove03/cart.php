@@ -38,7 +38,7 @@ $values = array_values($_SESSION);
       </div>
       <div class="box-large font-yanone">
         <?php
-        if (!$_SESSION["Handshake"] || !$_SESSION["Hug"]) {
+        if (empty($names)) {
           echo "Nothing in the cart.<br>";
           echo "<a href=\"catalog.php\">Return to catalog</a>";
         else {
