@@ -37,8 +37,10 @@
           if ($key == "handshake" || $key == "highfive") {
             print "Item: ".$key." Price: $".$value.".00<br>";
           }
-          else ($key == "address") {
-            print "Address: ".$value."<br>";
+          else {
+            if ($_SESSION["address"]) {
+              print "Address: ".$value."<br>";
+            }
           }
         }
          ?>
