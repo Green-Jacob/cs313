@@ -62,5 +62,6 @@ function cleanSession() {
   var url = "clean_session.php";
   $("#session_write").load(url, function(responseTxt){
     console.log(responseTxt);
+    refreshPage();
   });
 }
