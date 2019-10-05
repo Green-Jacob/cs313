@@ -32,7 +32,7 @@
       </div>
       <div class="box-large font-yanone">
         Enter Address:<br>
-        <input id="addItem" type="text" name="address" value=""><br>
+        <textarea id="addItem" name="address" rows="8" cols="80"></textarea>
         <input type="submit" name="submit" value="Place Order" onclick="addItem()">
       </div>
       <footer>
