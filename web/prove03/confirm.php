@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head onload="refreshPage()">
+  <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
@@ -39,7 +39,7 @@
           }
           else {
             if ($_SESSION["address"]) {
-              print "Address: ".$value."<br>";
+              print "Address: ".$value."<br onload=\"refreshPage()\">";
             }
           }
         }
