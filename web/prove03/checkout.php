@@ -37,7 +37,8 @@
         <input type="submit" name="submit" value="Place Order" onclick="addItem()">
       </div>
       <footer>
-        <a href="catalog.php">catalog</a><br>
+        <button type="button" name="button"><a href="catalog.php">catalog</a></button>
+        <button type="button" name="button"><a href="cart.php">catalog</a></button>
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">

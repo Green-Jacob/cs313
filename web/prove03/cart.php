@@ -54,8 +54,8 @@ $values = array_values($_SESSION);
          ?>
       </div>
       <footer>
-        <a href="catalog.php">catalog</a><br>
-        <a href="checkout.php">checkout</a><br>
+        <button type="button" name="button"><a href="catalog.php">catalog</a></button>
+        <button type="button" name="button"><a href="checkout.php">checkout</a></button>
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">
