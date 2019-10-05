@@ -37,7 +37,7 @@
           if ($key == "handshake" || $key == "highfive") {
             echo "Item: ".$key." Price: $".$value.".00<br>";
           }
-          if ($key == "address") {
+          else if ($key == "address") {
             echo "Address: ".$value."<br>";
           }
         }
