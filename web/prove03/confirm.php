@@ -35,10 +35,10 @@
         <?php
         foreach ($_SESSION as $key => $value) {
           if ($key == "handshake" || $key == "highfive") {
-            echo "Item: ".$key." Price: $".$value.".00<br>";
+            print "Item: ".$key." Price: $".$value.".00<br>";
           }
-          else if ($key == "address") {
-            echo "Address: ".$value."<br>";
+          else ($key == "address") {
+            print "Address: ".$value."<br>";
           }
         }
          ?>
