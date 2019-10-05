@@ -41,6 +41,7 @@ $values = array_values($_SESSION);
         if (empty($names)) {
           echo "Nothing in the cart.<br>";
           echo "<a href=\"catalog.php\">Return to catalog</a>";
+        }
         else {
           foreach ($_SESSION as $key => $value) {
             if ($key == "Handshake" || $key == "Hug") {
