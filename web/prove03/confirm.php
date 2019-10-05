@@ -35,7 +35,7 @@
         <?php
         foreach ($_SESSION as $key => $value) {
           if ($key == "Handshake" || $key == "Hug") {
-            print "Item: ".$key." Price: $".$value.".00<br>";
+            print "Item: ".$key." Price: ".$value."<br>";
           }
           else {
             if ($_SESSION["address"]) {
