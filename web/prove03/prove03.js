@@ -26,8 +26,8 @@ $(document).ready(function(){
     console.log(url);
     $("#session_write").load(url, data, function(responseTxt){
       console.log(responseTxt);
+      refreshPage();
     });
-    refreshPage();
   });//end addItem.click()
 });//end document.ready()
 
