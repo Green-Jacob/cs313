@@ -15,7 +15,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="prove03.js" charset="utf-8"></script>
   </head>
-  <body>
+  <body onbeforeunload="cleanSession()">
     <div class="container">
       <header>
         <a href="../home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
@@ -51,5 +51,5 @@
         <a href="catalog.php">catalog</a>
       </footer>
     </div><!-- end container -->
-  </body onbeforeunload="cleanSession()">
+  </body>
 </html>
