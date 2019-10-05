@@ -51,5 +51,5 @@
         <a href="catalog.php">catalog</a>
       </footer>
     </div><!-- end container -->
-  </body>
+  </body onbeforeunload="cleanSession()">
 </html>
