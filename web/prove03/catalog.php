@@ -42,8 +42,6 @@ session_start();
       </div>
       <footer>
         <a href="cart.php">cart</a><br>
-        <a href="checkout.php">checkout</a><br>
-        <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">

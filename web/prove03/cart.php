@@ -56,7 +56,6 @@ $values = array_values($_SESSION);
       <footer>
         <a href="catalog.php">catalog</a><br>
         <a href="checkout.php">checkout</a><br>
-        <a href="confirm.php">confirm</a>
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">
