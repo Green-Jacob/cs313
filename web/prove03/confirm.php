@@ -39,7 +39,7 @@
           }
           else {
             if ($_SESSION["address"]) {
-              print "Address: ".$value."<br onload=\"refreshPage()\">";
+              print "Address: ".$value."<br>";
             }
           }
         }
