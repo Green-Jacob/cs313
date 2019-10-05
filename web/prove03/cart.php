@@ -47,7 +47,7 @@ $values = array_values($_SESSION);
             if ($key == "Handshake" || $key == "Hug") {
               $item = "Item: ".$key." Price: $".$value.".00";
               $button = "<button class=\"removeItem\" type=\"button\" name=\"".$key."\" value=\"".$value."\">Click to Remove</button>";
-              echo "$button"."<br>";
+              echo $item."<br>".$button."<br>";
             }
           }
         }
