@@ -38,7 +38,7 @@ $values = array_values($_SESSION);
       </div>
       <div class="box-large font-yanone">
         <?php
-        if (isset($_SESSION) == false) {
+        if (empty($names)) {
           echo "Nothing in the cart.<br>";
           echo "<a href=\"catalog.php\">Return to catalog</a>";
         }
