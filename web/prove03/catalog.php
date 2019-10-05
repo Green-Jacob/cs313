@@ -33,10 +33,11 @@ session_start();
       </div>
       <div class="box-large font-yanone">
         <h2>Hug $3.00</h2>
-        <button class="addItem" type="button" name="Hug" value="3"
+        <button class="addItem" type="button" name="Hug" value="$3.00"
         >Add to cart</button><br>
+        <hr>
         <h2>Handshake $1.00</h2>
-        <button class="addItem" type="button" name="Handshake" value="1"
+        <button class="addItem" type="button" name="Handshake" value="$1.00"
         >Add to cart</button><br>
       </div>
       <footer>
