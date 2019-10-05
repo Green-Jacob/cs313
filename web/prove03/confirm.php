@@ -2,7 +2,7 @@
 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
+  <head onload="refreshPage()">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirmation</title>
@@ -16,7 +16,7 @@
     <script src="prove03.js" charset="utf-8"></script>
   </head>
   <body>
-    <div class="container" onload="refreshPage()">
+    <div class="container">
       <header>
         <a href="../home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
         <h1>Confirmation</h1>
