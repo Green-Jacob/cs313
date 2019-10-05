@@ -41,7 +41,8 @@
       </footer>
     </div><!-- end container -->
     <div hidden id="session_write">
-      <p>yo</p>
+      this is hidden
+      only used to use the .load() jQuery/ajax method
     </div>
   </body>
 </html>
