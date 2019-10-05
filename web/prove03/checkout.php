@@ -30,9 +30,10 @@
           </div>
         </div>
       </div>
-      <div class="box-large font-yanone">
+      <div class="box-large font-yanone col-lg-6">
         Enter Address:<br>
-        <textarea id="addItem" name="address" rows="8" cols="80"></textarea>
+        <textarea id="addItem" class="form-control" name="address"
+        rows="8" cols="80"></textarea>
         <input type="submit" name="submit" value="Place Order" onclick="addItem()">
       </div>
       <footer>
