@@ -46,11 +46,9 @@
          ?>
       </div>
       <footer>
-        <button type="button" name="button"
-        onclick="cleanSession()">Clear Session</button><br>
         <a href="cart.php">cart</a><br>
         <a href="checkout.php">checkout</a><br>
-        <a onclick="cleanSession()" href="catalog.php">catalog</a>
+        <a href="catalog.php">catalog</a>
       </footer>
     </div><!-- end container -->
   </body>
