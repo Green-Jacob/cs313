@@ -44,10 +44,10 @@ function addItem() {
     console.log(url);
     $("#session_write").load(url, data, function(responseTxt){
       console.log(responseTxt);
+      sendToConfirm();
       //$(this).html(responseTxt);
     });
   });
-  sendToConfirm();
 }
 
 function sendToConfirm(){
