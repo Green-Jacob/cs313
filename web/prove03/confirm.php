@@ -38,7 +38,7 @@
             echo "Item: ".$key." Price: $".$value.".00<br>";
           }
           if ($key == "address") {
-            echo "Address: ".$value;
+            echo "Address: ".$value."<br>";
           }
         }
          ?>
