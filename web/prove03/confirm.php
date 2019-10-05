@@ -15,8 +15,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="prove03.js" charset="utf-8"></script>
   </head>
-  <body onload="refreshPage()">
-    <div class="container">
+  <body>
+    <div class="container" onload="refreshPage()">
       <header>
         <a href="../home.php"><img src="../JakeGreenLogo.jpg" alt="Jake Green" id="logo"></a>
         <h1>Confirmation</h1>
