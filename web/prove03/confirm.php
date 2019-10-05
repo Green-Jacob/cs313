@@ -46,7 +46,7 @@
          ?>
       </div>
       <footer>
-        <a href="catalog.php">catalog</a>
+        <button type="button" name="button"><a href="catalog.php">catalog</a></button>
       </footer>
     </div><!-- end container -->
     <?php
