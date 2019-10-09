@@ -37,5 +37,41 @@ CREATE TABLE IF NOT EXISTS seventh_honors.assignments(
 CREATE TABLE IF NOT EXISTS seventh_honors.gradebook(
   assignment varchar(30) references seventh_honors.assignments(name),
   student varchar(30) references seventh_honors.students(name),
-  score numeric --this will be the score provided by user input divided by the total_score
+  score numeric
   );
+
+--eighth grade
+CREATE SCHEMA IF NOT EXISTS eighth;
+
+CREATE TABLE IF NOT EXISTS eighth.students(
+  name varchar(30) PRIMARY KEY
+  );
+
+CREATE TABLE IF NOT EXISTS eighth.assignments(
+  name varchar(30) PRIMARY KEY,
+  total_score numeric
+  );
+
+CREATE TABLE IF NOT EXISTS eighth.gradebook(
+  assignment varchar(30) references eighth.assignments(name),
+  student varchar(30) references eighth.students(name),
+  score numeric
+  );
+
+  --eighth grade honors
+  CREATE SCHEMA IF NOT EXISTS eighth_honors;
+
+  CREATE TABLE IF NOT EXISTS eighth_honors.students(
+    name varchar(30) PRIMARY KEY
+    );
+
+  CREATE TABLE IF NOT EXISTS eighth_honors.assignments(
+    name varchar(30) PRIMARY KEY,
+    total_score numeric
+    );
+
+  CREATE TABLE IF NOT EXISTS eighth_honors.gradebook(
+    assignment varchar(30) references eighth_honors.assignments(name),
+    student varchar(30) references eighth_honors.students(name),
+    score numeric 
+    );
