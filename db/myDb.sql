@@ -6,7 +6,7 @@
 CREATE SCHEMA IF NOT EXISTS seventh_honors;
 
 CREATE TABLE IF NOT EXISTS seventh_honors.students(
-  name varchar(30) PRIMARY KEY,
+  name varchar(30) PRIMARY KEY
   );
 
 CREATE TABLE IF NOT EXISTS seventh_honors.assignments(
