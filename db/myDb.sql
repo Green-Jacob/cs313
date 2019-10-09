@@ -1,17 +1,6 @@
-CREATE TABLE gradebook (
-    class varchar(80) references classes(name)
-);
+CREATE SCHEMA 7th_honors;
 
-CREATE TABLE classes (
-  name varchar(80) primary key
-);
-
-DROP TABLE "tablename";
-INSERT INTO classes VALUES('7th Math');
-INSERT INTO gradebook (class)
-    VALUES (3);
-SELECT * FROM ;
-SELECT "columns" FROM ;
-SELECT "expression" AS "column name" FROM "table";
-
-ALTER TABLE "tablename" RENAME COLUMN "columnname" TO "newcolumnname";
+CREATE TABLE 7th_honors.students(
+  name varchar(30) PRIMARY KEY,
+  id SERIAL NOT NULL PRIMARY KEY
+  );
