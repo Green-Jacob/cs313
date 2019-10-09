@@ -1,4 +1,4 @@
-CREATE SCHEMA 7th_honors;
+CREATE SCHEMA seventh_honors;
 
 CREATE TABLE 7th_honors.students(
   name varchar(30) PRIMARY KEY,
