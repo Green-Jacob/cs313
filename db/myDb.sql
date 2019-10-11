@@ -8,7 +8,8 @@
 CREATE SCHEMA IF NOT EXISTS seventh;
 
 CREATE TABLE IF NOT EXISTS seventh.students(
-  name varchar(30) PRIMARY KEY
+  name varchar(30) PRIMARY KEY,
+  period numeric NOT NULL
   );
 
 CREATE TABLE IF NOT EXISTS seventh.assignments(
@@ -26,7 +27,8 @@ CREATE TABLE IF NOT EXISTS seventh.gradebook(
 CREATE SCHEMA IF NOT EXISTS seventh_honors;
 
 CREATE TABLE IF NOT EXISTS seventh_honors.students(
-  name varchar(30) PRIMARY KEY
+  name varchar(30) PRIMARY KEY,
+  period numeric NOT NULL
   );
 
 CREATE TABLE IF NOT EXISTS seventh_honors.assignments(
@@ -44,7 +46,8 @@ CREATE TABLE IF NOT EXISTS seventh_honors.gradebook(
 CREATE SCHEMA IF NOT EXISTS eighth;
 
 CREATE TABLE IF NOT EXISTS eighth.students(
-  name varchar(30) PRIMARY KEY
+  name varchar(30) PRIMARY KEY,
+  period numeric NOT NULL
   );
 
 CREATE TABLE IF NOT EXISTS eighth.assignments(
@@ -62,7 +65,8 @@ CREATE TABLE IF NOT EXISTS eighth.gradebook(
   CREATE SCHEMA IF NOT EXISTS eighth_honors;
 
   CREATE TABLE IF NOT EXISTS eighth_honors.students(
-    name varchar(30) PRIMARY KEY
+    name varchar(30) PRIMARY KEY,
+    period numeric NOT NULL
     );
 
   CREATE TABLE IF NOT EXISTS eighth_honors.assignments(
@@ -73,5 +77,5 @@ CREATE TABLE IF NOT EXISTS eighth.gradebook(
   CREATE TABLE IF NOT EXISTS eighth_honors.gradebook(
     assignment varchar(30) references eighth_honors.assignments(name),
     student varchar(30) references eighth_honors.students(name),
-    score numeric 
+    score numeric
     );
