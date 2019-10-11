@@ -1,2 +1,1 @@
-DROP TABLE *;
-DROP SCHEMA seventh, seventh_honors, eighth, eighth_honors;
+DROP...CASCADE SCHEMA seventh, seventh_honors, eighth, eighth_honors;
