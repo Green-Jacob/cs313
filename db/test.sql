@@ -1,1 +1,1 @@
-DROP...CASCADE SCHEMA seventh, seventh_honors, eighth, eighth_honors;
+DROP SCHEMA...CASCADE seventh, seventh_honors, eighth, eighth_honors;
