@@ -13,7 +13,7 @@ try
   $dbName = ltrim($dbOpts["path"],'/');
 
   $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-  echo $dbHost.$dbPort.$dbUser.$dbName;
+  //echo $dbHost.$dbPort.$dbUser.$dbName;
   $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $ex)
@@ -22,4 +22,10 @@ catch (PDOException $ex)
   die();
 }
 
+foreach ($db->query('SELECT username, password FROM note_user') as $row)
+{
+  echo 'user: ' . $row['username'];
+  echo ' password: ' . $row['password'];
+  echo '<br/>';
+}
  ?>
