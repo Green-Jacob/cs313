@@ -25,8 +25,9 @@ catch (PDOException $ex)
 foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
 {
   echo 'name: ' . $row['name'];
-  echo 'period: ' . $row['period'];
   echo '<br/>';
+  echo 'period: ' . $row['period'];
+  echo '<br/><hr>';
 }
 
  ?>
