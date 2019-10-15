@@ -22,9 +22,10 @@ catch (PDOException $ex)
   die();
 }
 
-foreach ($db->query('SELECT name FROM seventh.students') as $row)
+foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
 {
-  echo 'user: ' . $row['name'];
+  echo 'name: ' . $row['name'];
+  echo 'period: ' . $row['period'];
   echo '<br/>';
 }
 
