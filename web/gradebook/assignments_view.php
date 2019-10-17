@@ -1,6 +1,16 @@
 <?php
 require 'dbConnect.php';
 $db = connect_db();
+function DisplayNames($table)
+{
+  foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
+  {
+    echo 'Name: <b>' . $row['name'] . "</b>";
+    echo '<br/>';
+    echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+    echo '<br/><hr>';
+  }
+}
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -78,21 +88,9 @@ $db = connect_db();
       <div class="box-small">
         <h1>Eighth Grade Honors Assignments</h1><hr>
         <?php
-        DisplayNames(eighth_honors.students);
+        DisplayNames("eighth_honors.students");
          ?>
       </div>
     </div><!-- end container -->
   </body>
 </html>
-<?php
-public function DisplayNames($table)
-{
-  foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
-  {
-    echo 'Name: <b>' . $row['name'] . "</b>";
-    echo '<br/>';
-    echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-    echo '<br/><hr>';
-  }
-}
- ?>
