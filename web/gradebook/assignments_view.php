@@ -42,7 +42,7 @@ $db = connect_db();
       <div class="box-small">
         <h1>Seventh Grade Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, total_score FROM seventh.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM seventh.assignments ORDER BY name') as $row)
         {
           echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
@@ -54,7 +54,7 @@ $db = connect_db();
       <div class="box-small">
         <h1>Seventh Grade Honors Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments ORDER BY name') as $row)
         {
           echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
@@ -66,7 +66,7 @@ $db = connect_db();
       <div class="box-small">
         <h1>Eighth Grade Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, total_score FROM eighth.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM eighth.assignments ORDER BY name') as $row)
         {
           echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
@@ -78,7 +78,7 @@ $db = connect_db();
       <div class="box-small">
         <h1>Eighth Grade Honors Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments ORDER BY name') as $row)
         {
           echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
