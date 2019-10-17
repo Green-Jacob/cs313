@@ -88,7 +88,7 @@ $db = connect_db();
 <?php
 function DisplayNames($table)
 {
-  $string;
+  $string = $table;
   foreach ($db->query('SELECT name, total_score FROM ' . $table . ' ORDER BY name') as $row)
   {
     $string = "Name: <b>" . $row['name'] . "</b>";
