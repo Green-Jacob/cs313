@@ -81,6 +81,8 @@ h1{
   margin:2em;
 }
 .box-large{
+  display:flex;
+  flex-wrap:wrap;
   width:80%;
   border: 3px groove #0080ff;
   border-radius:5px;
