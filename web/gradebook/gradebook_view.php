@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <header>
-        Gradebook Online
+        <h1>Gradebook View</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">

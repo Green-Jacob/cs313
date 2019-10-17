@@ -19,7 +19,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        Student Information
+        <h1>Student View</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -42,7 +42,7 @@ $db = connect_db();
         Function for adding a student will go here.
       </div>
       <div class="box-small">
-        <h1>Seventh Grade Students</h1><hr>
+        <h2>Seventh Grade Students</h2><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
         {
@@ -54,7 +54,7 @@ $db = connect_db();
          ?>
       </div>
       <div class="box-small">
-        <h1>Seventh Grade Honors Students</h1><hr>
+        <h2>Seventh Grade Honors Students</h2><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
         {
@@ -66,7 +66,7 @@ $db = connect_db();
          ?>
       </div>
       <div class="box-small">
-        <h1>Eighth Grade Students</h1><hr>
+        <h2>Eighth Grade Students</h2><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
         {
@@ -78,7 +78,7 @@ $db = connect_db();
          ?>
       </div>
       <div class="box-small">
-        <h1>Eighth Grade Honors Students</h1><hr>
+        <h2>Eighth Grade Honors Students</h2><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
         {

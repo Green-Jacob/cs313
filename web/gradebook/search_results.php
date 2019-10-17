@@ -19,7 +19,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        Gradebook
+        <h1>Gradebook Search</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">

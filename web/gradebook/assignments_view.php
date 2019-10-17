@@ -18,7 +18,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        Assignments
+        <h1>Assignment View</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -41,7 +41,7 @@ $db = connect_db();
         Function for adding assignments will go here
       </div>
       <div class="box-small">
-        <h1>Seventh Grade Assignments</h1><hr>
+        <h2>Seventh Grade Assignments</h2><hr>
         <?php
         foreach ($db->query('SELECT name, total_score FROM seventh.assignments ORDER BY name') as $row)
         {
@@ -53,7 +53,7 @@ $db = connect_db();
          ?>
       </div>
       <div class="box-small">
-        <h1>Seventh Grade Honors Assignments</h1><hr>
+        <h2>Seventh Grade Honors Assignments</h2><hr>
         <?php
         foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments ORDER BY name') as $row)
         {
@@ -65,7 +65,7 @@ $db = connect_db();
          ?>
       </div>
       <div class="box-small">
-        <h1>Eighth Grade Assignments</h1><hr>
+        <h2>Eighth Grade Assignments</h2><hr>
         <?php
         foreach ($db->query('SELECT name, total_score FROM eighth.assignments ORDER BY name') as $row)
         {
@@ -77,7 +77,7 @@ $db = connect_db();
          ?>
       </div>
       <div class="box-small">
-        <h1>Eighth Grade Honors Assignments</h1><hr>
+        <h2>Eighth Grade Honors Assignments</h2><hr>
         <?php
         foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments ORDER BY name') as $row)
         {
