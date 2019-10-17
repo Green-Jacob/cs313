@@ -3,13 +3,13 @@ require 'dbConnect.php';
 $db = connect_db();
 function DisplayNames($table)
 {
-  $string = '';
+  $string;
   foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
   {
     $string = 'Name: <b>' . $row['name'] . "</b>";
-    $string = $string . '<br/>';
-    $string = $string . 'Total Possible: <b>' . $row['total_score'] . "</b>";
-    $string = $string . '<br/><hr>';
+    $string .= '<br/>';
+    $string .= 'Total Possible: <b>' . $row['total_score'] . "</b>";
+    $string .= '<br/><hr>';
   }
   return $string;
 }
