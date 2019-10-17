@@ -1,6 +1,6 @@
 <?php
 /*Function for connecting to the database. Rather than needing every page to connect*/
-public function connect_db()
+function connect_db()
 {
   $db == NULL;
   try
@@ -24,8 +24,6 @@ public function connect_db()
     echo 'Error!: ' . $ex->getMessage();
     die();
   }
-  if ($db != NULL) {
-    return $db;
-  }
+  return $db;
 }
  ?>
