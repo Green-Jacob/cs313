@@ -56,10 +56,46 @@ catch (PDOException $ex)
           <a href="search.php">Search</a>
         </div>
       </div>
-      <div class="box-large">
+      <div class="box-small">
         <h1>Seventh Grade Students</h1>
         <?php
         foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
+        {
+          echo 'name: ' . $row['name'];
+          echo '<br/>';
+          echo 'period: ' . $row['period'];
+          echo '<br/><hr>';
+        }
+         ?>
+      </div>
+      <div class="box-small">
+        <h1>Seventh Grade Honors Students</h1>
+        <?php
+        foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
+        {
+          echo 'name: ' . $row['name'];
+          echo '<br/>';
+          echo 'period: ' . $row['period'];
+          echo '<br/><hr>';
+        }
+         ?>
+      </div>
+      <div class="box-small">
+        <h1>Eighth Grade Students</h1>
+        <?php
+        foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
+        {
+          echo 'name: ' . $row['name'];
+          echo '<br/>';
+          echo 'period: ' . $row['period'];
+          echo '<br/><hr>';
+        }
+         ?>
+      </div>
+      <div class="box-small">
+        <h1>Eighth Grade Honors Students</h1>
+        <?php
+        foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
         {
           echo 'name: ' . $row['name'];
           echo '<br/>';
