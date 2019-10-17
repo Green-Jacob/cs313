@@ -38,9 +38,9 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <h2>Search Grades by Student</h2>
-        This will be used to search the entered grades by student, class, or assignment.<br>
-        As there isn't a way to add grades yet, these aren't working.<br>
-        <form class="box-small" action="" method="post">
+        <p>This will be used to search the entered grades by student, class, or assignment.<br>
+        As there isn't a way to add grades yet, these aren't working.<br></p>
+        <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="table" value="seventh.students">
           <select class="" name="">
@@ -52,7 +52,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-small" action="" method="post">
+        <form class="box-inner" action="" method="post">
           <b>Seventh Honors</b><br>
           <input hidden type="text" name="table" value="seventh_honors.students">
           <select class="" name="">
@@ -64,7 +64,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-small" action="" method="post">
+        <form class="box-inner" action="" method="post">
           <b>Eighth Grade</b><br>
           <input hidden type="text" name="table" value="eighth.students">
           <select class="" name="">
@@ -76,7 +76,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-small" action="" method="post">
+        <form class="box-inner" action="" method="post">
           <b>Eighth Honors</b><br>
           <input hidden type="text" name="table" value="eighth_honors.students">
           <select class="" name="">
@@ -91,9 +91,9 @@ $db = connect_db();
       </div><!-- end search by student -->
       <div class="box-large">
         <h2>Search Grades by Assignment</h2>
-        This will be used to search the entered grades by student, class, or assignment.<br>
-        As there isn't a way to add grades yet, these aren't working.<br>
-        <form class="box-small" action="" method="post">
+        <p>This will be used to search the entered grades by student, class, or assignment.<br>
+        As there isn't a way to add grades yet, these aren't working.<br></p>
+        <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="table" value="seventh.assignments">
           <select class="" name="">
@@ -105,7 +105,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-small" action="" method="post">
+        <form class="box-inner" action="" method="post">
           <b>Seventh Honors</b><br>
           <input hidden type="text" name="table" value="seventh_honors.assignments">
           <select class="" name="">
@@ -117,7 +117,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-small" action="" method="post">
+        <form class="box-inner" action="" method="post">
           <b>Eighth Grade</b><br>
           <input hidden type="text" name="table" value="eighth.assignments">
           <select class="" name="">
@@ -129,7 +129,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-small" action="" method="post">
+        <form class="box-inner" action="" method="post">
           <b>Eighth Honors</b><br>
           <input hidden type="text" name="table" value="eighth_honors.assignments">
           <select class="" name="">

@@ -83,6 +83,13 @@ h1{
   padding:.2rem;
   margin:2em;
 }
+.box-inner{
+  width:15%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.2rem;
+  margin:2em;
+}
 .box-large{
   display:flex;
   flex-wrap:wrap;
