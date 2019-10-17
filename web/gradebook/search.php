@@ -7,7 +7,7 @@ $db = connect_db();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradebook Online</title>
+    <title>Gradebook Search</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
@@ -18,7 +18,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        Gradebook Online
+        Gradebook Search
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -40,8 +40,8 @@ $db = connect_db();
         <h2>Search Grades by Student</h2>
         This will be used to search the entered grades by student, class, or assignment.<br>
         As there isn't a way to add grades yet, these aren't working.
-        <form action="search_results.php" method="post">
-          Seventh Grade
+        <form class="box-small" action="search_results.php" method="post">
+          <b>Seventh Grade</b><br>
           <input hidden type="text" name="class" value="seventh">
           <select class="" name="">
             <?php
