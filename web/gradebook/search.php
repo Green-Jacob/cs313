@@ -38,7 +38,7 @@ $db = connect_db();
       </div>
       <h2>Search Grades by Student</h2><br>
       <div class="box-large">
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="seventh.students">
@@ -51,7 +51,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Honors</b><br>
           <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="seventh_honors.students">
@@ -64,7 +64,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Grade</b><br>
           <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="eighth.students">
@@ -77,7 +77,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Honors</b><br>
           <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="eighth_honors.students">
@@ -93,7 +93,7 @@ $db = connect_db();
       </div><!-- end search by student -->
       <h2>Search Grades by Assignment</h2><br>
       <div class="box-large">
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="seventh.assignments">
@@ -106,7 +106,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Honors</b><br>
           <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="seventh_honors.assignments">
@@ -119,7 +119,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Grade</b><br>
           <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="eighth.assignments">
@@ -132,7 +132,7 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="box-inner" action="" method="post">
+        <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Honors</b><br>
           <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="eighth_honors.assignments">
