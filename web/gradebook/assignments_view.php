@@ -6,10 +6,10 @@ function DisplayNames($table)
   $string;
   foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
   {
-    $string = 'Name: <b>' . $row['name'] . "</b>";
-    $string .= '<br/>';
-    $string .= 'Total Possible: <b>' . $row['total_score'] . "</b>";
-    $string .= '<br/><hr>';
+    $string = "Name: <b>" . $row['name'] . "</b>";
+    $string .= "<br/>";
+    $string .= "Total Possible: <b>" . $row['total_score'] . "</b>";
+    $string .= "<br/><hr>";
   }
   return $string;
 }
