@@ -85,7 +85,7 @@ $db = connect_db();
   </body>
 </html>
 <?php
-function DisplayNames($table)
+public function DisplayNames($table)
 {
   foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
   {
