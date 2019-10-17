@@ -148,18 +148,16 @@ $db = connect_db();
       </div><!-- end search by assignment -->
       <h2>Search by Class</h2>
       <div class="box-large">
-        <div class="box-inner">
-          <form class="" action="search_results.php" method="get">
-            <input hidden type="text" name="search" value="3">
-          <select class="form-control" name="class">
-            <option value="seventh">Seventh</option>
-            <option value="seventh_honors">Seventh Honors</option>
-            <option value="eighth">Eighth</option>
-            <option value="eighth_honors">Eighth Honors</option>
-          </select>
-          <input type="submit" name="submit" value="Search">
-          </form>
-        </div>
+        <form class="" action="search_results.php" method="get">
+          <input hidden type="text" name="search" value="3">
+        <select class="form-control" name="class">
+          <option value="seventh">Seventh</option>
+          <option value="seventh_honors">Seventh Honors</option>
+          <option value="eighth">Eighth</option>
+          <option value="eighth_honors">Eighth Honors</option>
+        </select>
+        <input type="submit" name="submit" value="Search">
+        </form>
       </div><!-- end search by class -->
     </div><!-- end container -->
   </body>
