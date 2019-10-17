@@ -46,6 +46,17 @@ $db = connect_db();
           case '2':
             echo "Nothing added to the gradebook yet. No results found.";
             break;
+          case '3':
+          echo "Class Students<br>";
+          foreach ($db->query('SELECT name, period FROM '. $_GET['class'] . '.students') as $row)
+          {
+            echo 'Name: ' . $row['name'];
+            echo '<br/>';
+            echo 'Period: ' . $row['period'];
+            echo '<br/><hr>';
+          }
+          echo "Class Assignments<br>";
+            break;
           default:
             echo "No results found.";
             break;
