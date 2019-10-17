@@ -21,11 +21,19 @@
           <a href="../home.php">Home</a>
         </div>
         <div class="dropdown">
-          
+          <span>Gradebook pages</span>
+          <div class="dropdown-list">
+            <a href="gradebook_view.php">Graded entries</a>
+            <a href="student_view.php">Students</a>
+            <a href="assignments_view.php">Assignments</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <a href="search.php">Search</a>
         </div>
       </div>
       <div class="box-large">
-        placeholder
+        This is where the interface for adding items will be.
       </div>
     </div><!-- end container -->
   </body>
