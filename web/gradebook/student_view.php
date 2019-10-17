@@ -1,25 +1,6 @@
 <?php
-try
-{
-  $dbUrl = getenv('DATABASE_URL');
-
-  $dbOpts = parse_url($dbUrl);
-
-  $dbHost = $dbOpts["host"];
-  $dbPort = $dbOpts["port"];
-  $dbUser = $dbOpts["user"];
-  $dbPassword = $dbOpts["pass"];
-  $dbName = ltrim($dbOpts["path"],'/');
-
-  $db = new PDO("pgsql:host=$dbHost;port=$dbPort;dbname=$dbName", $dbUser, $dbPassword);
-  //echo $dbHost.$dbPort.$dbUser.$dbName;
-  $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (PDOException $ex)
-{
-  echo 'Error!: ' . $ex->getMessage();
-  die();
-}
+require 'dbConnect.php';
+$db = connect_db();
  ?>
 
 <!DOCTYPE html>
@@ -56,8 +37,11 @@ catch (PDOException $ex)
           <a href="search.php">Search</a>
         </div>
       </div>
+      <div class="sidebar">
+        Function for adding a student will go here.
+      </div>
       <div class="box-small">
-        <h1>Seventh Grade Students</h1>
+        <h1>Seventh Grade Students</h1><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
         {
@@ -69,7 +53,7 @@ catch (PDOException $ex)
          ?>
       </div>
       <div class="box-small">
-        <h1>Seventh Grade Honors Students</h1>
+        <h1>Seventh Grade Honors Students</h1><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
         {
@@ -81,7 +65,7 @@ catch (PDOException $ex)
          ?>
       </div>
       <div class="box-small">
-        <h1>Eighth Grade Students</h1>
+        <h1>Eighth Grade Students</h1><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
         {
@@ -93,7 +77,7 @@ catch (PDOException $ex)
          ?>
       </div>
       <div class="box-small">
-        <h1>Eighth Grade Honors Students</h1>
+        <h1>Eighth Grade Honors Students</h1><hr>
         <?php
         foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
         {
