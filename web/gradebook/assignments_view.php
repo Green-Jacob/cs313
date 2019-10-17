@@ -44,9 +44,9 @@ $db = connect_db();
         <?php
         foreach ($db->query('SELECT name, total_score FROM seventh.assignments') as $row)
         {
-          echo 'Name: ' . $row['name'];
+          echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
-          echo 'Total Possible: ' . $row['total_score'];
+          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
           echo '<br/><hr>';
         }
          ?>
@@ -56,9 +56,9 @@ $db = connect_db();
         <?php
         foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments') as $row)
         {
-          echo 'Name: ' . $row['name'];
+          echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
-          echo 'Total Possible: ' . $row['total_score'];
+          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
           echo '<br/><hr>';
         }
          ?>
@@ -68,9 +68,9 @@ $db = connect_db();
         <?php
         foreach ($db->query('SELECT name, total_score FROM eighth.assignments') as $row)
         {
-          echo 'Name: ' . $row['name'];
+          echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
-          echo 'Total Possible: ' . $row['total_score'];
+          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
           echo '<br/><hr>';
         }
          ?>
@@ -80,9 +80,9 @@ $db = connect_db();
         <?php
         foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments') as $row)
         {
-          echo 'Name: ' . $row['name'];
+          echo 'Name: <b>' . $row['name'] . "</b>";
           echo '<br/>';
-          echo 'Total Possible: ' . $row['total_score'];
+          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
           echo '<br/><hr>';
         }
          ?>
