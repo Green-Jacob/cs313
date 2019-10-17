@@ -89,7 +89,7 @@ $db = connect_db();
 function DisplayNames($table)
 {
   $string;
-  foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
+  foreach ($db->query('SELECT name, total_score FROM ' . $table . ' ORDER BY name') as $row)
   {
     $string = "Name: <b>" . $row['name'] . "</b>";
     $string .= "<br/>";
