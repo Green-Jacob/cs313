@@ -18,7 +18,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        Gradebook Search
+        <h1>Gradebook Search</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -39,10 +39,10 @@ $db = connect_db();
       <div class="box-large">
         <h2>Search Grades by Student</h2>
         This will be used to search the entered grades by student, class, or assignment.<br>
-        As there isn't a way to add grades yet, these aren't working.
+        As there isn't a way to add grades yet, these aren't working.<br>
         <form class="box-small" action="" method="post">
           <b>Seventh Grade</b><br>
-          <input hidden type="text" name="class" value="seventh">
+          <input hidden type="text" name="table" value="seventh.students">
           <select class="" name="">
             <?php
             foreach ($db->query('SELECT name FROM seventh.students') as $row){
@@ -54,7 +54,7 @@ $db = connect_db();
         </form>
         <form class="box-small" action="" method="post">
           <b>Seventh Honors</b><br>
-          <input hidden type="text" name="class" value="seventh_honors">
+          <input hidden type="text" name="table" value="seventh_honors.students">
           <select class="" name="">
             <?php
             foreach ($db->query('SELECT name FROM seventh_honors.students') as $row){
@@ -66,7 +66,7 @@ $db = connect_db();
         </form>
         <form class="box-small" action="" method="post">
           <b>Eighth Grade</b><br>
-          <input hidden type="text" name="class" value="eighth">
+          <input hidden type="text" name="table" value="eighth.students">
           <select class="" name="">
             <?php
             foreach ($db->query('SELECT name FROM eighth.students') as $row){
@@ -78,7 +78,7 @@ $db = connect_db();
         </form>
         <form class="box-small" action="" method="post">
           <b>Eighth Honors</b><br>
-          <input hidden type="text" name="class" value="eighth_honors">
+          <input hidden type="text" name="table" value="eighth_honors.students">
           <select class="" name="">
             <?php
             foreach ($db->query('SELECT name FROM eighth_honors.students') as $row){
@@ -88,7 +88,60 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-      </div>
+      </div><!-- end search by student -->
+      <div class="box-large">
+        <h2>Search Grades by Assignemnt</h2>
+        This will be used to search the entered grades by student, class, or assignment.<br>
+        As there isn't a way to add grades yet, these aren't working.<br>
+        <form class="box-small" action="" method="post">
+          <b>Seventh Grade</b><br>
+          <input hidden type="text" name="table" value="seventh.assignments">
+          <select class="" name="">
+            <?php
+            foreach ($db->query('SELECT name FROM seventh.assignments') as $row){
+              echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+            }
+            ?>
+          </select><hr>
+          <input type="submit" name="submit" value="Search">
+        </form>
+        <form class="box-small" action="" method="post">
+          <b>Seventh Honors</b><br>
+          <input hidden type="text" name="table" value="seventh_honors.assignments">
+          <select class="" name="">
+            <?php
+            foreach ($db->query('SELECT name FROM seventh_honors.assignments') as $row){
+              echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+            }
+            ?>
+          </select><hr>
+          <input type="submit" name="submit" value="Search">
+        </form>
+        <form class="box-small" action="" method="post">
+          <b>Eighth Grade</b><br>
+          <input hidden type="text" name="table" value="eighth.assignments">
+          <select class="" name="">
+            <?php
+            foreach ($db->query('SELECT name FROM eighth.assignments') as $row){
+              echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+            }
+            ?>
+          </select><hr>
+          <input type="submit" name="submit" value="Search">
+        </form>
+        <form class="box-small" action="" method="post">
+          <b>Eighth Honors</b><br>
+          <input hidden type="text" name="table" value="eighth_honors.assignments">
+          <select class="" name="">
+            <?php
+            foreach ($db->query('SELECT name FROM eighth_honors.assignments') as $row){
+              echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+            }
+            ?>
+          </select><hr>
+          <input type="submit" name="submit" value="Search">
+        </form>
+      </div><!-- end search by assignment -->
     </div><!-- end container -->
   </body>
 </html>
