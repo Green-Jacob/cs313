@@ -37,7 +37,7 @@ $db = connect_db();
         </div>
       </div>
       <div class="box-large">
-        <h2>Search Grades by Student</h2>
+        <h2>Search Grades by Student</h2><br>
         <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="table" value="seventh.students">
@@ -88,7 +88,7 @@ $db = connect_db();
         </form>
       </div><!-- end search by student -->
       <div class="box-large">
-        <h2>Search Grades by Assignment</h2>
+        <h2>Search Grades by Assignment</h2><br>
         <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="table" value="seventh.assignments">
