@@ -1,7 +1,7 @@
 <?php
 require 'dbConnect.php';
 $db = connect_db();
-function DisplayNames($table)
+public function DisplayNames($table)
 {
   foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
   {
