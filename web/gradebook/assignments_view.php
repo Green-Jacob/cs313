@@ -42,11 +42,11 @@ $db = connect_db();
       <div class="box-small">
         <h1>Seventh Grade Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, period FROM seventh.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM seventh.assignments') as $row)
         {
           echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'Period: ' . $row['period'];
+          echo 'Total Possible: ' . $row['total_score'];
           echo '<br/><hr>';
         }
          ?>
@@ -54,11 +54,11 @@ $db = connect_db();
       <div class="box-small">
         <h1>Seventh Grade Honors Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, period FROM seventh_honors.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments') as $row)
         {
           echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'Period: ' . $row['period'];
+          echo 'Total Possible: ' . $row['total_score'];
           echo '<br/><hr>';
         }
          ?>
@@ -66,11 +66,11 @@ $db = connect_db();
       <div class="box-small">
         <h1>Eighth Grade Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, period FROM eighth.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM eighth.assignments') as $row)
         {
           echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'Period: ' . $row['period'];
+          echo 'Total Possible: ' . $row['total_score'];
           echo '<br/><hr>';
         }
          ?>
@@ -78,11 +78,11 @@ $db = connect_db();
       <div class="box-small">
         <h1>Eighth Grade Honors Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, period FROM eighth_honors.assignments') as $row)
+        foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments') as $row)
         {
           echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'Period: ' . $row['period'];
+          echo 'Total Possible: ' . $row['total_score'];
           echo '<br/><hr>';
         }
          ?>
