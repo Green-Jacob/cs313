@@ -8,7 +8,7 @@ $db = connect_db();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradebook Online</title>
+    <title>Gradebook Search Results</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
@@ -19,7 +19,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        Gradebook Online
+        Gradebook
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -38,7 +38,19 @@ $db = connect_db();
         </div>
       </div>
       <div class="box-large">
-        This is where the interface for adding items will be.
+        <?php
+        switch ($_GET['search']) {
+          case '1':
+            echo "Nothing added to the gradebook yet. No results found.";
+            break;
+          case '2':
+            echo "Nothing added to the gradebook yet. No results found.";
+            break;
+          default:
+            echo "No results found.";
+            break;
+        }
+         ?>
       </div>
     </div><!-- end container -->
   </body>
