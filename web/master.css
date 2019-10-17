@@ -28,6 +28,9 @@ header{
 input[type=submit]{
   margin:.5rem;
 }
+input[type=select]{
+  width:auto;
+}
 footer{
   width:80%;
   border: 3px groove #0080ff;

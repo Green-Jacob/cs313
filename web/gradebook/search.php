@@ -90,7 +90,7 @@ $db = connect_db();
         </form>
       </div><!-- end search by student -->
       <div class="box-large">
-        <h2>Search Grades by Assignemnt</h2>
+        <h2>Search Grades by Assignment</h2>
         This will be used to search the entered grades by student, class, or assignment.<br>
         As there isn't a way to add grades yet, these aren't working.<br>
         <form class="box-small" action="" method="post">
