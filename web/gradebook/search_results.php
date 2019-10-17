@@ -47,7 +47,7 @@ $db = connect_db();
             echo "Nothing added to the gradebook yet. No results found.";
             break;
           case '3':
-          echo "<div class='box-large'>";
+          echo "<div class='box-small'>";
           echo "<b>Class Students</b><br>";
           foreach ($db->query('SELECT name, period FROM '. $_GET['class'] . '.students') as $row)
           {
@@ -57,7 +57,7 @@ $db = connect_db();
             echo '<br/><hr>';
           }
           echo "</div>";
-          echo "<div class='box-large'>";
+          echo "<div class='box-small'>";
           echo "<b>Class Assignments</b><br>";
           foreach ($db->query('SELECT name FROM '. $_GET['class'] . '.assignments') as $row)
           {
