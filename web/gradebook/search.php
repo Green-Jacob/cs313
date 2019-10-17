@@ -40,7 +40,7 @@ $db = connect_db();
         <h2>Search Grades by Student</h2>
         This will be used to search the entered grades by student, class, or assignment.<br>
         As there isn't a way to add grades yet, these aren't working.
-        <form class="box-small" action="search_results.php" method="post">
+        <form class="box-small" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="class" value="seventh">
           <select class="" name="">
@@ -52,8 +52,8 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="" action="" method="post">
-          Seventh Honors
+        <form class="box-small" action="" method="post">
+          <b>Seventh Honors</b><br>
           <input hidden type="text" name="class" value="seventh_honors">
           <select class="" name="">
             <?php
@@ -64,8 +64,8 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="" action="" method="post">
-          Eighth
+        <form class="box-small" action="" method="post">
+          <b>Eighth Grade</b><br>
           <input hidden type="text" name="class" value="eighth">
           <select class="" name="">
             <?php
@@ -76,8 +76,8 @@ $db = connect_db();
           </select><hr>
           <input type="submit" name="submit" value="Search">
         </form>
-        <form class="" action="" method="post">
-          Eighth Honors
+        <form class="box-small" action="" method="post">
+          <b>Eighth Honors</b><br>
           <input hidden type="text" name="class" value="eighth_honors">
           <select class="" name="">
             <?php
