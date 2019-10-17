@@ -1,18 +1,6 @@
 <?php
 require 'dbConnect.php';
 $db = connect_db();
-function DisplayNames($table)
-{
-  $string;
-  foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
-  {
-    $string = "Name: <b>" . $row['name'] . "</b>";
-    $string .= "<br/>";
-    $string .= "Total Possible: <b>" . $row['total_score'] . "</b>";
-    $string .= "<br/><hr>";
-  }
-  return $string;
-}
  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -97,3 +85,17 @@ function DisplayNames($table)
     </div><!-- end container -->
   </body>
 </html>
+<?php
+function DisplayNames($table)
+{
+  $string;
+  foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
+  {
+    $string = "Name: <b>" . $row['name'] . "</b>";
+    $string .= "<br/>";
+    $string .= "Total Possible: <b>" . $row['total_score'] . "</b>";
+    $string .= "<br/><hr>";
+  }
+  return $string;
+}
+ ?>
