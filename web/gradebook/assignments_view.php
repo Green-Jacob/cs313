@@ -78,15 +78,21 @@ $db = connect_db();
       <div class="box-small">
         <h1>Eighth Grade Honors Assignments</h1><hr>
         <?php
-        foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments ORDER BY name') as $row)
-        {
-          echo 'Name: <b>' . $row['name'] . "</b>";
-          echo '<br/>';
-          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-          echo '<br/><hr>';
-        }
+        DisplayNames(eighth_honors.students);
          ?>
       </div>
     </div><!-- end container -->
   </body>
 </html>
+<?php
+function DisplayNames($table)
+{
+  foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
+  {
+    echo 'Name: <b>' . $row['name'] . "</b>";
+    echo '<br/>';
+    echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+    echo '<br/><hr>';
+  }
+}
+ ?>
