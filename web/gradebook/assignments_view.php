@@ -32,12 +32,12 @@ $db = connect_db();
             <a href="assignments_view.php">Assignments</a>
           </div>
         </div>
-        <div class="sidebar">
-          Function for adding assignments will go here
-        </div>
         <div class="dropdown">
           <a href="search.php">Search</a>
         </div>
+      </div>
+      <div class="sidebar">
+        Function for adding assignments will go here
       </div>
       <div class="box-small">
         <h1>Seventh Grade Assignments</h1><hr>

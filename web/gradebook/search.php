@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
+require 'dbConnect.php';
+$db = connect_db();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -34,7 +37,15 @@
         </div>
       </div>
       <div class="box-large">
-
+        <form action="" method="post">
+          <select class="" name="">
+            <?php
+            foreach ($db->query('SELECT name FROM seventh.students') as $row){
+              echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+            }
+            ?>
+          </select>
+</form>
       </div>
     </div><!-- end container -->
   </body>
