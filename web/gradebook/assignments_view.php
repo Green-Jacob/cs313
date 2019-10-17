@@ -88,7 +88,7 @@ function DisplayNames($table)
       <div class="box-small">
         <h1>Eighth Grade Honors Assignments</h1><hr>
         <?php
-        DisplayNames("eighth_honors.students");
+        DisplayNames("eighth_honors.assignments");
          ?>
       </div>
     </div><!-- end container -->
