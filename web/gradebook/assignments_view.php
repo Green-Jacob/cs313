@@ -27,6 +27,7 @@ $db = connect_db();
         <div class="dropdown">
           <span>Gradebook pages</span>
           <div class="dropdown-list">
+            <a href="index.php">Gradebook Home</a>
             <a href="gradebook_view.php">Graded entries</a>
             <a href="student_view.php">Students</a>
             <a href="assignments_view.php">Assignments</a>

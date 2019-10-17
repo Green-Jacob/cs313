@@ -27,6 +27,7 @@ $db = connect_db();
         <div class="dropdown">
           <span>Gradebook pages</span>
           <div class="dropdown-list">
+            <a href="index.php">Gradebook Home</a>
             <a href="gradebook_view.php">Graded entries</a>
             <a href="student_view.php">Students</a>
             <a href="assignments_view.php">Assignments</a>
@@ -36,7 +37,7 @@ $db = connect_db();
           <a href="search.php">Search</a>
         </div>
       </div>
-      <h2>Search Grades by Student</h2><br>
+      <h2>Search Grades by Student(not functional on week 5)</h2><br>
       <div class="box-large">
         <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Grade</b><br>
@@ -91,7 +92,7 @@ $db = connect_db();
           <input type="submit" name="submit" value="Search">
         </form>
       </div><!-- end search by student -->
-      <h2>Search Grades by Assignment</h2><br>
+      <h2>Search Grades by Assignment(not functional on week 5)</h2><br>
       <div class="box-large">
         <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Grade</b><br>
