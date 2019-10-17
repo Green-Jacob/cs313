@@ -38,7 +38,7 @@ catch (PDOException $ex)
   <body>
     <div class="container">
       <header>
-        Gradebook Online
+        Student Information
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -61,9 +61,9 @@ catch (PDOException $ex)
         <?php
         foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
         {
-          echo 'name: ' . $row['name'];
+          echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'period: ' . $row['period'];
+          echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
         }
          ?>
@@ -73,9 +73,9 @@ catch (PDOException $ex)
         <?php
         foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
         {
-          echo 'name: ' . $row['name'];
+          echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'period: ' . $row['period'];
+          echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
         }
          ?>
@@ -85,9 +85,9 @@ catch (PDOException $ex)
         <?php
         foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
         {
-          echo 'name: ' . $row['name'];
+          echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'period: ' . $row['period'];
+          echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
         }
          ?>
@@ -97,9 +97,9 @@ catch (PDOException $ex)
         <?php
         foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
         {
-          echo 'name: ' . $row['name'];
+          echo 'Name: ' . $row['name'];
           echo '<br/>';
-          echo 'period: ' . $row['period'];
+          echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
         }
          ?>

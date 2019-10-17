@@ -35,6 +35,9 @@ footer{
   padding:.3rem;
   margin:.8em;
 }
+h1{
+  font-size:1em;
+}
 .bordered{
   border: 5px groove green;
   border-radius: 5px;
