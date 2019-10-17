@@ -1,15 +1,17 @@
 <?php
 require 'dbConnect.php';
 $db = connect_db();
-public function DisplayNames($table)
+function DisplayNames($table)
 {
+  $string = '';
   foreach ($db->query('SELECT name, total_score FROM'. $table . ' ORDER BY name') as $row)
   {
-    echo 'Name: <b>' . $row['name'] . "</b>";
-    echo '<br/>';
-    echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-    echo '<br/><hr>';
+    $string = 'Name: <b>' . $row['name'] . "</b>";
+    $string = $string . '<br/>';
+    $string = $string . 'Total Possible: <b>' . $row['total_score'] . "</b>";
+    $string = $string . '<br/><hr>';
   }
+  return $string;
 }
  ?>
 <!DOCTYPE html>
@@ -88,7 +90,8 @@ public function DisplayNames($table)
       <div class="box-small">
         <h1>Eighth Grade Honors Assignments</h1><hr>
         <?php
-        DisplayNames("eighth_honors.assignments");
+        $display = DisplayNames("eighth_honors.assignments");
+        echo $display;
          ?>
       </div>
     </div><!-- end container -->
