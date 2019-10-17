@@ -40,6 +40,7 @@ $db = connect_db();
       <div class="box-large">
         <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
+          <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="seventh.students">
           <select class="form-control" name="">
             <?php
@@ -52,6 +53,7 @@ $db = connect_db();
         </form>
         <form class="box-inner" action="" method="post">
           <b>Seventh Honors</b><br>
+          <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="seventh_honors.students">
           <select class="form-control" name="">
             <?php
@@ -64,6 +66,7 @@ $db = connect_db();
         </form>
         <form class="box-inner" action="" method="post">
           <b>Eighth Grade</b><br>
+          <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="eighth.students">
           <select class="form-control" name="">
             <?php
@@ -76,6 +79,7 @@ $db = connect_db();
         </form>
         <form class="box-inner" action="" method="post">
           <b>Eighth Honors</b><br>
+          <input hidden type="text" name="search" value="1">
           <input hidden type="text" name="table" value="eighth_honors.students">
           <select class="form-control" name="">
             <?php
@@ -91,6 +95,7 @@ $db = connect_db();
       <div class="box-large">
         <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
+          <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="seventh.assignments">
           <select class="form-control" name="">
             <?php
@@ -103,6 +108,7 @@ $db = connect_db();
         </form>
         <form class="box-inner" action="" method="post">
           <b>Seventh Honors</b><br>
+          <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="seventh_honors.assignments">
           <select class="form-control" name="">
             <?php
@@ -115,6 +121,7 @@ $db = connect_db();
         </form>
         <form class="box-inner" action="" method="post">
           <b>Eighth Grade</b><br>
+          <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="eighth.assignments">
           <select class="form-control" name="">
             <?php
@@ -127,6 +134,7 @@ $db = connect_db();
         </form>
         <form class="box-inner" action="" method="post">
           <b>Eighth Honors</b><br>
+          <input hidden type="text" name="search" value="2">
           <input hidden type="text" name="table" value="eighth_honors.assignments">
           <select class="form-control" name="">
             <?php
@@ -138,6 +146,21 @@ $db = connect_db();
           <input type="submit" name="submit" value="Search">
         </form>
       </div><!-- end search by assignment -->
+      <h2>Search by Class</h2>
+      <div class="box-large">
+        <div class="box-inner">
+          <form class="" action="search_results.php" method="get">
+            <input hidden type="text" name="search" value="3">
+          <select class="form-control" name="class">
+            <option value="seventh">Seventh</option>
+            <option value="seventh_honors">Seventh Honors</option>
+            <option value="eighth">Eighth</option>
+            <option value="eighth_honors">Eighth Honors</option>
+          </select>
+          <input type="submit" name="submit" value="Search">
+          </form>
+        </div>
+      </div><!-- end search by class -->
     </div><!-- end container -->
   </body>
 </html>
