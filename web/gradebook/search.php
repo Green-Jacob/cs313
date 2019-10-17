@@ -39,11 +39,11 @@ $db = connect_db();
       <div class="box-large">
         <h2>Search Grades by Student</h2>
         <p>This will be used to search the entered grades by student, class, or assignment.<br>
-        As there isn't a way to add grades yet, these aren't working.<br></p>
+        As there isn't a way to add grades yet, these aren't working.<br></p><hr>
         <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="table" value="seventh.students">
-          <select class="" name="">
+          <select class="form-control" name="">
             <?php
             foreach ($db->query('SELECT name FROM seventh.students') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -92,7 +92,7 @@ $db = connect_db();
       <div class="box-large">
         <h2>Search Grades by Assignment</h2>
         <p>This will be used to search the entered grades by student, class, or assignment.<br>
-        As there isn't a way to add grades yet, these aren't working.<br></p>
+        As there isn't a way to add grades yet, these aren't working.<br></p><hr>
         <form class="box-inner" action="" method="post">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="table" value="seventh.assignments">
