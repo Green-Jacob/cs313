@@ -100,7 +100,8 @@ $db = connect_db();
           echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
         }*/
-        echo (displayNames('eighth_honors'));
+        $t = displayNames('eighth_honors');
+        echo $t;
          ?>
       </div>
     </div><!-- end container -->
