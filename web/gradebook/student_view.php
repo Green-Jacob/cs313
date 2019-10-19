@@ -5,7 +5,7 @@ $db = connect_db();
  <?php
  function displayNames($class)
  {
-   $string = "";
+   $string = $class;
    foreach ($db->query(('SELECT name, period FROM' . $class . '.students')) as $row)
    {
      $string .= 'Name: ' . $row['name'];
