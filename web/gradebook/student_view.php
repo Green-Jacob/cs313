@@ -94,7 +94,7 @@ $db = connect_db();
   </body>
 </html>
 <?php
-public function displayNames($class)
+function displayNames($class)
 {
   foreach ($db->query('SELECT name, period FROM' . $class . 'students') as $row)
   {
