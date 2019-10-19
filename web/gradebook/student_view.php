@@ -2,20 +2,6 @@
 require 'dbConnect.php';
 $db = connect_db();
  ?>
- <?php
- function displayNames($class)
- {
-   $string = $class;
-   foreach ($db->query(('SELECT name, period FROM' . $class . '.students')) as $row)
-   {
-     $string .= 'Name: ' . $row['name'];
-     $string .= '<br/>';
-     $string .= 'Period: ' . $row['period'];
-     $string .= '<br/><hr>';
-   }
-   return $string;
- }
-  ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -93,15 +79,13 @@ $db = connect_db();
       <div class="box-small">
         <h2>Eighth Grade Honors Students</h2><hr>
         <?php
-        /*foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
+        foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
         {
           echo 'Name: ' . $row['name'];
           echo '<br/>';
           echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
-        }*/
-        $t = displayNames('eighth_honors');
-        echo $t;
+        }
          ?>
       </div>
     </div><!-- end container -->
