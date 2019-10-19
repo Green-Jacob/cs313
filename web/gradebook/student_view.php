@@ -87,7 +87,7 @@ $db = connect_db();
           echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
         }*/
-        displayNames('eighth_honors');
+        echo displayNames('eighth_honors');
          ?>
       </div>
     </div><!-- end container -->
@@ -96,12 +96,14 @@ $db = connect_db();
 <?php
 function displayNames($class)
 {
+  $string = "";
   foreach ($db->query('SELECT name, period FROM' . $class . '.students') as $row)
   {
-    echo 'Name: ' . $row['name'];
-    echo '<br/>';
-    echo 'Period: ' . $row['period'];
-    echo '<br/><hr>';
+    $string .= 'Name: ' . $row['name'];
+    $string .= '<br/>';
+    $string .= 'Period: ' . $row['period'];
+    $string .= '<br/><hr>';
   }
+  return $string;
 }
  ?>
