@@ -80,15 +80,28 @@ $db = connect_db();
       <div class="box-small">
         <h2>Eighth Grade Honors Students</h2><hr>
         <?php
-        foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
+        /*foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
         {
           echo 'Name: ' . $row['name'];
           echo '<br/>';
           echo 'Period: ' . $row['period'];
           echo '<br/><hr>';
-        }
+        }*/
+        displayNames('eighth_honors');
          ?>
       </div>
     </div><!-- end container -->
   </body>
 </html>
+<?php
+public function displayNames($class)
+{
+  foreach ($db->query('SELECT name, period FROM' . $class . 'students') as $row)
+  {
+    echo 'Name: ' . $row['name'];
+    echo '<br/>';
+    echo 'Period: ' . $row['period'];
+    echo '<br/><hr>';
+  }
+}
+ ?>
