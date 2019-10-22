@@ -1,4 +1,3 @@
-# Create a table for the scriptures
 CREATE TABLE scripture (
   id SERIAL PRIMARY KEY NOT NULL,
   book VARCHAR(80) NOT NULL,
@@ -7,7 +6,6 @@ CREATE TABLE scripture (
   content VARCHAR(4000) NOT NULL
   );
 
-# Insert data into the new table
 INSERT INTO scripture (book, chapter, verse, content)
   VALUES ('John', 1, 5, 'And the light shineth in darkness; and the darkness comprehended it not.');
 
