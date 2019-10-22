@@ -14,7 +14,8 @@ $db = connect_db();
     {
       echo 'Book: <b>' . $row['book'] . "</b>";
       echo '<br/>';
-      echo 'Chapter: <b>' . $row['Chapter'] . "</b>";
+      echo 'Chapter: <b>' . $row['chapter'] . "</b>";
+      echo '<br/>';
       echo 'Verse: <b>' . $row['verse'] . "</b>";
       echo '<br/>';
       echo 'Content: <b>' . $row['content'] . "</b>";
