@@ -37,8 +37,19 @@ $db = connect_db();
           <a href="search.php">Search</a>
         </div>
       </div>
+      <h2>Add assignment</h2>
       <div class="sidebar">
-        Function for adding assignments will go here
+        <form class="form-control" action="gradebook_modify" method="post">
+          <select class="form-control" name="class">
+            <option value="seventh">Seventh</option>
+            <option value="seventh_honors">Seventh Honors</option>
+            <option value="eighth">Eighth</option>
+            <option value="eighth_honors">Eighth Honors</option>
+          </select>
+          Name: <input type="text" name="name" value="">
+          Total Possible: <input type="number" name="total_score" max="200" value="">
+          <input type="submit" name="add" value="assignment">
+        </form>
       </div>
       <div class="box-small">
         <h2>Seventh Grade Assignments</h2><hr>
