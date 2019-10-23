@@ -79,7 +79,7 @@ $db = connect_db();
           try {
             $c = $_POST['class'];
             $n = $_POST['name'];
-            $p = $_POST['period'];
+            echo $p = $_POST['period'];
             $statement = $db->prepare("INSERT INTO $c.students(name, period) VALUES(:name, :period)");
             $statement->bindValue(':name', $n, PDO::PARAM_STR);
             $statement->bindValue(':period', $p, PDO::PARAM_INT);
