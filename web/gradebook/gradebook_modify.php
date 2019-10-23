@@ -46,7 +46,7 @@ $db = connect_db();
               $c = $_POST['class'];
               $n = $_POST['name'];
               $t = $_POST['total_score'];
-              $statement = $db->prepare("INSERT INTO IF NOT EXISTS $c.assignments(name, total_score) VALUES(:name, :total_score)");
+              $statement = $db->prepare("INSERT INTO $c.assignments(name, total_score) VALUES(:name, :total_score)");
               $statement->bindValue(':name', $n, PDO::PARAM_STR);
               $statement->bindValue(':total_score', $t, PDO::PARAM_INT);
               $statement->execute();
@@ -62,16 +62,14 @@ $db = connect_db();
         }
       ?>
       </div>
+      <h2>Assignment List</h2><br>
       <div class="box-large">
         <?php
         try {
-          echo "<h2>Assignment List</h2><br>";
           foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
           {
-            echo 'Name: <b>' . $row['name'] . "</b>";
-            echo '<br/>';
-            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-            echo '<br/><hr>';
+            echo 'Name: <b>' . $row['name'] . '</b><br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . '</b><br/><hr>';
           }
         } catch (\Exception $e) {
           echo "Error with database. Details: $e";
