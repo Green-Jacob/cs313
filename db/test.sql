@@ -3,9 +3,9 @@ CREATE TABLE topic (
   name TEXT NOT NULL
   );
 
-INSERT INTO topic VALUES('Faith');
-INSERT INTO topic VALUES('Sacrifice');
-INSERT INTO topic VALUES('Charity');
+INSERT INTO topic(name) VALUES('Faith');
+INSERT INTO topic(name) VALUES('Sacrifice');
+INSERT INTO topic(name) VALUES('Charity');
 
 CREATE TABLE whatchamacallit (
   topic_id INT NOT NULL REFERENCES topic(id),
