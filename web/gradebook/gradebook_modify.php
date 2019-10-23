@@ -38,7 +38,7 @@ $db = connect_db();
           <a href="search.php">Search</a>
         </div>
       </div>
-      <div class="sidebar">
+      <div class="box-large">
         <?php
         switch ($_POST['add']) {
           case 'Add Assignment':
@@ -50,11 +50,29 @@ $db = connect_db();
               $statement->bindValue(':name', $n, PDO::PARAM_STR);
               $statement->bindValue(':total_score', $t, PDO::PARAM_INT);
               $statement->execute();
+              echo "<div class='box-small'>";
               echo "<h2>Successfully add $n to List.</h2><br>";
+              echo "<div class='box-small'>";
             } catch (\Exception $e) {
               //echo "Error with database. Details: $e";
-
+              echo "<div class='box-small'>";
+              echo "Assignment not added. Most likely already exists in the list.";
+              echo "<div class='box-small'>";
             }
+            echo "<div class='box-small'>";
+            echo "<h2>Assignment List</h2><br>";
+            try {
+              foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
+              {
+                echo "Name: ".$row['name'];
+                echo "<br>";
+                echo "Total Possible: ".$row['total_score'];
+                echo "<br><hr>";
+              }
+            } catch (\Exception $e) {
+              echo "Error with database. Details: $e";
+            }
+            echo "</div>";
             break;
 
           default:
@@ -62,22 +80,6 @@ $db = connect_db();
             break;
         }
       ?>
-      </div>
-      <div class="box-small">
-        <h2>Assignment List</h2><br>
-        <?php
-        try {
-          foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
-          {
-            echo "Name: ".$row['name'];
-            echo "<br>";
-            echo "Total Possible: ".$row['total_score'];
-            echo "<br><hr>";
-          }
-        } catch (\Exception $e) {
-          echo "Error with database. Details: $e";
-        }
-         ?>
       </div>
     </div><!-- end container -->
   </body>
