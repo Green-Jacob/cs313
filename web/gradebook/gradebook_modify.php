@@ -88,7 +88,7 @@ $db = connect_db();
             echo "<h2>Successfully add $n to List.</h2><br>";
             echo "</div>";
           } catch (\Exception $e) {
-            //echo "Error with database. Details: $e";
+            echo "Error with database. Details: $e";
             echo "<div class='box-small'>";
             echo "Student not added. Most likely already exists in the list.";
             echo "</div>";
