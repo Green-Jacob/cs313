@@ -52,7 +52,8 @@ $db = connect_db();
               $statement->execute();
               echo "<h2>Successfully add $n to List.</h2><hr>";
             } catch (\Exception $e) {
-              echo "Error with database. Details: $e";
+              //echo "Error with database. Details: $e";
+
             }
             break;
 
@@ -68,8 +69,8 @@ $db = connect_db();
         try {
           foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
           {
-            echo 'Name: <b>' . $row['name'] . '</b><br/>';
-            echo 'Total Possible: <b>' . $row['total_score'] . '</b><br/><hr>';
+            echo "Name: <b>".$row['name']."</b><br/>";
+            echo "Total Possible: <b>".$row['total_score']."</b><br/><hr>";
           }
         } catch (\Exception $e) {
           echo "Error with database. Details: $e";
