@@ -69,8 +69,8 @@ $db = connect_db();
         try {
           foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
           {
-            echo "Name: <b>".$row['name']."</b><br/>";
-            echo "Total Possible: <b>".$row['total_score']."</b><br/><hr>";
+            echo "Name: ".$row['name']."<br/>";
+            echo "Total Possible: ".$row['total_score']."<br/><hr>";
           }
         } catch (\Exception $e) {
           echo "Error with database. Details: $e";
