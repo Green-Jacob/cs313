@@ -40,7 +40,7 @@ $db = connect_db();
       <h2>Add assignment</h2>
       <div class="sidebar">
         <form class="" action="gradebook_modify" method="post">
-          <select class="form-control" name="class">
+          <select class="" name="class">
             <option value="seventh">Seventh</option>
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
@@ -48,7 +48,7 @@ $db = connect_db();
           </select>
           Name: <input type="text" name="name" value="">
           Total Possible: <input type="number" name="total_score" max="200" value="">
-          <input type="submit" name="add" value="assignment">
+          <input type="submit" name="add" value="Add Assignment">
         </form>
       </div>
       <div class="box-small">

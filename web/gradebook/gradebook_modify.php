@@ -40,7 +40,7 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <?php
-        switch ($_POST['add']) {
+        switch ($_POST['Add Assignment']) {
           case 'assignment':
             $c = $_POST['class'];
             $n = $_POST['name'];
