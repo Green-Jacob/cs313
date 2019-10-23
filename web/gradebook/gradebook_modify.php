@@ -63,8 +63,8 @@ $db = connect_db();
         }
       ?>
       </div>
-      <h2>Assignment List</h2><br>
       <div class="box-small">
+        <h2>Assignment List</h2><br>
         <?php
         try {
           foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
