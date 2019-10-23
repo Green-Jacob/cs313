@@ -47,7 +47,7 @@ $db = connect_db();
             <option value="eighth_honors">Eighth Honors</option>
           </select>
           Name: <input type="text" name="name" value=""><br>
-          Period: <input type="number" name="total_score" max="8" value="">
+          Period: <input type="number" name="period" max="8" value="">
           <input type="submit" name="add" value="Add Student">
         </form>
       </div>

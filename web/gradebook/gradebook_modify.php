@@ -42,9 +42,7 @@ $db = connect_db();
         <?php
         switch ($_POST['add']) {
           case 'Add Assignment':
-            echo "<div class='dropdown'>";
-            echo "<a href='assignments_view'>Back to Assignments</a>";
-            echo "</div>";
+            echo "<button type='button'><a href='assignments_view'>Back to Assignments</a></button>";
             try {
               $c = $_POST['class'];
               $n = $_POST['name'];
@@ -98,7 +96,7 @@ $db = connect_db();
           echo "<div class='box-small'>";
           echo "<h2>Student List</h2><br>";
           try {
-            foreach ($db->query("SELECT name, total_score FROM $c.students") as $row)
+            foreach ($db->query("SELECT name, period FROM $c.students") as $row)
             {
               echo "Name: ".$row['name'];
               echo "<br>";
