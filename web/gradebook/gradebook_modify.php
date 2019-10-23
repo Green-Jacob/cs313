@@ -52,7 +52,7 @@ $db = connect_db();
               $statement->execute();
               echo "<h2>Successfully add $n to List.</h2><hr>";
             } catch (\Exception $e) {
-              echo "Error with database. Details: $ex";
+              echo "Error with database. Details: $e";
             }
             try {
               echo "<h2>Assignment List</h2><br>";
@@ -64,7 +64,7 @@ $db = connect_db();
                 echo '<br/><hr>';
               }
             } catch (\Exception $e) {
-              echo "Error with database. Details: $ex";
+              echo "Error with database. Details: $e";
             }
             break;
 
