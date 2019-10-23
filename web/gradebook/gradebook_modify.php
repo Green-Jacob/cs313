@@ -38,7 +38,7 @@ $db = connect_db();
           <a href="search.php">Search</a>
         </div>
       </div>
-      <div class="box-large">
+      <div class="sidebar">
         <?php
         switch ($_POST['add']) {
           case 'Add Assignment':
@@ -54,23 +54,27 @@ $db = connect_db();
             } catch (\Exception $e) {
               echo "Error with database. Details: $e";
             }
-            try {
-              echo "<h2>Assignment List</h2><br>";
-              foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
-              {
-                echo 'Name: <b>' . $row['name'] . "</b>";
-                echo '<br/>';
-                echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-                echo '<br/><hr>';
-              }
-            } catch (\Exception $e) {
-              echo "Error with database. Details: $e";
-            }
             break;
 
           default:
             // code...
             break;
+        }
+      ?>
+      </div>
+      <div class="box-large">
+        <?php
+        try {
+          echo "<h2>Assignment List</h2><br>";
+          foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
+          {
+            echo 'Name: <b>' . $row['name'] . "</b>";
+            echo '<br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+            echo '<br/><hr>';
+          }
+        } catch (\Exception $e) {
+          echo "Error with database. Details: $e";
         }
          ?>
       </div>
