@@ -45,10 +45,10 @@ $db = connect_db();
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
-          </select><br>
-          Name: <input type="text" name="name" value=""><br>
-          Total Possible: <input type="number" name="total_score" max="200" value=""><br>
-          <input type="submit" name="add" value="assignment"><br>
+          </select>
+          Name: <input type="text" name="name" value="">
+          Total Possible: <input type="number" name="total_score" max="200" value="">
+          <input type="submit" name="add" value="assignment">
         </form>
       </div>
       <div class="box-small">
