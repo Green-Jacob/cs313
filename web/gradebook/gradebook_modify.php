@@ -42,6 +42,9 @@ $db = connect_db();
         <?php
         switch ($_POST['add']) {
           case 'Add Assignment':
+            echo "<div class='dropdown'>";
+            echo "<a href='assignments_view'>Back to Assignments</a>";
+            echo "</div>";
             try {
               $c = $_POST['class'];
               $n = $_POST['name'];
@@ -74,7 +77,39 @@ $db = connect_db();
             }
             echo "</div>";
             break;
-
+          case 'Add Student':
+          try {
+            $c = $_POST['class'];
+            $n = $_POST['name'];
+            $p = $_POST['period'];
+            $statement = $db->prepare("INSERT INTO $c.students(name, period) VALUES(:name, :period)");
+            $statement->bindValue(':name', $n, PDO::PARAM_STR);
+            $statement->bindValue(':period', $p, PDO::PARAM_INT);
+            $statement->execute();
+            echo "<div class='box-small'>";
+            echo "<h2>Successfully add $n to List.</h2><br>";
+            echo "</div>";
+          } catch (\Exception $e) {
+            //echo "Error with database. Details: $e";
+            echo "<div class='box-small'>";
+            echo "Student not added. Most likely already exists in the list.";
+            echo "</div>";
+          }
+          echo "<div class='box-small'>";
+          echo "<h2>Student List</h2><br>";
+          try {
+            foreach ($db->query("SELECT name, total_score FROM $c.students") as $row)
+            {
+              echo "Name: ".$row['name'];
+              echo "<br>";
+              echo "Period: ".$row['period'];
+              echo "<br><hr>";
+            }
+          } catch (\Exception $e) {
+            echo "Error with database. Details: $e";
+          }
+          echo "</div>";
+            break;
           default:
             // code...
             break;

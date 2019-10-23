@@ -38,7 +38,18 @@ $db = connect_db();
         </div>
       </div>
       <div class="sidebar">
-        Function for adding a student will go here.
+        <form class="" action="gradebook_modify.php" method="post">
+          Class:
+          <select class="" name="class">
+            <option value="seventh">Seventh</option>
+            <option value="seventh_honors">Seventh Honors</option>
+            <option value="eighth">Eighth</option>
+            <option value="eighth_honors">Eighth Honors</option>
+          </select>
+          Name: <input type="text" name="name" value=""><br>
+          Period: <input type="number" name="total_score" max="8" value="">
+          <input type="submit" name="add" value="Add Student">
+        </form>
       </div>
       <div class="box-small">
         <h2>Seventh Grade Students</h2><hr>
