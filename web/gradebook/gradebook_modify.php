@@ -40,8 +40,8 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <?php
-        switch ($_POST['Add Assignment']) {
-          case 'assignment':
+        switch ($_POST['add']) {
+          case 'Add Assignment':
             $c = $_POST['class'];
             $n = $_POST['name'];
             $t = $_POST['total_score'];

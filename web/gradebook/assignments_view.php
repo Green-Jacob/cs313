@@ -40,6 +40,7 @@ $db = connect_db();
       <h2>Add assignment</h2>
       <div class="sidebar">
         <form class="" action="gradebook_modify.php" method="post">
+          Class:
           <select class="" name="class">
             <option value="seventh">Seventh</option>
             <option value="seventh_honors">Seventh Honors</option>
