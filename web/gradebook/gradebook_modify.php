@@ -39,8 +39,8 @@ $db = connect_db();
         </div>
       </div>
       <div class="box-large">
-        <?php
-        switch ($_POST['add']) {
+        <?php $_GET
+        switch ($_GET['add']) {
           case 'Add Assignment':
             echo "<button type='button'><a href='assignments_view'>Back to Assignments</a></button>";
             try {
@@ -77,9 +77,9 @@ $db = connect_db();
             break;
           case 'Add Student':
           try {
-            $c = $_POST['class'];
-            $n = $_POST['name'];
-            echo $p = $_POST['period'];
+            $c = $_GET['class'];
+            $n = $_GET['name'];
+            $p = $_GET['period'];
             $statement = $db->prepare("INSERT INTO $c.students(name, period) VALUES(:name, :period)");
             $statement->bindValue(':name', $n, PDO::PARAM_STR);
             $statement->bindValue(':period', $p, PDO::PARAM_INT);

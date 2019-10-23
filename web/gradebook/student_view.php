@@ -38,7 +38,7 @@ $db = connect_db();
         </div>
       </div>
       <div class="sidebar">
-        <form class="" action="gradebook_modify.php" method="post">
+        <form class="" action="gradebook_modify.php" method="get">
           Class:
           <select class="" name="class">
             <option value="seventh">Seventh</option>
