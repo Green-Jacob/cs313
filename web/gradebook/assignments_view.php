@@ -39,7 +39,7 @@ $db = connect_db();
       </div>
       <h2>Add assignment</h2>
       <div class="sidebar">
-        <form class="form-control" action="gradebook_modify" method="post">
+        <form class="" action="gradebook_modify" method="post">
           <select class="form-control" name="class">
             <option value="seventh">Seventh</option>
             <option value="seventh_honors">Seventh Honors</option>
