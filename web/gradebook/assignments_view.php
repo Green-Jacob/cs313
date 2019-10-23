@@ -46,7 +46,7 @@ $db = connect_db();
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
           </select>
-          Name: <input type="text" name="name" value="">
+          Name: <input type="text" name="name" value=""><br>
           Total Possible: <input type="number" name="total_score" max="200" value="">
           <input type="submit" name="add" value="Add Assignment">
         </form>
