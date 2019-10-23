@@ -52,12 +52,12 @@ $db = connect_db();
               $statement->execute();
               echo "<div class='box-small'>";
               echo "<h2>Successfully add $n to List.</h2><br>";
-              echo "<div class='box-small'>";
+              echo "</div>";
             } catch (\Exception $e) {
               //echo "Error with database. Details: $e";
               echo "<div class='box-small'>";
               echo "Assignment not added. Most likely already exists in the list.";
-              echo "<div class='box-small'>";
+              echo "</div>";
             }
             echo "<div class='box-small'>";
             echo "<h2>Assignment List</h2><br>";
