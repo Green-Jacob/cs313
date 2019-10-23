@@ -50,7 +50,7 @@ $db = connect_db();
               $statement->bindValue(':name', $n, PDO::PARAM_STR);
               $statement->bindValue(':total_score', $t, PDO::PARAM_INT);
               $statement->execute();
-              echo "<h2>Successfully add $n to List.</h2><hr>";
+              echo "<h2>Successfully add $n to List.</h2><br>";
             } catch (\Exception $e) {
               //echo "Error with database. Details: $e";
 
@@ -64,7 +64,7 @@ $db = connect_db();
       ?>
       </div>
       <h2>Assignment List</h2><br>
-      <div class="box-large">
+      <div class="box-small">
         <?php
         try {
           foreach ($db->query("SELECT name, total_score FROM $c.assignments ORDER BY name") as $row)
