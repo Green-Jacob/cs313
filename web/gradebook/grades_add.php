@@ -8,7 +8,7 @@ $db = connect_db();
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Added to Gradebook</title>
+    <title>Add to Gradebook</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
@@ -19,7 +19,7 @@ $db = connect_db();
   <body>
     <div class="container">
       <header>
-        <h1>Added to Gradebook</h1>
+        <h1>Add to Gradebook</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">
