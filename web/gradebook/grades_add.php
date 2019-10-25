@@ -41,9 +41,12 @@ $db = connect_db();
       <div class="box-large">
         <?php
         $c = $_POST['class'];
+        $class = ucfirst($c);
+        $class = str_replace("_", " ", $class);
+        echo "<h2>Adding to $class</h2>";
          ?>
          <form class="" action="gradebook_modify.php" method="post">
-           Assignment:
+           Assignment:<br>
            <select class="form-control" name="assignment">
              <?php
              foreach ($db->query("SELECT name FROM $c.assignments ORDER BY name") as $row){
@@ -51,7 +54,7 @@ $db = connect_db();
              }
              ?>
            </select><hr><br>
-           Student:
+           Student:<br>
            <select class="form-control" name="student">
              <?php
              foreach ($db->query("SELECT name FROM $c.students") as $row){
@@ -59,7 +62,7 @@ $db = connect_db();
              }
              ?>
            </select><hr><br>
-           Score:
+           Score:<br>
            <input type="number" name="score" value=""><br>
            <input type="submit" name="add" value="Add Grade">
          </form>
