@@ -46,6 +46,7 @@ $db = connect_db();
        ?>
       <div class="box-large">
          <form class="" action="gradebook_modify.php" method="post">
+           <input hidden type="text" name="class" value="<?php echo $c ?>">
            Assignment:<br>
            <select class="form-control" name="assignment">
              <?php
