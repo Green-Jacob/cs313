@@ -34,16 +34,16 @@
           <a href="search.php">Search</a>
         </div>
       </div>
+      <h2>Add Grades</h2>
       <div class="box-large">
-        <h2>Add Grades</h2>
         <form class="" action="grades_add.php" method="post">
-          Class:
+          Class:<br>
           <select class="" name="class">
             <option value="seventh">Seventh</option>
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
-          </select>
+          </select><br>
           <input type="submit" name="add" value="Add Grade">
         </form>
       </div>
