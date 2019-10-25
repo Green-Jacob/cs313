@@ -38,13 +38,13 @@ $db = connect_db();
           <a href="search.php">Search</a>
         </div>
       </div>
+      <?php
+      $c = $_POST['class'];
+      $class = ucfirst($c);
+      $class = str_replace("_", " ", $class);
+      echo "<h2>Adding to $class</h2>";
+       ?>
       <div class="box-large">
-        <?php
-        $c = $_POST['class'];
-        $class = ucfirst($c);
-        $class = str_replace("_", " ", $class);
-        echo "<h2>Adding to $class</h2>";
-         ?>
          <form class="" action="gradebook_modify.php" method="post">
            Assignment:<br>
            <select class="form-control" name="assignment">
