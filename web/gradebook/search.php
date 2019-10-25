@@ -42,8 +42,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="search" value="1">
-          <input hidden type="text" name="table" value="seventh.students">
-          <select class="form-control" name="">
+          <input hidden type="text" name="class" value="seventh">
+          <select class="form-control" name="student">
             <?php
             foreach ($db->query('SELECT name FROM seventh.students') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -55,8 +55,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Honors</b><br>
           <input hidden type="text" name="search" value="1">
-          <input hidden type="text" name="table" value="seventh_honors.students">
-          <select class="form-control" name="">
+          <input hidden type="text" name="class" value="seventh_honors">
+          <select class="form-control" name="student">
             <?php
             foreach ($db->query('SELECT name FROM seventh_honors.students') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -68,8 +68,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Grade</b><br>
           <input hidden type="text" name="search" value="1">
-          <input hidden type="text" name="table" value="eighth.students">
-          <select class="form-control" name="">
+          <input hidden type="text" name="class" value="eighth">
+          <select class="form-control" name="student">
             <?php
             foreach ($db->query('SELECT name FROM eighth.students') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -81,8 +81,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Honors</b><br>
           <input hidden type="text" name="search" value="1">
-          <input hidden type="text" name="table" value="eighth_honors.students">
-          <select class="form-control" name="">
+          <input hidden type="text" name="class" value="eighth_honors">
+          <select class="form-control" name="student">
             <?php
             foreach ($db->query('SELECT name FROM eighth_honors.students') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -97,8 +97,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Grade</b><br>
           <input hidden type="text" name="search" value="2">
-          <input hidden type="text" name="table" value="seventh.assignments">
-          <select class="form-control" name="">
+          <input hidden type="text" name="table" value="seventh">
+          <select class="form-control" name="assignment">
             <?php
             foreach ($db->query('SELECT name FROM seventh.assignments') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -110,8 +110,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Seventh Honors</b><br>
           <input hidden type="text" name="search" value="2">
-          <input hidden type="text" name="table" value="seventh_honors.assignments">
-          <select class="form-control" name="">
+          <input hidden type="text" name="table" value="seventh_honors">
+          <select class="form-control" name="assignment">
             <?php
             foreach ($db->query('SELECT name FROM seventh_honors.assignments') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -123,8 +123,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Grade</b><br>
           <input hidden type="text" name="search" value="2">
-          <input hidden type="text" name="table" value="eighth.assignments">
-          <select class="form-control" name="">
+          <input hidden type="text" name="table" value="eighth">
+          <select class="form-control" name="assignment">
             <?php
             foreach ($db->query('SELECT name FROM eighth.assignments') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
@@ -136,8 +136,8 @@ $db = connect_db();
         <form class="box-inner" action="search_results.php" method="get">
           <b>Eighth Honors</b><br>
           <input hidden type="text" name="search" value="2">
-          <input hidden type="text" name="table" value="eighth_honors.assignments">
-          <select class="form-control" name="">
+          <input hidden type="text" name="table" value="eighth_honors">
+          <select class="form-control" name="assignment">
             <?php
             foreach ($db->query('SELECT name FROM eighth_honors.assignments') as $row){
               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';

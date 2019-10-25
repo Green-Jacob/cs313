@@ -33,8 +33,76 @@
           <a href="search.php">Search</a>
         </div>
       </div>
+      <div class="sidebar">
+        <h2>Add Grades</h2>
+        <form class="" action="grades_add.php" method="post">
+          Class:
+          <select class="" name="class">
+            <option value="seventh">Seventh</option>
+            <option value="seventh_honors">Seventh Honors</option>
+            <option value="eighth">Eighth</option>
+            <option value="eighth_honors">Eighth Honors</option>
+          </select>
+          <input type="submit" name="add" value="Add Grade">
+        </form>
+      </div>
       <div class="box-large">
-        This is where the graded items will appear after next week.
+        <div class="box-small">
+          <h2>Seventh Grade Entries</h2><hr>
+          <?php
+          foreach ($db->query('SELECT assignment, student, score FROM seventh.gradebook ORDER BY student') as $row)
+          {
+            echo 'Name: ' . $row['student'];
+            echo '<br/>';
+            echo 'Assignment: ' . $row['assignment'];
+            echo '<br/>';
+            echo 'Score:' . $row['score'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Seventh Grade Honors Entries</h2><hr>
+          <?php
+          foreach ($db->query('SELECT assignment, student, score FROM seventh_honors.gradebook ORDER BY student') as $row)
+          {
+            echo 'Name: ' . $row['student'];
+            echo '<br/>';
+            echo 'Assignment: ' . $row['assignment'];
+            echo '<br/>';
+            echo 'Score:' . $row['score'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Eighth Grade Entries</h2><hr>
+          <?php
+          foreach ($db->query('SELECT assignment, student, score FROM eighth.gradebook ORDER BY student') as $row)
+          {
+            echo 'Name: ' . $row['student'];
+            echo '<br/>';
+            echo 'Assignment: ' . $row['assignment'];
+            echo '<br/>';
+            echo 'Score:' . $row['score'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Eighth Grade Honors Entries</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
+          {
+            echo 'Name: ' . $row['student'];
+            echo '<br/>';
+            echo 'Assignment: ' . $row['assignment'];
+            echo '<br/>';
+            echo 'Score:' . $row['score'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
       </div>
     </div><!-- end container -->
   </body>

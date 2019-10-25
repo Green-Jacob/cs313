@@ -1,10 +1,14 @@
-<?php session_start(); ?>
+<?php
+session_start();
+require 'dbConnect.php';
+$db = connect_db();
+?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gradebook Online</title>
+    <title>Added to Gradebook</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
@@ -15,7 +19,7 @@
   <body>
     <div class="container">
       <header>
-        <h1>Gradebook Online</h1>
+        <h1>Added to Gradebook</h1>
       </header>
       <div class="sidebar">
         <div class="dropdown">
@@ -35,17 +39,30 @@
         </div>
       </div>
       <div class="box-large">
-        <h2>Add Grades</h2>
-        <form class="" action="grades_add.php" method="post">
-          Class:
-          <select class="" name="class">
-            <option value="seventh">Seventh</option>
-            <option value="seventh_honors">Seventh Honors</option>
-            <option value="eighth">Eighth</option>
-            <option value="eighth_honors">Eighth Honors</option>
-          </select>
-          <input type="submit" name="add" value="Add Grade">
-        </form>
+        <?php
+        $c = $_POST['class'];
+         ?>
+         <form class="" action="gradebook_modify.php" method="post">
+           Assignment:
+           <select class="form-control" name="assignment">
+             <?php
+             foreach ($db->query("SELECT name FROM $c.assignments ORDER BY name") as $row){
+               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+             }
+             ?>
+           </select><hr><br>
+           Student:
+           <select class="form-control" name="student">
+             <?php
+             foreach ($db->query("SELECT name FROM $c.students") as $row){
+               echo '<option value="' . $row['name'] . '">'. $row['name'] . '</option>';
+             }
+             ?>
+           </select><hr><br>
+           Score:
+           <input type="number" name="score" value=""><br>
+           <input type="submit" name="add" value="Add Grade">
+         </form>
       </div>
     </div><!-- end container -->
   </body>

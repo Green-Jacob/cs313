@@ -39,7 +39,7 @@ $db = connect_db();
         </div>
       </div>
       <div class="box-large">
-        <?php 
+        <?php
         switch ($_POST['add']) {
           case 'Add Assignment':
             echo "<button type='button'><a href='assignments_view'>Back to Assignments</a></button>";
@@ -85,7 +85,7 @@ $db = connect_db();
             $statement->bindValue(':period', $p, PDO::PARAM_INT);
             $statement->execute();
             echo "<div class='box-small'>";
-            echo "<h2>Successfully add $n to List.</h2><br>";
+            echo "<h2>Successfully added $n to List.</h2><br>";
             echo "</div>";
           } catch (\Exception $e) {
             echo "Error with database. Details: $e";

@@ -42,10 +42,32 @@ $db = connect_db();
         <?php
         switch ($_GET['search']) {
           case '1':
-            echo "Nothing added to the gradebook yet. No results found.";
+          $c = $_GET['class'];
+          $s = $_GET['student'];
+          echo "<div class='box-small'>";
+          echo "<b>Grades of $s</b><br>";
+          foreach ($db->query('SELECT assignment, score FROM '. $c . '.gradebook WHERE student = ' . $s ) as $row)
+          {
+            echo 'Assignment: ' . $row['assignment'];
+            echo '<br/>';
+            echo 'Score: ' . $row['score'];
+            echo '<br/><hr>';
+          }
+          echo "</div>";
             break;
           case '2':
-            echo "Nothing added to the gradebook yet. No results found.";
+          $t = $_GET['table'];
+          $a = $_GET['assignment'];
+          echo "<div class='box-small'>";
+          echo "<b>Grades of $s</b><br>";
+          foreach ($db->query('SELECT student, score FROM '. $c . '.gradebook WHERE assignment = ' . $a ) as $row)
+          {
+            echo 'Student: ' . $row['student'];
+            echo '<br/>';
+            echo 'Score: ' . $row['score'];
+            echo '<br/><hr>';
+          }
+          echo "</div>";
             break;
           case '3':
           echo "<div class='box-small'>";
