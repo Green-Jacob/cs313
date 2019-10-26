@@ -63,14 +63,19 @@ $db = connect_db();
           $t = $_GET['table'];
           $a = $_GET['assignment'];
           echo "<div class='box-small'>";
-          echo "<b>Grades by Assignment $s</b><br>";
-          foreach ($db->query('SELECT student, score FROM '. $c . '.gradebook WHERE assignment = \'' . $a . '\'' ) as $row)
-          {
-            echo 'Student: ' . $row['student'];
-            echo '<br/>';
-            echo 'Score: ' . $row['score'];
-            echo '<br/><hr>';
+          echo "<b>Grades for $a</b><br>";
+          try {
+            foreach ($db->query('SELECT student, score FROM '. $c . '.gradebook WHERE assignment = \'' . $a . '\'' ) as $row)
+            {
+              echo 'Student: ' . $row['student'];
+              echo '<br/>';
+              echo 'Score: ' . $row['score'];
+              echo '<br/><hr>';
+            }
+          } catch (\Exception $e) {
+            echo $e;
           }
+
           echo "</div>";
             break;
           case '3':
