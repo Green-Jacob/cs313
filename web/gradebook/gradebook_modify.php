@@ -110,7 +110,7 @@ $db = connect_db();
             break;
           case 'Add Grade':
             //$c = $_POST['class'];
-            //$a = $_POST['assignment'];
+            $a = $_POST['assignment'];
             //$s = $_POST['student'];
             //$sc = $_POST['score'];
             $t;
@@ -119,7 +119,7 @@ $db = connect_db();
                 {
                   $t = $row['total_score'];
                 }
-              } catch (\Exception $e) {
+                } catch (\Exception $e) {
 
             }
             echo "Total retrieved: $t";
