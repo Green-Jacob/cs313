@@ -111,6 +111,7 @@ $db = connect_db();
           case 'Add Grade':
             $c = $_GET['class'];
             $a = $_GET['assignment'];
+            $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
             $sc = $_GET['score'];
             echo "$a";
