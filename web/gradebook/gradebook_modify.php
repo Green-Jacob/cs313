@@ -122,6 +122,8 @@ $db = connect_db();
                 $statement.bindValue(':name', $a, PDO::PARAM_STR);
                 $statement->execute();
                 $statement->bind_result($t);
+                $statement->fetch();
+                $statement->close();
                 } catch (\Exception $e) {
                 }
                 echo $t;
