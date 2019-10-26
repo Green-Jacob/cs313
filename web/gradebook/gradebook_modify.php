@@ -117,7 +117,8 @@ $db = connect_db();
                 foreach ($db->query("SELECT * FROM $c.assignments WHERE name = $a") as $row)
                 {
                   $t = $row['total_score'];
-                  echo "Total retrieved: " . $t;
+
+                  echo "Total retrieved: " . $row['total_score'];
                 }
                 } catch (\Exception $e) {
 
