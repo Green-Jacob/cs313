@@ -50,7 +50,7 @@
         <div class="box-small">
           <h2>Seventh Grade Entries</h2><hr>
           <?php
-          try {
+          /*try {
             foreach ($db->query('SELECT * FROM seventh.gradebook') as $row)
             {
               echo 'Name: ' . $row['student'];
@@ -62,7 +62,7 @@
             }
           } catch (\Exception $e) {
             echo "$e";
-          }
+          }*/
            ?>
         </div>
         <div class="box-small">
