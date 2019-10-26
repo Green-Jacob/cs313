@@ -40,7 +40,7 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <?php
-        switch ($_GET['add']) {
+        switch ($_POST['add']) {
           case 'Add Assignment':
             echo "<button type='button'><a href='assignments_view'>Back to Assignments</a></button>";
             try {
@@ -109,12 +109,12 @@ $db = connect_db();
           echo "</div>";
             break;
           case 'Add Grade':
-            $c = $_GET['class'];
-            $cA = $_GET['class'] . ".assignments";
-            $a = $_GET['assignment'];
+            $c = $_POST['class'];
+            $cA = $_POST['class'] . ".assignments";
+            $a = $_POST['assignment'];
             $a = htmlspecialchars_decode($a);
-            $s = $_GET['student'];
-            $sc = $_GET['score'];
+            $s = $_POST['student'];
+            $sc = $_POST['score'];
             $t = 0;
             $scoreToEnter;
             echo "$a ";
@@ -141,7 +141,7 @@ $db = connect_db();
               try {
                 foreach ($db->query("SELECT assignment, student, score FROM $c.gradebook") as $row)
                 {
-                  echo "Name: ".$row['Student'];
+                  echo "Name: ".$row['student'];
                   echo "<br>";
                   echo "Assignment: ".$row['assignment'];
                   echo "<br>";
