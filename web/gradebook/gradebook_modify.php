@@ -117,8 +117,8 @@ $db = connect_db();
             echo "$a ";
             try {
                 $statement = $db->prepare('SELECT total_score FROM :s WHERE name=:name');
-                $statement.bindValue(':s', $cA, PDO::PARAM_STR);
-                $statement.bindValue(':name', $a, PDO::PARAM_STR);
+                $statement.bindValue(':s', $cA);
+                $statement.bindValue(':name', $a);
                 $statement->execute();
                 $statement->bind_result($t);
                 $statement->fetch();
