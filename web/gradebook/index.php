@@ -44,7 +44,7 @@
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
           </select><br>
-          <input type="submit" name="add" value="Add Grade">
+          <input type="submit" name="add" value="Add to Gradebook">
         </form>
       </div>
     </div><!-- end container -->

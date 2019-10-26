@@ -64,7 +64,7 @@ $db = connect_db();
              ?>
            </select><hr><br>
            Score:<br>
-           <input type="number" name="score" value=""><br>
+           <input required type="number" name="score" value=""><br>
            <input type="submit" name="add" value="Add Grade">
          </form>
       </div>
