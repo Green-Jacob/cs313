@@ -121,9 +121,8 @@ $db = connect_db();
                 $statement.bindValue(':s', $cA);
                 $statement.bindValue(':name', $a);
                 $statement->execute();
-                $t = 0;
-                $statement->bind_result($t);
-                $statement->fetch(PDO::FETCH_ASSOC);
+                $result = $statement->fetch(PDO::FETCH_ASSOC);
+                $t = $result['total_score'];
                 $statement->close();
                 echo $t;
                 } catch (\Exception $e) {
