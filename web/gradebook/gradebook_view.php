@@ -50,7 +50,7 @@
         <div class="box-small">
           <h2>Seventh Grade Entries</h2><hr>
           <?php
-          foreach ($db->query('SELECT assignment, student, score FROM seventh.gradebook ORDER BY student') as $row)
+          foreach ($db->query('SELECT assignment, student, score FROM seventh.gradebook') as $row)
           {
             echo 'Name: ' . $row['student'];
             echo '<br/>';
@@ -64,7 +64,7 @@
         <div class="box-small">
           <h2>Seventh Grade Honors Entries</h2><hr>
           <?php
-          foreach ($db->query('SELECT assignment, student, score FROM seventh_honors.gradebook ORDER BY student') as $row)
+          foreach ($db->query('SELECT assignment, student, score FROM seventh_honors.gradebook') as $row)
           {
             echo 'Name: ' . $row['student'];
             echo '<br/>';
@@ -78,7 +78,7 @@
         <div class="box-small">
           <h2>Eighth Grade Entries</h2><hr>
           <?php
-          foreach ($db->query('SELECT assignment, student, score FROM eighth.gradebook ORDER BY student') as $row)
+          foreach ($db->query('SELECT assignment, student, score FROM eighth.gradebook') as $row)
           {
             echo 'Name: ' . $row['student'];
             echo '<br/>';
