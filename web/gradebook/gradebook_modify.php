@@ -114,7 +114,7 @@ $db = connect_db();
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
             $sc = $_GET['score'];
-            $t = "";
+            $t = 0;
             echo "$a ";
             try {
               foreach ($db->query("SELECT * FROM $cA") as $row)
