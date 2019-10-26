@@ -109,6 +109,7 @@ $db = connect_db();
           echo "</div>";
             break;
           case 'Add Grade':
+            $c = $_GET['class'];
             $cA = $_GET['class'] . ".assignments";
             $a = $_GET['assignment'];
             $a = htmlspecialchars_decode($a);
@@ -130,6 +131,27 @@ $db = connect_db();
                 } catch (\Exception $e) {
                   echo "problem: ".$e;
                 }
+              $stmt = $db->prepare("INSERT INTO $c.gradebook(assignment, student, score) VALUES(:assignment, :student, :score)");
+              $stmt->bindValue(':assignment', $a);
+              $stmt->bindValue(':student', $s);
+              $stmt->bindValue(':score', $scoreToEnter);
+              $stmt->execute();
+              echo "<div class='box-small'>";
+              echo "<h2>Grades</h2><br>";
+              try {
+                foreach ($db->query("SELECT assignment, student, score FROM $c.gradebook") as $row)
+                {
+                  echo "Name: ".$row['Student'];
+                  echo "<br>";
+                  echo "Assignment: ".$row['assignment'];
+                  echo "<br>";
+                  echo "Score: ".$row["score"];
+                  echo "<br><hr>";
+                }
+              } catch (\Exception $e) {
+                echo "Error with database. Details: $e";
+              }
+              echo "</div>";
             break;
           default:
             // code...
