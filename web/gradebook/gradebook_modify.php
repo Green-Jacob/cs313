@@ -121,13 +121,10 @@ $db = connect_db();
                 $statement.bindValue(':s', $cA, PDO::PARAM_STR);
                 $statement.bindValue(':name', $a, PDO::PARAM_STR);
                 $statement->execute();
-                while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
-                  $t = $row['total_score'];
-                  echo "Total retrieved: " . $t;
-                }
+                $statement->bind_result($t);
                 } catch (\Exception $e) {
-
-            }
+                }
+                echo $t;
             break;
           default:
             // code...
