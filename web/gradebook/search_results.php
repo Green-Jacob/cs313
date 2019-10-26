@@ -88,6 +88,23 @@ $db = connect_db();
             echo '<br/><hr>';
           }
           echo "</div>";
+          echo "<div class='box-small'>";
+          echo "<b>Class grades</b><br>";
+          try {
+            foreach ($db->query('SELECT * FROM'. $_GET['class'].'.gradebook ORDER BY student') as $row)
+            {
+              echo 'Name: ' . $row['student'];
+              echo '<br/>';
+              echo 'Assignment: ' . $row['assignment'];
+              echo '<br/>';
+              echo 'Score:' . $row['score'];
+              echo '<br/><hr>';
+            }
+          } catch (\Exception $e) {
+            echo "$e";
+          }
+          echo "</div>";
+
             break;
           default:
             echo "No results found.";
