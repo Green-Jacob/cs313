@@ -113,7 +113,6 @@ $db = connect_db();
             $a = $_POST['assignment'];
             $s = $_POST['student'];
             $sc = $_POST['score'];
-            $t;
             try {
                 foreach ($db->query("SELECT total_score FROM $c.assignments WHERE name = $a") as $row)
                 {
@@ -122,7 +121,7 @@ $db = connect_db();
                 } catch (\Exception $e) {
 
             }
-            echo "Total retrieved: $t";
+            echo "Total retrieved: " . $t;
             break;
           default:
             // code...
