@@ -152,6 +152,20 @@ $db = connect_db();
                 echo "Error with database. Details: $e";
               }
               echo "</div>";
+
+              echo '<div class="sidebar">';
+              echo '<h2>Add Grades</h2>';
+              echo '<form class="" action="grades_add.php" method="post">';
+              echo 'Class:';
+              echo '<select class="" name="class">';
+              echo '<option value="seventh">Seventh</option>';
+              echo '<option value="seventh_honors">Seventh Honors</option>';
+              echo '<option value="eighth">Eighth</option>';
+              echo '<option value="eighth_honors">Eighth Honors</option>';
+              echo '</select>';
+              echo '<input type="submit" name="add" value="Add Grade">';
+              echo '</form>';
+              echo '</div>';
             break;
           default:
             // code...
