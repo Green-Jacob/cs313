@@ -113,6 +113,7 @@ $db = connect_db();
             $a = $_GET['assignment'];
             $s = $_GET['student'];
             $sc = $_GET['score'];
+            echo "$a";
             try {
                 foreach ($db->query("SELECT * FROM $c.assignments WHERE name = $a") as $row)
                 {
