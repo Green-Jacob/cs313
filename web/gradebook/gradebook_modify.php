@@ -123,7 +123,7 @@ $db = connect_db();
                 $statement->execute();
                 $t = 0;
                 $statement->bind_result($t);
-                $statement->fetch();
+                $statement->fetch(PDO::FETCH_ASSOC);
                 $statement->close();
                 echo $t;
                 } catch (\Exception $e) {
