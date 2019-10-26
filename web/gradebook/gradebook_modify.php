@@ -115,10 +115,7 @@ $db = connect_db();
             $sc = $_POST['score'];
             $t;
             try {
-                foreach ($db->query("SELECT total_score FROM $c.assignments WHERE name = $a") as $row)
-                {
-                  $t = $row['total_score'];
-                }
+                $t = db->query("SELECT total_score FROM $c.assignments WHERE name = $a");
                 } catch (\Exception $e) {
 
             }
