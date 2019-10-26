@@ -114,13 +114,14 @@ $db = connect_db();
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
             $sc = $_GET['score'];
-            $t = "this should be a number";
+
             echo "$a ";
             try {
                 $statement = $db->prepare('SELECT total_score FROM :s WHERE name=:name');
                 $statement.bindValue(':s', $cA);
                 $statement.bindValue(':name', $a);
                 $statement->execute();
+                $t = "this should be a number";
                 $statement->bind_result($t);
                 $statement->fetch();
                 $statement->close();
