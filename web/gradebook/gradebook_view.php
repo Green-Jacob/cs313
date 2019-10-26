@@ -54,7 +54,7 @@ $db = connect_db();
         <div class="box-small">
           <h2>Seventh Grade Entries</h2><hr>
           <?php
-          /*try {
+          try {
             foreach ($db->query('SELECT * FROM seventh.gradebook') as $row)
             {
               echo 'Name: ' . $row['student'];
@@ -66,7 +66,7 @@ $db = connect_db();
             }
           } catch (\Exception $e) {
             echo "$e";
-          }*/
+          }
            ?>
         </div>
         <div class="box-small">
