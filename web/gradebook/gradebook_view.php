@@ -51,7 +51,7 @@
           <h2>Seventh Grade Entries</h2><hr>
           <?php
           try {
-            foreach ($db->query('SELECT assignment, student, score FROM seventh.gradebook') as $row)
+            foreach ($db->query('SELECT * FROM seventh.gradebook') as $row)
             {
               echo 'Name: ' . $row['student'];
               echo '<br/>';
@@ -69,7 +69,7 @@
           <h2>Seventh Grade Honors Entries</h2><hr>
           <?php
           try {
-            foreach ($db->query('SELECT assignment, student, score FROM seventh_honors.gradebook') as $row)
+            foreach ($db->query('SELECT * FROM seventh_honors.gradebook') as $row)
             {
               echo 'Name: ' . $row['student'];
               echo '<br/>';
@@ -87,7 +87,7 @@
           <h2>Eighth Grade Entries</h2><hr>
           <?php
           try {
-            foreach ($db->query('SELECT assignment, student, score FROM eighth.gradebook') as $row)
+            foreach ($db->query('SELECT * FROM eighth.gradebook') as $row)
             {
               echo 'Name: ' . $row['student'];
               echo '<br/>';
@@ -105,7 +105,7 @@
           <h2>Eighth Grade Honors Entries</h2><hr>
           <?php
           try {
-            foreach ($db->query('SELECT assignment, student, score FROM eighth_honors.gradebook') as $row)
+            foreach ($db->query('SELECT * FROM eighth_honors.gradebook') as $row)
             {
               echo 'Name: ' . $row['student'];
               echo '<br/>';
