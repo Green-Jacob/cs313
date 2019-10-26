@@ -108,6 +108,20 @@ $db = connect_db();
           }
           echo "</div>";
             break;
+          case 'Add Grade':
+            $c = $_POST['class'];
+            $a = $_POST['assignment'];
+            $s = $_POST['student'];
+            $sc = $_POST['score'];
+            $t;
+            try {
+                $t = $db->query("SELECT score FROM $c.assignments WHERE assignment = $a");
+              }
+            } catch (\Exception $e) {
+
+            }
+            echo "Total retrieved: $t";
+            break;
           default:
             // code...
             break;
