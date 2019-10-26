@@ -123,11 +123,11 @@ $db = connect_db();
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                   $t = $row['total_score'];
+                  echo "Total retrieved: " . $t;
                 }
                 } catch (\Exception $e) {
 
             }
-            echo "Total retrieved: " . $t;
             break;
           default:
             // code...
