@@ -109,7 +109,7 @@ $db = connect_db();
           echo "</div>";
             break;
           case 'Add Grade':
-            $cA = $_GET['class'] . "assignments";
+            $cA = $_GET['class'] . ".assignments";
             $a = $_GET['assignment'];
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
