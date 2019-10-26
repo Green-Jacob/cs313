@@ -121,7 +121,7 @@ $db = connect_db();
                 $statement.bindValue(':s', $cA);
                 $statement.bindValue(':name', $a);
                 $statement->execute();
-                $t = "this should be a number";
+                $t = 0;
                 $statement->bind_result($t);
                 $statement->fetch();
                 $statement->close();
