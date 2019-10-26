@@ -125,6 +125,7 @@ $db = connect_db();
                 $statement->close();
                 echo $t;
                 } catch (\Exception $e) {
+                  echo "problem: ".$e;
                 }
             break;
           default:
