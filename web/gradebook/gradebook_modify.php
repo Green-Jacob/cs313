@@ -115,7 +115,7 @@ $db = connect_db();
             $sc = $_GET['score'];
             echo "$a";
             try {
-                foreach ($db->query("SELECT * FROM $c.assignments WHERE name = $a") as $row)
+                foreach ($db->query("SELECT * FROM $c.assignments WHERE name=$a") as $row)
                 {
                   $t = $row['total_score'];
 
