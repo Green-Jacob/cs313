@@ -63,8 +63,8 @@ $db = connect_db();
           $t = $_GET['table'];
           $a = $_GET['assignment'];
           echo "<div class='box-small'>";
-          echo "<b>Grades of $s</b><br>";
-          foreach ($db->query('SELECT student, score FROM '. $c . '.gradebook WHERE assignment = ' . $a ) as $row)
+          echo "<b>Grades by Assignment $s</b><br>";
+          foreach ($db->query('SELECT student, score FROM '. $c . '.gradebook WHERE assignment = \'' . $a . '\'' ) as $row)
           {
             echo 'Student: ' . $row['student'];
             echo '<br/>';
