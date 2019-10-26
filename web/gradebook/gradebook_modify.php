@@ -115,11 +115,11 @@ $db = connect_db();
             //$sc = $_POST['score'];
             $t;
             try {
-                foreach ($db->query("SELECT total_score FROM $c.assignments") as $row){
+                foreach ($db->query("SELECT total_score FROM $c.assignments") as $row)
+                {
                   $t = $row['total_score'];
                 }
-              }
-            } catch (\Exception $e) {
+              } catch (\Exception $e) {
 
             }
             echo "Total retrieved: $t";
