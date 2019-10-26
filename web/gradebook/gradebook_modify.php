@@ -114,7 +114,6 @@ $db = connect_db();
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
             $sc = $_GET['score'];
-            $t;
             echo "$a ";
             try {
                 $statement = $db->prepare('SELECT total_score FROM :s WHERE name=:name');
