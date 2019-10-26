@@ -114,17 +114,16 @@ $db = connect_db();
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
             $sc = $_GET['score'];
-
+            $t = "";
             echo "$a ";
             try {
-                $statement = $db->prepare('SELECT total_score FROM :s WHERE name=:name');
-                $statement.bindValue(':s', $cA);
-                $statement.bindValue(':name', $a);
-                $statement->execute();
-                $result = $statement->fetch(PDO::FETCH_ASSOC);
-                $t = $result['total_score'];
-                $statement->close();
-                echo $t;
+              foreach ($db->query("SELECT * FROM $cA") as $row)
+              {
+                if ($row['name'] == $a) {
+                  $t = $row['total_score'];
+                  echo "Total: ". $t;
+                }
+              }
                 } catch (\Exception $e) {
                   echo "problem: ".$e;
                 }
