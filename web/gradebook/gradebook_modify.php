@@ -120,7 +120,10 @@ $db = connect_db();
                 $statement = $db->prepare("SELECT total_score FROM :schema.assignments WHERE name=:name");
                 $statement.bindValue(':schema', $c, PDO::PARAM_STR);
                 $statement.bindValue(':name', $a, PDO::PARAM_STR);
-                $t = $statement->execute();  
+                $statement->execute();
+                while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
+                  $t = $row['total_score'];
+                }
                 } catch (\Exception $e) {
 
             }
