@@ -114,7 +114,7 @@ $db = connect_db();
             $s = $_POST['student'];
             $sc = $_POST['score'];
             try {
-                foreach ($db->query("SELECT total_score FROM $c.assignments WHERE name = $a") as $row)
+                foreach ($db->query("SELECT * FROM $c.assignments WHERE name = $a") as $row)
                 {
                   $t = $row['total_score'];
                 }
