@@ -109,10 +109,10 @@ $db = connect_db();
           echo "</div>";
             break;
           case 'Add Grade':
-            $c = $_POST['class'];
-            $a = $_POST['assignment'];
-            $s = $_POST['student'];
-            $sc = $_POST['score'];
+            $c = $_GET['class'];
+            $a = $_GET['assignment'];
+            $s = $_GET['student'];
+            $sc = $_GET['score'];
             try {
                 foreach ($db->query("SELECT * FROM $c.assignments WHERE name = $a") as $row)
                 {
