@@ -123,9 +123,9 @@ $db = connect_db();
                 $statement->bind_result($t);
                 $statement->fetch();
                 $statement->close();
+                echo $t;
                 } catch (\Exception $e) {
                 }
-                echo $t;
             break;
           default:
             // code...
