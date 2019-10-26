@@ -91,7 +91,7 @@ $db = connect_db();
           echo "<div class='box-small'>";
           echo "<b>Class grades</b><br>";
           try {
-            foreach ($db->query('SELECT * FROM'. $_GET['class'].'.gradebook ORDER BY student') as $row)
+            foreach ($db->query('SELECT * FROM '. $_GET['class'].'.gradebook ORDER BY student') as $row)
             {
               echo 'Name: ' . $row['student'];
               echo '<br/>';
