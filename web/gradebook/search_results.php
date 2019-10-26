@@ -47,7 +47,7 @@ $db = connect_db();
           echo "<div class='box-small'>";
           echo "<b>Grades of $s</b><br>";
           try {
-            foreach ($db->query('SELECT assignment, score FROM '. $c . '.gradebook WHERE student = "' . $s . '"' ) as $row)
+            foreach ($db->query('SELECT assignment, score FROM '. $c . '.gradebook WHERE student = \'' . $s . '\'' ) as $row)
             {
               echo 'Assignment: ' . $row['assignment'];
               echo '<br/>';
