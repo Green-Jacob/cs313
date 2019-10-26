@@ -114,14 +114,13 @@ $db = connect_db();
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
             $sc = $_GET['score'];
-            echo "$a";
+            $t;
+            echo "$a ";
             try {
-                foreach ($db->query("SELECT * FROM $c.assignments WHERE name=$a") as $row)
-                {
-                  $t = $row['total_score'];
-
-                  echo "Total retrieved: " . $row['total_score'];
-                }
+                $statement = $db->prepare("SELECT total_score FROM :schema.assignments WHERE name=:name");
+                $statement.bindValue(':schema', $c, PDO::PARAM_STR);
+                $statement.bindValue(':name', $a, PDO::PARAM_STR);
+                $t = $statement->execute();  
                 } catch (\Exception $e) {
 
             }
