@@ -110,6 +110,8 @@ $db = connect_db();
             break;
           case 'Add Grade':
             $c = $_POST['class'];
+            $class = ucfirst($c);
+            $class = str_replace("_", " ", $class);
             $cA = $_POST['class'] . ".assignments";
             $a = $_POST['assignment'];
             $a = htmlspecialchars_decode($a);
@@ -117,15 +119,12 @@ $db = connect_db();
             $sc = $_POST['score'];
             $t = 0;
             $scoreToEnter;
-            echo "$a ";
             try {
               foreach ($db->query("SELECT * FROM $cA") as $row)
               {
                 if ($row['name'] == $a) {
                   $t = $row['total_score'];
-                  echo "Total: ". $t;
                   $scoreToEnter = $sc / $t;
-                  echo "Score entered: " . $scoreToEnter;
                 }
               }
                 } catch (\Exception $e) {
@@ -137,7 +136,7 @@ $db = connect_db();
               $stmt->bindValue(':score', $scoreToEnter);
               $stmt->execute();
               echo "<div class='box-small'>";
-              echo "<h2>Grades</h2><br>";
+              echo "<h2>Grades for $class</h2><br>";
               try {
                 foreach ($db->query("SELECT assignment, student, score FROM $c.gradebook") as $row)
                 {
