@@ -40,7 +40,7 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <?php
-        switch ($_POST['add']) {
+        switch ($_GET['add']) {
           case 'Add Assignment':
             echo "<button type='button'><a href='assignments_view'>Back to Assignments</a></button>";
             try {
