@@ -115,6 +115,7 @@ $db = connect_db();
             $s = $_GET['student'];
             $sc = $_GET['score'];
             $t = 0;
+            $scoreToEnter;
             echo "$a ";
             try {
               foreach ($db->query("SELECT * FROM $cA") as $row)
@@ -122,6 +123,8 @@ $db = connect_db();
                 if ($row['name'] == $a) {
                   $t = $row['total_score'];
                   echo "Total: ". $t;
+                  $scoreToEnter = $sc / $t;
+                  echo "Score entered: " . $scoreToEnter;
                 }
               }
                 } catch (\Exception $e) {
