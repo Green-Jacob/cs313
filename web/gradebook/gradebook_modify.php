@@ -117,11 +117,9 @@ $db = connect_db();
             $t;
             echo "$a ";
             try {
-                $q = "SELECT total_score FROM :s.assignments WHERE name=:name";
-                $statement = $db->prepare($q);
+                $statement = $db->prepare('SELECT total_score FROM :s.assignments WHERE name=:name');
                 $statement.bindValue(':s', $c, PDO::PARAM_STR);
                 $statement.bindValue(':name', $a, PDO::PARAM_STR);
-                echo $statement;
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
                   $t = $row['total_score'];
