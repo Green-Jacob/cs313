@@ -109,7 +109,7 @@ $db = connect_db();
           echo "</div>";
             break;
           case 'Add Grade':
-            $c = $_GET['class'];
+            $cA = $_GET['class'] . "assignments";
             $a = $_GET['assignment'];
             $a = htmlspecialchars_decode($a);
             $s = $_GET['student'];
@@ -117,8 +117,8 @@ $db = connect_db();
             $t;
             echo "$a ";
             try {
-                $statement = $db->prepare('SELECT total_score FROM :s.assignments WHERE name=:name');
-                $statement.bindValue(':s', $c, PDO::PARAM_STR);
+                $statement = $db->prepare('SELECT total_score FROM :s WHERE name=:name');
+                $statement.bindValue(':s', $cA, PDO::PARAM_STR);
                 $statement.bindValue(':name', $a, PDO::PARAM_STR);
                 $statement->execute();
                 while ($row = $statement->fetch(PDO::FETCH_ASSOC)) {
