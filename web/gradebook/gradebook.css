@@ -1,0 +1,126 @@
+@@media only screen and(max-width:600px) {
+  .container{
+    flex-direction:column;
+  }
+}
+/* the flex container for the pages */
+.container{
+  border: 2px groove black;
+  border-radius:5px;
+  display:flex;
+  flex-wrap:wrap;
+  align-items:center;
+  width:auto;
+  background-color:#ccffcc;/* background color for all pages */
+}
+header{
+  border: 3px groove lightblue;
+  border-radius:5px;
+  width:100%;
+  text-align:center;
+  font-family: 'Acme', sans-serif;
+  font-size:1.5em;
+  text-shadow:3px 2px rgb(0, 153, 0, 0.5);
+  color:#001a33;
+  padding:.5rem;
+  margin:.75em;
+}
+input[type=submit]{
+  margin:.5rem;
+}
+input[type=select]{
+  width:auto;
+}
+footer{
+  width:80%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.3rem;
+  margin:.8em;
+}
+h1{
+  font-size:3em;
+}
+.bordered{
+  border: 5px groove green;
+  border-radius: 5px;
+}
+.sidebar{
+  border: 3px groove grey;
+  border-radius:5px;
+  width:100%;
+  background-color:rgba(230, 242, 255, 0.5);
+  padding:.5rem;
+  margin:.75em;
+}
+/* dropdown menu */
+.dropdown{
+  position:relative;
+  display:inline-block;
+  border: 2px solid black;
+  border-radius:3px;
+  background-color:rgba(230, 242, 255, 0.5);
+  padding:.5rem;
+}
+.dropdown-list{
+  display:none;
+  position:absolute;
+  min-width:150px;
+  background-color:white;
+  border:2px groove black;
+  border-radius:2px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.3);
+  z-index:1;
+  padding:.5rem;
+}
+.dropdown:hover .dropdown-list{
+  display:block;
+}
+.box-small{
+  width:45%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.2rem;
+  margin:2em;
+}
+.box-inner{
+  width:15%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.2rem;
+  margin:2em;
+  font-size:1em;
+}
+.box-large{
+  display:flex;
+  flex-wrap:wrap;
+  width:80%;
+  border: 3px groove #0080ff;
+  border-radius:5px;
+  padding:.3rem;
+  margin:.8em;
+}
+.font-large{
+  font-size:3em;
+}
+.font-turretroad{
+  font-family: 'Turret Road', cursive;
+}
+.font-yanone{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size:1.6rem;
+}
+.text-center{
+  text-align:center;
+}
+#logo{
+  margin:.3rem;
+  width:100px;
+  height:100px;
+  float:left;
+  border:2px solid green;
+  border-radius:5px;
+}
+#green-text{
+  color:green;
+}

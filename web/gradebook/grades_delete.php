@@ -12,7 +12,7 @@ $db = connect_db();
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
-    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="gradebook.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Yanone+Kaffeesatz&display=swap"
     rel="stylesheet">
   </head>
@@ -42,7 +42,7 @@ $db = connect_db();
       $c = $_POST['class'];
       $class = ucfirst($c);
       $class = str_replace("_", " ", $class);
-      echo "<h2>Adding to $class</h2>";
+      echo "<h2>Removing from $class</h2>";
        ?>
       <div class="box-large">
          <form class="" action="gradebook_modify.php" method="post">
