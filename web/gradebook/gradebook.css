@@ -33,6 +33,9 @@ input[type=submit]{
 input[type=text]{
   border-radius:3px;
 }
+input[type=number]{
+  border-radius:3px;
+}
 input[type=select]{
   width:auto;
 }
@@ -83,7 +86,7 @@ h1{
 }
 .box-small{
   width:45%;
-  background-color:rgba(51, 153, 255, 0.5);
+  background-color:rgba(202, 129, 255, 0.5);
   border: 3px groove #9999ff;
   border-radius:5px;
   padding:.2rem;
@@ -91,7 +94,7 @@ h1{
 }
 .box-inner{
   width:15%;
-  background-color:rgba(51, 153, 255, 0.5);
+  background-color:rgba(202, 129, 255, 0.5);
   border: 3px groove #9999ff;
   border-radius:5px;
   padding:.2rem;
@@ -102,7 +105,7 @@ h1{
   display:flex;
   flex-wrap:wrap;
   width:80%;
-  background-color:rgba(51, 153, 255, 0.5);
+  background-color:rgba(202, 129, 255, 0.5);
   border: 3px groove #9999ff;
   border-radius:5px;
   padding:.3rem;
