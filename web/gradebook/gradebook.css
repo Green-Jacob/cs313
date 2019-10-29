@@ -11,10 +11,10 @@
   flex-wrap:wrap;
   align-items:center;
   width:auto;
-  background-color:#ccffcc;/* background color for all pages */
+  background-color:#3399ff;/* background color for all pages */
 }
 header{
-  border: 3px groove lightblue;
+  border: 3px groove #001a33;
   border-radius:5px;
   width:100%;
   text-align:center;
@@ -42,11 +42,11 @@ h1{
   font-size:3em;
 }
 .bordered{
-  border: 5px groove green;
+  border: 5px groove #001a33;
   border-radius: 5px;
 }
 .sidebar{
-  border: 3px groove grey;
+  border: 3px groove #9999ff;
   border-radius:5px;
   width:100%;
   background-color:rgba(230, 242, 255, 0.5);
@@ -78,14 +78,14 @@ h1{
 }
 .box-small{
   width:45%;
-  border: 3px groove #0080ff;
+  border: 3px groove #9999ff;
   border-radius:5px;
   padding:.2rem;
   margin:2em;
 }
 .box-inner{
   width:15%;
-  border: 3px groove #0080ff;
+  border: 3px groove #9999ff;
   border-radius:5px;
   padding:.2rem;
   margin:2em;
@@ -95,7 +95,7 @@ h1{
   display:flex;
   flex-wrap:wrap;
   width:80%;
-  border: 3px groove #0080ff;
+  border: 3px groove #9999ff;
   border-radius:5px;
   padding:.3rem;
   margin:.8em;
@@ -118,7 +118,7 @@ h1{
   width:100px;
   height:100px;
   float:left;
-  border:2px solid green;
+  border:2px solid #9999ff;
   border-radius:5px;
 }
 #green-text{
