@@ -56,7 +56,7 @@
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
-          </select>
+          </select><br>
           <input type="submit" name="add" value="Remove Grades">
         </form>
       </div>

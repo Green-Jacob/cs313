@@ -52,53 +52,56 @@ $db = connect_db();
           <input type="submit" name="add" value="Add Assignment">
         </form>
       </div>
-      <div class="box-small">
-        <h2>Seventh Grade Assignments</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, total_score FROM seventh.assignments ORDER BY name') as $row)
-        {
-          echo 'Name: <b>' . $row['name'] . "</b>";
-          echo '<br/>';
-          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-          echo '<br/><hr>';
-        }
-         ?>
-      </div>
-      <div class="box-small">
-        <h2>Seventh Grade Honors Assignments</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments ORDER BY name') as $row)
-        {
-          echo 'Name: <b>' . $row['name'] . "</b>";
-          echo '<br/>';
-          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-          echo '<br/><hr>';
-        }
-         ?>
-      </div>
-      <div class="box-small">
-        <h2>Eighth Grade Assignments</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, total_score FROM eighth.assignments ORDER BY name') as $row)
-        {
-          echo 'Name: <b>' . $row['name'] . "</b>";
-          echo '<br/>';
-          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-          echo '<br/><hr>';
-        }
-         ?>
-      </div>
-      <div class="box-small">
-        <h2>Eighth Grade Honors Assignments</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments ORDER BY name') as $row)
-        {
-          echo 'Name: <b>' . $row['name'] . "</b>";
-          echo '<br/>';
-          echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
-          echo '<br/><hr>';
-        }
-         ?>
+      <div class="box-large">
+        <h2>Assignments by Class</h2>
+        <div class="box-small">
+          <h2>Seventh Grade Assignments</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, total_score FROM seventh.assignments ORDER BY name') as $row)
+          {
+            echo 'Name: <b>' . $row['name'] . "</b>";
+            echo '<br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Seventh Grade Honors Assignments</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments ORDER BY name') as $row)
+          {
+            echo 'Name: <b>' . $row['name'] . "</b>";
+            echo '<br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Eighth Grade Assignments</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, total_score FROM eighth.assignments ORDER BY name') as $row)
+          {
+            echo 'Name: <b>' . $row['name'] . "</b>";
+            echo '<br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Eighth Grade Honors Assignments</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments ORDER BY name') as $row)
+          {
+            echo 'Name: <b>' . $row['name'] . "</b>";
+            echo '<br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
       </div>
     </div><!-- end container -->
   </body>

@@ -51,53 +51,56 @@ $db = connect_db();
           <input type="submit" name="add" value="Add Student">
         </form>
       </div>
-      <div class="box-small">
-        <h2>Seventh Grade Students</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
-        {
-          echo 'Name: ' . $row['name'];
-          echo '<br/>';
-          echo 'Period: ' . $row['period'];
-          echo '<br/><hr>';
-        }
-         ?>
-      </div>
-      <div class="box-small">
-        <h2>Seventh Grade Honors Students</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
-        {
-          echo 'Name: ' . $row['name'];
-          echo '<br/>';
-          echo 'Period: ' . $row['period'];
-          echo '<br/><hr>';
-        }
-         ?>
-      </div>
-      <div class="box-small">
-        <h2>Eighth Grade Students</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
-        {
-          echo 'Name: ' . $row['name'];
-          echo '<br/>';
-          echo 'Period: ' . $row['period'];
-          echo '<br/><hr>';
-        }
-         ?>
-      </div>
-      <div class="box-small">
-        <h2>Eighth Grade Honors Students</h2><hr>
-        <?php
-        foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
-        {
-          echo 'Name: ' . $row['name'];
-          echo '<br/>';
-          echo 'Period: ' . $row['period'];
-          echo '<br/><hr>';
-        }
-         ?>
+      <div class="box-large">
+        <h2>Students by Class</h2>
+        <div class="box-small">
+          <h2>Seventh Grade Students</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
+          {
+            echo 'Name: ' . $row['name'];
+            echo '<br/>';
+            echo 'Period: ' . $row['period'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Seventh Grade Honors Students</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
+          {
+            echo 'Name: ' . $row['name'];
+            echo '<br/>';
+            echo 'Period: ' . $row['period'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Eighth Grade Students</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
+          {
+            echo 'Name: ' . $row['name'];
+            echo '<br/>';
+            echo 'Period: ' . $row['period'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
+        <div class="box-small">
+          <h2>Eighth Grade Honors Students</h2><hr>
+          <?php
+          foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
+          {
+            echo 'Name: ' . $row['name'];
+            echo '<br/>';
+            echo 'Period: ' . $row['period'];
+            echo '<br/><hr>';
+          }
+           ?>
+        </div>
       </div>
     </div><!-- end container -->
   </body>

@@ -64,6 +64,7 @@ $db = connect_db();
         </form>
       </div>
       <div class="box-large">
+        <h2>Grades by Class</h2>
         <div class="box-small">
           <h2>Seventh Grade Entries</h2><hr>
           <?php
