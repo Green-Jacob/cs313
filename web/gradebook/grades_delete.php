@@ -51,8 +51,12 @@ $db = connect_db();
            try {
              foreach ($db->query("SELECT assignment, student, score FROM $c.gradebook") as $row)
              {
-              echo "<input type=\"radio\" name=\"student\" value=\"$row['student']\">";
-              echo " Name :$row['Student']"." Assignment:$row['assignment']"." Score:$row['score']<br><hr>";
+              $s = $row['student'];
+              $sc = $row['score'];
+              $a = $row['assignment'];
+              echo "<input type=\"radio\" name=\"student\" value=\"$s\">";
+              echo " Name :$s"." Assignment:$a"." Score:$sc<br><hr>";
+              echo "<input hidden type=\"text\" name=\"assignment\" value=\"$a\">";
              }
            } catch (\Exception $e) {
              echo $e;
