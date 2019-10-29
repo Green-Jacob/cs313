@@ -11,7 +11,7 @@
   flex-wrap:wrap;
   align-items:center;
   width:auto;
-  background-color:#3399ff;/* background color for all pages */
+  background-image:linear-gradient(to bottom right,#3399ff,#8399ff);
   font-family: 'ZCOOL XiaoWei', serif;/* default font for the site */
 }
 header{
@@ -28,6 +28,7 @@ header{
 }
 input[type=submit]{
   margin:.5rem;
+  border-radius:3px;
 }
 input[type=select]{
   width:auto;
