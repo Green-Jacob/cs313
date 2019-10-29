@@ -12,6 +12,7 @@
   align-items:center;
   width:auto;
   background-color:#3399ff;/* background color for all pages */
+  font-family: 'ZCOOL XiaoWei', serif;/* default font for the site */
 }
 header{
   border: 3px groove #001a33;
