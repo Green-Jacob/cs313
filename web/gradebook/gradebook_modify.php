@@ -166,6 +166,60 @@ $db = connect_db();
               echo '</form>';
               echo '</div>';
             break;
+          case 'Remove Grade':
+          $c = $_POST['class'];
+          $class = ucfirst($c);
+          $class = str_replace("_", " ", $class);
+          $cA = $_POST['class'] . ".assignments";
+          $a = $_POST['assignment'];
+          $a = htmlspecialchars_decode($a);
+          $s = $_POST['student'];
+          try {
+            foreach ($db->query("SELECT * FROM $cA") as $row)
+            {
+              if ($row['name'] == $a) {
+                $t = $row['total_score'];
+                $scoreToEnter = $sc / $t;
+              }
+            }
+              } catch (\Exception $e) {
+                echo "problem: ".$e;
+              }
+            $stmt = $db->prepare("DELETE FROM $c.gradebook WHERE assignment = :assignment AND student = :student");
+            $stmt->bindValue(':assignment', $a);
+            $stmt->bindValue('student', $s);
+            $stmt->execute();
+            echo "<div class='box-small'>";
+            echo "<h2>Grades for $class</h2><br>";
+            try {
+              foreach ($db->query("SELECT assignment, student, score FROM $c.gradebook") as $row)
+              {
+                echo "Name: ".$row['student'];
+                echo "<br>";
+                echo "Assignment: ".$row['assignment'];
+                echo "<br>";
+                echo "Score: ".$row["score"];
+                echo "<br><hr>";
+              }
+            } catch (\Exception $e) {
+              echo "Error with database. Details: $e";
+            }
+            echo "</div>";
+
+            echo '<div class="sidebar">';
+            echo '<h2>Delete Grades</h2>';
+            echo '<form class="" action="grades_delete.php" method="post">';
+            echo 'Class:';
+            echo '<select class="" name="class">';
+            echo '<option value="seventh">Seventh</option>';
+            echo '<option value="seventh_honors">Seventh Honors</option>';
+            echo '<option value="eighth">Eighth</option>';
+            echo '<option value="eighth_honors">Eighth Honors</option>';
+            echo '</select>';
+            echo '<input type="submit" name="add" value="Add Grade">';
+            echo '</form>';
+            echo '</div>';
+            break;
           default:
             // code...
             break;

@@ -50,6 +50,19 @@ $db = connect_db();
           <input type="submit" name="add" value="Add Grade">
         </form>
       </div>
+      <div class="sidebar">
+        <h2>Remove Grades</h2>
+        <form class="" action="grades_delete.php" method="post">
+          Class:
+          <select class="" name="class">
+            <option value="seventh">Seventh</option>
+            <option value="seventh_honors">Seventh Honors</option>
+            <option value="eighth">Eighth</option>
+            <option value="eighth_honors">Eighth Honors</option>
+          </select>
+          <input type="submit" name="add" value="Remove Grades">
+        </form>
+      </div>
       <div class="box-large">
         <div class="box-small">
           <h2>Seventh Grade Entries</h2><hr>
