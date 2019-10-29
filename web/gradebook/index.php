@@ -34,8 +34,8 @@
           <a href="search.php">Search</a>
         </div>
       </div>
-      <h2>Add Grades</h2>
-      <div class="box-large">
+      <div class="sidebar">
+        <h2>Add Grades</h2>
         <form class="" action="grades_add.php" method="post">
           Class:<br>
           <select class="" name="class">
@@ -45,6 +45,19 @@
             <option value="eighth_honors">Eighth Honors</option>
           </select><br>
           <input type="submit" name="add" value="Add to Gradebook">
+        </form>
+      </div>
+      <div class="sidebar">
+        <h2>Remove Grades</h2>
+        <form class="" action="grades_delete.php" method="post">
+          Class:
+          <select class="" name="class">
+            <option value="seventh">Seventh</option>
+            <option value="seventh_honors">Seventh Honors</option>
+            <option value="eighth">Eighth</option>
+            <option value="eighth_honors">Eighth Honors</option>
+          </select>
+          <input type="submit" name="add" value="Remove Grades">
         </form>
       </div>
     </div><!-- end container -->
