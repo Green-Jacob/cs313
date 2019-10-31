@@ -67,8 +67,10 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <h2>Grades by Class</h2>
-        <button type="button" class="btn btn-primary bordered" id="showSeventh">Show Seventh Grade</button>
-        <button type="button" class="btn btn-primary bordered" id="hideSeventh">Hide Seventh Grade</button><br>
+        <div class="box-inner">
+          <button type="button" class="btn btn-primary bordered" id="showSeventh">Show Seventh Grade</button>
+          <button type="button" class="btn btn-primary bordered" id="hideSeventh">Hide Seventh Grade</button><br>
+        </div>
         <div class="box-small" id="seventh">
           <h2>Seventh Grade Entries</h2><hr>
           <?php
@@ -87,8 +89,10 @@ $db = connect_db();
           }
            ?>
         </div>
+        <div class="box-inner">
         <button type="button" class="btn btn-primary bordered" id="showSeventhHonors">Show Seventh Honors Grade</button>
         <button type="button" class="btn btn-primary bordered" id="hideSeventhHonors">Hide Seventh Honors Grade</button><br>
+        </div>
         <div class="box-small" id="seventhHonors">
           <h2>Seventh Grade Honors Entries</h2><hr>
           <?php
@@ -107,8 +111,10 @@ $db = connect_db();
           }
            ?>
         </div>
+        <div class="box-inner">
         <button type="button" class="btn btn-primary bordered" id="showEighth">Show Seventh Honors Grade</button>
         <button type="button" class="btn btn-primary bordered" id="hideEighth">Hide Seventh Honors Grade</button><br>
+        </div>
         <div class="box-small" id="eighth">
           <h2>Eighth Grade Entries</h2><hr>
           <?php
@@ -127,8 +133,10 @@ $db = connect_db();
           }
            ?>
         </div>
+        <div class="box-inner">
         <button type="button" class="btn btn-primary bordered" id="showEighthHonors">Show Seventh Honors Grade</button>
         <button type="button" class="btn btn-primary bordered" id="hideEighthHonors">Hide Seventh Honors Grade</button><br>
+        </div>
         <div class="box-small" id="eighthHonors">
           <h2>Eighth Grade Honors Entries</h2><hr>
           <?php
