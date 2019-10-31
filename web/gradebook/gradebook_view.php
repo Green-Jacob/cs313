@@ -85,8 +85,8 @@ $db = connect_db();
           }
            ?>
         </div>
-        <button type="button" id="showSeventh">Show Seventh Grade</button>
-        <button type="button" id="hideSeventh">Hide Seventh Grade</button><br>
+        <button type="button" class="btn btn-primary" id="showSeventh">Show Seventh Grade</button>
+        <button type="button" class="btn btn-primary" id="hideSeventh">Hide Seventh Grade</button><br>
         <div class="box-small" id="seventhHonors">
           <h2>Seventh Grade Honors Entries</h2><hr>
           <?php
