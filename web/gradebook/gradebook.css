@@ -39,6 +39,9 @@ input[type=number]{
 input[type=select]{
   width:auto;
 }
+button{
+  max-height:100px;
+}
 footer{
   width:80%;
   border: 3px groove #0080ff;
