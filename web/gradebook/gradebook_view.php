@@ -67,7 +67,10 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <h2>Grades by Class</h2>
-
+        <div class="sidebar">
+          <button type="button" class="btn btn-primary bordered" id="showSeventh">Show Seventh Grade</button>
+          <button type="button" class="btn btn-primary bordered" id="hideSeventh">Hide Seventh Grade</button><br>
+        </div>
         <div class="box-small" id="seventh">
           <h2>Seventh Grade Entries</h2><hr>
           <?php
@@ -85,10 +88,6 @@ $db = connect_db();
             echo "$e";
           }
            ?>
-           <div class="sidebar">
-             <button type="button" class="btn btn-primary bordered" id="showSeventh">Show Seventh Grade</button>
-             <button type="button" class="btn btn-primary bordered" id="hideSeventh">Hide Seventh Grade</button><br>
-           </div>
         </div>
         <div class="box-inner">
         <button type="button" class="btn btn-primary bordered" id="showSeventhHonors">Show Seventh Honors Grade</button>
@@ -113,8 +112,8 @@ $db = connect_db();
            ?>
         </div>
         <div class="box-inner">
-        <button type="button" class="btn btn-primary bordered" id="showEighth">Show Seventh Honors Grade</button>
-        <button type="button" class="btn btn-primary bordered" id="hideEighth">Hide Seventh Honors Grade</button><br>
+        <button type="button" class="btn btn-primary bordered" id="showEighth">Show Eighth Grade</button>
+        <button type="button" class="btn btn-primary bordered" id="hideEighth">Hide Eighth Grade</button><br>
         </div>
         <div class="box-small" id="eighth">
           <h2>Eighth Grade Entries</h2><hr>
@@ -135,8 +134,8 @@ $db = connect_db();
            ?>
         </div>
         <div class="box-inner">
-        <button type="button" class="btn btn-primary bordered" id="showEighthHonors">Show Seventh Honors Grade</button>
-        <button type="button" class="btn btn-primary bordered" id="hideEighthHonors">Hide Seventh Honors Grade</button><br>
+        <button type="button" class="btn btn-primary bordered" id="showEighthHonors">Show Eighth Honors Grade</button>
+        <button type="button" class="btn btn-primary bordered" id="hideEighthHonors">Hide Eighth Honors Grade</button><br>
         </div>
         <div class="box-small" id="eighthHonors">
           <h2>Eighth Grade Honors Entries</h2><hr>
