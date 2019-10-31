@@ -8,6 +8,9 @@ $(document).ready(function(){
   $("#hideSeventhHonors").click(function(){
     $("#seventhHonors").hide();
   });
+  $("#showSeventhHonors").click(function(){
+    $("#seventhHonors").show();
+  });
   $("#showEighth").click(function(){
     $("#eighth").show();
   });
@@ -18,9 +21,6 @@ $(document).ready(function(){
     $("#eighthHonors").show();
   });
   $("#hideEighthHonors").click(function(){
-    $("#seventh").hide();
-  });
-  $("#showSeventhHonors").click(function(){
-    $("#seventhHonors").show();
+    $("#eighthHonors").hide();
   });
 });
