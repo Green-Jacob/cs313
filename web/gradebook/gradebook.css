@@ -53,13 +53,14 @@ h1{
   font-size:3em;
 }
 h2{
-  width:100%; 
+  width:100%;
 }
 .bordered{
   border: 5px groove #001a33;
   border-radius: 5px;
 }
 .sidebar{
+  justify-content: space-around;
   border: 3px groove #9999ff;
   border-radius:5px;
   width:100%;
