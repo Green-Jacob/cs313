@@ -14,6 +14,8 @@ $db = connect_db();
     <link rel="stylesheet" href="gradebook.css">
     <link href="https://fonts.googleapis.com/css?family=Acme|Yanone+Kaffeesatz|ZCOOL+XiaoWei&display=swap"
     rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="gradebook.js" charset="utf-8"></script>
   </head>
   <body>
     <div class="container">
@@ -54,7 +56,11 @@ $db = connect_db();
       </div>
       <div class="box-large">
         <h2>Assignments by Class</h2>
-        <div class="box-small">
+        <div class="sidebar">
+          <button type="button" class="btn btn-primary bordered" id="showSeventh">Show Seventh Grade</button>
+          <button type="button" class="btn btn-primary bordered" id="hideSeventh">Hide Seventh Grade</button><br>
+        </div>
+        <div class="box-small" id="seventh">
           <h2>Seventh Grade Assignments</h2><hr>
           <?php
           foreach ($db->query('SELECT name, total_score FROM seventh.assignments ORDER BY name') as $row)
@@ -66,7 +72,11 @@ $db = connect_db();
           }
            ?>
         </div>
-        <div class="box-small">
+        <div class="sidebar">
+        <button type="button" class="btn btn-primary bordered" id="showSeventhHonors">Show Seventh Honors Grade</button>
+        <button type="button" class="btn btn-primary bordered" id="hideSeventhHonors">Hide Seventh Honors Grade</button><br>
+        </div>
+        <div class="box-small" id="seventhHonors">
           <h2>Seventh Grade Honors Assignments</h2><hr>
           <?php
           foreach ($db->query('SELECT name, total_score FROM seventh_honors.assignments ORDER BY name') as $row)
@@ -78,7 +88,11 @@ $db = connect_db();
           }
            ?>
         </div>
-        <div class="box-small">
+        <div class="sidebar">
+        <button type="button" class="btn btn-primary bordered" id="showEighth">Show Eighth Grade</button>
+        <button type="button" class="btn btn-primary bordered" id="hideEighth">Hide Eighth Grade</button><br>
+        </div>
+        <div class="box-small" id="eighth">
           <h2>Eighth Grade Assignments</h2><hr>
           <?php
           foreach ($db->query('SELECT name, total_score FROM eighth.assignments ORDER BY name') as $row)
@@ -90,7 +104,11 @@ $db = connect_db();
           }
            ?>
         </div>
-        <div class="box-small">
+        <div class="sidebar">
+        <button type="button" class="btn btn-primary bordered" id="showEighthHonors">Show Eighth Honors Grade</button>
+        <button type="button" class="btn btn-primary bordered" id="hideEighthHonors">Hide Eighth Honors Grade</button><br>
+        </div>
+        <div class="box-small" id="eighthHonors">
           <h2>Eighth Grade Honors Assignments</h2><hr>
           <?php
           foreach ($db->query('SELECT name, total_score FROM eighth_honors.assignments ORDER BY name') as $row)
