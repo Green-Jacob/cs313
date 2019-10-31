@@ -85,7 +85,7 @@ $db = connect_db();
             echo "$e";
           }
            ?>
-           <div class="box-inner">
+           <div class="sidebar">
              <button type="button" class="btn btn-primary bordered" id="showSeventh">Show Seventh Grade</button>
              <button type="button" class="btn btn-primary bordered" id="hideSeventh">Hide Seventh Grade</button><br>
            </div>
