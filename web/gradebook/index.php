@@ -37,13 +37,13 @@
       <div class="sidebar">
         <h2>Add Grades</h2>
         <form class="" action="grades_add.php" method="post">
-          Class:<br>
+          Class:
           <select class="" name="class">
             <option value="seventh">Seventh</option>
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
-          </select><br>
+          </select>
           <input type="submit" name="add" value="Add to Gradebook">
         </form>
       </div>
@@ -56,7 +56,7 @@
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
-          </select><br>
+          </select>
           <input type="submit" name="add" value="Remove Grades">
         </form>
       </div>
