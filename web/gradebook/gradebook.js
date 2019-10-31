@@ -5,4 +5,9 @@ $(document).ready(function(){
   $("#showSeventh").click(function(){
     $("#seventh").show();
   });
+  $("#hideSeventhHonors").click(function(){
+    $("#seventhHonors").hide();
+  });
+  $("#showSeventhHonors").click(function(){
+    $("#seventhHonors").show();
 });
