@@ -35,7 +35,7 @@
         </div>
       </div>
       <div class="sidebar">
-        <h2>Add Grades</h2>
+        <h3>Add Grades</h3>
         <form class="" action="grades_add.php" method="post">
           Class:
           <select class="" name="class">
@@ -48,7 +48,7 @@
         </form>
       </div>
       <div class="sidebar">
-        <h2>Remove Grades</h2>
+        <h3>Remove Grades</h3>
         <form class="" action="grades_delete.php" method="post">
           Class:
           <select class="" name="class">

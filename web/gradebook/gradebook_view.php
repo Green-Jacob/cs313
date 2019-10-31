@@ -40,7 +40,7 @@ $db = connect_db();
         </div>
       </div>
       <div class="sidebar">
-        <h2>Add Grades</h2>
+        <h3>Add Grades</h3>
         <form class="" action="grades_add.php" method="post">
           Class:
           <select class="" name="class">
@@ -48,12 +48,12 @@ $db = connect_db();
             <option value="seventh_honors">Seventh Honors</option>
             <option value="eighth">Eighth</option>
             <option value="eighth_honors">Eighth Honors</option>
-          </select><br>
+          </select>
           <input type="submit" name="add" value="Add Grade">
         </form>
       </div>
       <div class="sidebar">
-        <h2>Remove Grades</h2>
+        <h3>Remove Grades</h3>
         <form class="" action="grades_delete.php" method="post">
           Class:
           <select class="" name="class">
