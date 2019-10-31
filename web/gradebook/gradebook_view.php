@@ -89,7 +89,7 @@ $db = connect_db();
           }
            ?>
         </div>
-        <div class="box-inner">
+        <div class="sidebar">
         <button type="button" class="btn btn-primary bordered" id="showSeventhHonors">Show Seventh Honors Grade</button>
         <button type="button" class="btn btn-primary bordered" id="hideSeventhHonors">Hide Seventh Honors Grade</button><br>
         </div>
@@ -111,7 +111,7 @@ $db = connect_db();
           }
            ?>
         </div>
-        <div class="box-inner">
+        <div class="sidebar">
         <button type="button" class="btn btn-primary bordered" id="showEighth">Show Eighth Grade</button>
         <button type="button" class="btn btn-primary bordered" id="hideEighth">Hide Eighth Grade</button><br>
         </div>
@@ -133,7 +133,7 @@ $db = connect_db();
           }
            ?>
         </div>
-        <div class="box-inner">
+        <div class="sidebar">
         <button type="button" class="btn btn-primary bordered" id="showEighthHonors">Show Eighth Honors Grade</button>
         <button type="button" class="btn btn-primary bordered" id="hideEighthHonors">Hide Eighth Honors Grade</button><br>
         </div>
