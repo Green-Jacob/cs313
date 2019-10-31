@@ -60,6 +60,7 @@ h2{
   border-radius: 5px;
 }
 .sidebar{
+  display:flex;
   justify-content: space-around;
   border: 3px groove #9999ff;
   border-radius:5px;
