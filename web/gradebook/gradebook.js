@@ -8,6 +8,19 @@ $(document).ready(function(){
   $("#hideSeventhHonors").click(function(){
     $("#seventhHonors").hide();
   });
+  $("#showEighth").click(function(){
+    $("#eighth").show();
+  });
+  $("#hideEighth").click(function(){
+    $("#eighth").hide();
+  });
+  $("#showEighthHonors").click(function(){
+    $("#eighthHonors").show();
+  });
+  $("#hideEighthHonors").click(function(){
+    $("#seventh").hide();
+  });
   $("#showSeventhHonors").click(function(){
     $("#seventhHonors").show();
+  });
 });
