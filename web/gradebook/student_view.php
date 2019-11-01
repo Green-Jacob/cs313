@@ -64,9 +64,9 @@ $db = connect_db();
           <?php
           foreach ($db->query('SELECT name, period FROM seventh.students') as $row)
           {
-            echo 'Name: ' . $row['name'];
+            echo 'Name: <b>' . $row['name'] . '</b>';
             echo '<br/>';
-            echo 'Period: ' . $row['period'];
+            echo 'Period: <b>' . $row['period'] . '</b>';
             echo '<br/><hr>';
           }
            ?>
@@ -80,9 +80,9 @@ $db = connect_db();
           <?php
           foreach ($db->query('SELECT name, period FROM seventh_honors.students') as $row)
           {
-            echo 'Name: ' . $row['name'];
+            echo 'Name: <b>' . $row['name'] . '</b>';
             echo '<br/>';
-            echo 'Period: ' . $row['period'];
+            echo 'Period: <b>' . $row['period'] . '</b>';
             echo '<br/><hr>';
           }
            ?>
@@ -96,9 +96,9 @@ $db = connect_db();
           <?php
           foreach ($db->query('SELECT name, period FROM eighth.students') as $row)
           {
-            echo 'Name: ' . $row['name'];
+            echo 'Name: <b>' . $row['name'] . '</b>';
             echo '<br/>';
-            echo 'Period: ' . $row['period'];
+            echo 'Period: <b>' . $row['period'] . '</b>';
             echo '<br/><hr>';
           }
            ?>
@@ -112,9 +112,9 @@ $db = connect_db();
           <?php
           foreach ($db->query('SELECT name, period FROM eighth_honors.students') as $row)
           {
-            echo 'Name: ' . $row['name'];
+            echo 'Name: <b>' . $row['name'] . '</b>';
             echo '<br/>';
-            echo 'Period: ' . $row['period'];
+            echo 'Period: <b>' . $row['period'] . '</b>';
             echo '<br/><hr>';
           }
            ?>

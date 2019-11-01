@@ -49,9 +49,9 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT assignment, score FROM '. $c . '.gradebook WHERE student = \'' . $s . '\'' ) as $row)
             {
-              echo 'Assignment: ' . $row['assignment'];
+              echo 'Assignment: <b>' . $row['assignment'] . '</b>';
               echo '<br/>';
-              echo 'Score: ' . $row['score'];
+              echo 'Score: <b>' . $row['score'] . '%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {
@@ -67,9 +67,9 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT student, score FROM '. $t . '.gradebook WHERE assignment = \'' . $a . '\'' ) as $row)
             {
-              echo 'Student: ' . $row['student'];
+              echo 'Student: <b>' . $row['student'] . '</b>';
               echo '<br/>';
-              echo 'Score: ' . $row['score'];
+              echo 'Score: <b>' . $row['score'] . '%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {
@@ -83,17 +83,19 @@ $db = connect_db();
           echo "<b>Class Students</b><br>";
           foreach ($db->query('SELECT name, period FROM '. $_GET['class'] . '.students') as $row)
           {
-            echo 'Name: ' . $row['name'];
+            echo 'Name: <b>' . $row['name'] . '</b>';
             echo '<br/>';
-            echo 'Period: ' . $row['period'];
+            echo 'Period: <b>' . $row['period'] . '</b>';
             echo '<br/><hr>';
           }
           echo "</div>";
           echo "<div class='box-small'>";
           echo "<b>Class Assignments</b><br>";
-          foreach ($db->query('SELECT name FROM '. $_GET['class'] . '.assignments') as $row)
+          foreach ($db->query('SELECT name, total_score FROM '. $_GET['class'] . '.assignments ORDER BY name') as $row)
           {
-            echo 'Name: ' . $row['name'];
+            echo 'Name: <b>' . $row['name'] . "</b>";
+            echo '<br/>';
+            echo 'Total Possible: <b>' . $row['total_score'] . "</b>";
             echo '<br/><hr>';
           }
           echo "</div>";
@@ -102,11 +104,11 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT * FROM '. $_GET['class'].'.gradebook ORDER BY student') as $row)
             {
-              echo 'Name: ' . $row['student'];
+              echo 'Name: <b>' . $row['student'] . '</b>';
               echo '<br/>';
-              echo 'Assignment: ' . $row['assignment'];
+              echo 'Assignment: <b>' . $row['assignment'] . '</b>';
               echo '<br/>';
-              echo 'Score:' . $row['score'];
+              echo 'Score: <b>' . $row['score'].'%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {

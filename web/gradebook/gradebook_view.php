@@ -77,11 +77,11 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT * FROM seventh.gradebook ORDER BY student') as $row)
             {
-              echo 'Name: ' . $row['student'];
+              echo 'Name: <b>' . $row['student'] . '</b>';
               echo '<br/>';
-              echo 'Assignment: ' . $row['assignment'];
+              echo 'Assignment: <b>' . $row['assignment'] . '</b>';
               echo '<br/>';
-              echo 'Score:' . $row['score'].'%';
+              echo 'Score: <b>' . $row['score'].'%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {
@@ -99,11 +99,11 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT * FROM seventh_honors.gradebook ORDER BY student') as $row)
             {
-              echo 'Name: ' . $row['student'];
+              echo 'Name: <b>' . $row['student'] . '</b>';
               echo '<br/>';
-              echo 'Assignment: ' . $row['assignment'];
+              echo 'Assignment: <b>' . $row['assignment'] . '</b>';
               echo '<br/>';
-              echo 'Score:' . $row['score'].'%';
+              echo 'Score: <b>' . $row['score'].'%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {
@@ -121,11 +121,11 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT * FROM eighth.gradebook ORDER BY student') as $row)
             {
-              echo 'Name: ' . $row['student'];
+              echo 'Name: <b>' . $row['student'] . '</b>';
               echo '<br/>';
-              echo 'Assignment: ' . $row['assignment'];
+              echo 'Assignment: <b>' . $row['assignment'] . '</b>';
               echo '<br/>';
-              echo 'Score:' . $row['score'].'%';
+              echo 'Score: <b>' . $row['score'].'%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {
@@ -143,11 +143,11 @@ $db = connect_db();
           try {
             foreach ($db->query('SELECT * FROM eighth_honors.gradebook ORDER BY student') as $row)
             {
-              echo 'Name: ' . $row['student'];
+              echo 'Name: <b>' . $row['student'] . '</b>';
               echo '<br/>';
-              echo 'Assignment: ' . $row['assignment'];
+              echo 'Assignment: <b>' . $row['assignment'] . '</b>';
               echo '<br/>';
-              echo 'Score:' . $row['score'].'%';
+              echo 'Score: <b>' . $row['score'].'%</b>';
               echo '<br/><hr>';
             }
           } catch (\Exception $e) {
